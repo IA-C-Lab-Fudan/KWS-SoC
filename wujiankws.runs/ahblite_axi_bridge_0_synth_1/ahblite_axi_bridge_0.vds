@@ -1,0 +1,497 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed May 13 20:08:57 2020
+# Process ID: 22708
+# Current directory: F:/VivadoProject/1/wujiankws/wujiankws/wujiankws.runs/ahblite_axi_bridge_0_synth_1
+# Command line: vivado.exe -log ahblite_axi_bridge_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ahblite_axi_bridge_0.tcl
+# Log file: F:/VivadoProject/1/wujiankws/wujiankws/wujiankws.runs/ahblite_axi_bridge_0_synth_1/ahblite_axi_bridge_0.vds
+# Journal file: F:/VivadoProject/1/wujiankws/wujiankws/wujiankws.runs/ahblite_axi_bridge_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ahblite_axi_bridge_0.tcl -notrace
+Command: synth_design -top ahblite_axi_bridge_0 -part xczu7ev-ffvc1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13816 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1598.832 ; gain = 64.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ahblite_axi_bridge_0' [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/synth/ahblite_axi_bridge_0.vhd:113]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_INSTANCE bound to: ahblite_axi_bridge_0 - type: string 
+	Parameter C_M_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_M_AXI_NON_SECURE bound to: 1 - type: integer 
+	Parameter C_S_AHB_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AHB_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_M_AXI_THREAD_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_AHB_AXI_TIMEOUT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'ahblite_axi_bridge' declared at 'f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:4257' bound to instance 'U0' of component 'ahblite_axi_bridge' [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/synth/ahblite_axi_bridge_0.vhd:245]
+INFO: [Synth 8-638] synthesizing module 'ahblite_axi_bridge' [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:4353]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_INSTANCE bound to: ahblite_axi_bridge_0 - type: string 
+	Parameter C_M_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_S_AHB_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AHB_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_M_AXI_THREAD_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_AHB_AXI_TIMEOUT bound to: 0 - type: integer 
+	Parameter C_M_AXI_NON_SECURE bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ahblite_axi_control' [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:3648]
+INFO: [Synth 8-256] done synthesizing module 'ahblite_axi_control' (1#1) [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:3648]
+INFO: [Synth 8-638] synthesizing module 'ahb_if' [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:2506]
+	Parameter C_S_AHB_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AHB_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_THREAD_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_NON_SECURE bound to: 1 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element S_AHB_HBURST_i_reg was removed.  [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:2723]
+INFO: [Synth 8-256] done synthesizing module 'ahb_if' (2#1) [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:2506]
+INFO: [Synth 8-638] synthesizing module 'ahb_data_counter' [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:3367]
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'counter_f' [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:328]
+	Parameter C_NUM_BITS bound to: 5 - type: integer 
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'counter_f' (3#1) [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:328]
+INFO: [Synth 8-256] done synthesizing module 'ahb_data_counter' (4#1) [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:3367]
+INFO: [Synth 8-638] synthesizing module 'axi_wchannel' [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:910]
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+	Parameter C_S_AHB_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AHB_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_THREAD_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element next_wr_strobe_reg was removed.  [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:1214]
+INFO: [Synth 8-256] done synthesizing module 'axi_wchannel' (5#1) [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:910]
+INFO: [Synth 8-638] synthesizing module 'axi_rchannel' [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:1931]
+	Parameter C_S_AHB_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_THREAD_ID_WIDTH bound to: 4 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element rdata_placed_on_ahb_reg was removed.  [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:2184]
+INFO: [Synth 8-256] done synthesizing module 'axi_rchannel' (6#1) [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:1931]
+INFO: [Synth 8-638] synthesizing module 'time_out' [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:534]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_AHB_AXI_TIMEOUT bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'time_out' (7#1) [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:534]
+INFO: [Synth 8-256] done synthesizing module 'ahblite_axi_bridge' (8#1) [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:4353]
+INFO: [Synth 8-256] done synthesizing module 'ahblite_axi_bridge_0' (9#1) [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/synth/ahblite_axi_bridge_0.vhd:113]
+WARNING: [Synth 8-3331] design time_out has unconnected port S_AHB_HCLK
+WARNING: [Synth 8-3331] design time_out has unconnected port S_AHB_HRESETN
+WARNING: [Synth 8-3331] design time_out has unconnected port core_is_idle
+WARNING: [Synth 8-3331] design time_out has unconnected port enable_timeout_cnt
+WARNING: [Synth 8-3331] design time_out has unconnected port M_AXI_BVALID
+WARNING: [Synth 8-3331] design time_out has unconnected port wr_load_timeout_cntr
+WARNING: [Synth 8-3331] design time_out has unconnected port last_axi_rd_sample
+WARNING: [Synth 8-3331] design time_out has unconnected port rd_load_timeout_cntr
+WARNING: [Synth 8-3331] design axi_wchannel has unconnected port ahb_hburst_wrap4
+WARNING: [Synth 8-3331] design axi_wchannel has unconnected port ahb_haddr_hsize[4]
+WARNING: [Synth 8-3331] design axi_wchannel has unconnected port ahb_haddr_hsize[3]
+WARNING: [Synth 8-3331] design axi_wchannel has unconnected port ahb_haddr_hsize[2]
+WARNING: [Synth 8-3331] design axi_wchannel has unconnected port ahb_haddr_hsize[1]
+WARNING: [Synth 8-3331] design axi_wchannel has unconnected port ahb_haddr_hsize[0]
+WARNING: [Synth 8-3331] design axi_wchannel has unconnected port ahb_hsize[1]
+WARNING: [Synth 8-3331] design axi_wchannel has unconnected port ahb_hsize[0]
+WARNING: [Synth 8-3331] design ahblite_axi_bridge has unconnected port m_axi_bid[3]
+WARNING: [Synth 8-3331] design ahblite_axi_bridge has unconnected port m_axi_bid[2]
+WARNING: [Synth 8-3331] design ahblite_axi_bridge has unconnected port m_axi_bid[1]
+WARNING: [Synth 8-3331] design ahblite_axi_bridge has unconnected port m_axi_bid[0]
+WARNING: [Synth 8-3331] design ahblite_axi_bridge has unconnected port m_axi_rid[3]
+WARNING: [Synth 8-3331] design ahblite_axi_bridge has unconnected port m_axi_rid[2]
+WARNING: [Synth 8-3331] design ahblite_axi_bridge has unconnected port m_axi_rid[1]
+WARNING: [Synth 8-3331] design ahblite_axi_bridge has unconnected port m_axi_rid[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1671.680 ; gain = 137.258
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1678.148 ; gain = 143.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1678.148 ; gain = 143.727
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1678.148 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [F:/VivadoProject/1/wujiankws/wujiankws/wujiankws.runs/ahblite_axi_bridge_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/VivadoProject/1/wujiankws/wujiankws/wujiankws.runs/ahblite_axi_bridge_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1806.977 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1806.980 ; gain = 0.004
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1806.980 ; gain = 272.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1806.980 ; gain = 272.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  F:/VivadoProject/1/wujiankws/wujiankws/wujiankws.runs/ahblite_axi_bridge_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1806.980 ; gain = 272.559
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'ctl_sm_cs_reg' in module 'ahblite_axi_control'
+INFO: [Synth 8-5544] ROM "valid_cnt_required_i" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AXI_ALEN_i" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:356]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                ctl_idle |                          0000001 |                              000
+                ctl_addr |                          0000010 |                              001
+               ctl_write |                          0000100 |                              010
+               ctl_bresp |                          0001000 |                              101
+           ctl_bresp_err |                          0010000 |                              110
+                ctl_read |                          0100000 |                              011
+            ctl_read_err |                          1000000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctl_sm_cs_reg' using encoding 'one-hot' in module 'ahblite_axi_control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1806.980 ; gain = 272.559
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 6     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 36    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 8     
+	   3 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 54    
+	   7 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ahblite_axi_control 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 14    
+	   7 Input      1 Bit        Muxes := 12    
+Module ahb_if 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 14    
+Module counter_f 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module axi_wchannel 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 5     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 14    
+	   5 Input      1 Bit        Muxes := 1     
+Module axi_rchannel 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'AXI_WCHANNEL/axi_waddr_done_i_reg' into 'AHBLITE_AXI_CONTROL/ahb_wnr_i_reg' [f:/VivadoProject/1/wujiankws/wujiankws/wujiankws.srcs/sources_1/ip/ahblite_axi_bridge_0/hdl/ahblite_axi_bridge_v3_0_vh_rfs.vhd:1253]
+WARNING: [Synth 8-3331] design ahblite_axi_bridge has unconnected port m_axi_bid[3]
+WARNING: [Synth 8-3331] design ahblite_axi_bridge has unconnected port m_axi_bid[2]
+WARNING: [Synth 8-3331] design ahblite_axi_bridge has unconnected port m_axi_bid[1]
+WARNING: [Synth 8-3331] design ahblite_axi_bridge has unconnected port m_axi_bid[0]
+WARNING: [Synth 8-3331] design ahblite_axi_bridge has unconnected port m_axi_rid[3]
+WARNING: [Synth 8-3331] design ahblite_axi_bridge has unconnected port m_axi_rid[2]
+WARNING: [Synth 8-3331] design ahblite_axi_bridge has unconnected port m_axi_rid[1]
+WARNING: [Synth 8-3331] design ahblite_axi_bridge has unconnected port m_axi_rid[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AHB_IF/valid_cnt_required_i_reg[4] )
+INFO: [Synth 8-3886] merging instance 'U0/AHB_IF/valid_cnt_required_i_reg[0]' (FDRE) to 'U0/AHB_IF/valid_cnt_required_i_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AXI_WCHANNEL/timeout_detected_i_reg )
+INFO: [Synth 8-3886] merging instance 'U0/AXI_WCHANNEL/NARROW_TRANSFER_OFF.M_AXI_WSTRB_i_reg[0]' (FDS) to 'U0/AXI_WCHANNEL/NARROW_TRANSFER_OFF.M_AXI_WSTRB_i_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_WCHANNEL/NARROW_TRANSFER_OFF.M_AXI_WSTRB_i_reg[1]' (FDS) to 'U0/AXI_WCHANNEL/NARROW_TRANSFER_OFF.M_AXI_WSTRB_i_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_WCHANNEL/NARROW_TRANSFER_OFF.M_AXI_WSTRB_i_reg[2]' (FDS) to 'U0/AXI_WCHANNEL/NARROW_TRANSFER_OFF.M_AXI_WSTRB_i_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/AHB_IF/GEN_1_PROT_CACHE_REG_NON_SECURE.AXI_ACACHE_i_reg[2]' (FDRE) to 'U0/AHB_IF/GEN_1_PROT_CACHE_REG_NON_SECURE.AXI_ACACHE_i_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AHB_IF/GEN_1_PROT_CACHE_REG_NON_SECURE.AXI_ACACHE_i_reg[3] )
+INFO: [Synth 8-3886] merging instance 'U0/AHB_IF/AXI_ALEN_i_reg[0]' (FDRE) to 'U0/AHB_IF/AXI_ALEN_i_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AHB_IF/AXI_ALEN_i_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AHB_IF/AXI_ALEN_i_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AHB_IF/AXI_ALEN_i_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AHB_IF/AXI_ALEN_i_reg[7] )
+INFO: [Synth 8-3886] merging instance 'U0/AXI_WCHANNEL/axi_cnt_required_reg[0]' (FDRE) to 'U0/AXI_WCHANNEL/axi_cnt_required_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/AHB_IF/burst_term_txer_cnt_i_reg[0]' (FDRE) to 'U0/AHB_IF/burst_term_txer_cnt_i_reg[1]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1806.980 ; gain = 272.559
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2408.961 ; gain = 874.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2439.242 ; gain = 904.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2448.262 ; gain = 913.840
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2455.051 ; gain = 920.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2455.051 ; gain = 920.629
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2455.051 ; gain = 920.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2455.051 ; gain = 920.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2455.051 ; gain = 920.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2455.051 ; gain = 920.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |    15|
+|3     |LUT3 |    14|
+|4     |LUT4 |    19|
+|5     |LUT5 |    60|
+|6     |LUT6 |    49|
+|7     |FDRE |   201|
+|8     |FDSE |     5|
++------+-----+------+
+
+Report Instance Areas: 
++------+----------------------------+--------------------+------+
+|      |Instance                    |Module              |Cells |
++------+----------------------------+--------------------+------+
+|1     |top                         |                    |   365|
+|2     |  U0                        |ahblite_axi_bridge  |   365|
+|3     |    AHBLITE_AXI_CONTROL     |ahblite_axi_control |    32|
+|4     |    AHB_DATA_COUNTER        |ahb_data_counter    |    13|
+|5     |      AHB_SAMPLE_CNT_MODULE |counter_f_0         |    13|
+|6     |    AHB_IF                  |ahb_if              |   151|
+|7     |    AXI_RCHANNEL            |axi_rchannel        |    27|
+|8     |    AXI_WCHANNEL            |axi_wchannel        |   142|
+|9     |      AXI_WRITE_CNT_MODULE  |counter_f           |    23|
++------+----------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2455.051 ; gain = 920.629
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 2455.051 ; gain = 791.797
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2455.051 ; gain = 920.629
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2467.105 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2487.410 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+50 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2487.410 ; gain = 2022.824
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2487.410 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/VivadoProject/1/wujiankws/wujiankws/wujiankws.runs/ahblite_axi_bridge_0_synth_1/ahblite_axi_bridge_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ahblite_axi_bridge_0, cache-ID = 3223816335c57680
+INFO: [Coretcl 2-1174] Renamed 8 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2487.410 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/VivadoProject/1/wujiankws/wujiankws/wujiankws.runs/ahblite_axi_bridge_0_synth_1/ahblite_axi_bridge_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ahblite_axi_bridge_0_utilization_synth.rpt -pb ahblite_axi_bridge_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 13 20:09:45 2020...

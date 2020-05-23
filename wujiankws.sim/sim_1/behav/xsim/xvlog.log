@@ -1,0 +1,443 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/data_broadcaster.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_broadcaster
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/datastream_out_12u_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datastream_out_12u_s
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/dw_layer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dw_layer1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/dw_layer1_x_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dw_layer1_x_5_ram
+INFO: [VRFC 10-311] analyzing module dw_layer1_x_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/dw_layer1_y_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dw_layer1_y_5_ram
+INFO: [VRFC 10-311] analyzing module dw_layer1_y_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/dw_layer2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dw_layer2
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/dw_layer2_y_6_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dw_layer2_y_6_0_ram
+INFO: [VRFC 10-311] analyzing module dw_layer2_y_6_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/fc_64u_12u_1u_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_64u_12u_1u_s
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/fc_64u_12u_1u_s_y_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_64u_12u_1u_s_y_4_ram
+INFO: [VRFC 10-311] analyzing module fc_64u_12u_1u_s_y_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/fc_relu6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_relu6
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/fc_relu6_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_relu6_x_ram
+INFO: [VRFC 10-311] analyzing module fc_relu6_x
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/fc_relu6_y.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_relu6_y_ram
+INFO: [VRFC 10-311] analyzing module fc_relu6_y
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/fifo_w32_d12_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w32_d12_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w32_d12_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/fifo_w32_d40_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w32_d40_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/fifo_w32_d64_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w32_d64_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/fifo_w32_d414_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w32_d414_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/fifo_w32_d500_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w32_d500_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/fifo_w32_d16512_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w32_d16512_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/fifo_w32_d19872_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w32_d19872_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/grucell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module grucell
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/grucell_state.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module grucell_state_ram
+INFO: [VRFC 10-311] analyzing module grucell_state
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/grucell_state_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module grucell_state_1_0_ram
+INFO: [VRFC 10-311] analyzing module grucell_state_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/grucell_zz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module grucell_zz_ram
+INFO: [VRFC 10-311] analyzing module grucell_zz
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/kws_bn_bias1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kws_bn_bias1_ram
+INFO: [VRFC 10-311] analyzing module kws_bn_bias1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/kws_dw_weight1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kws_dw_weight1_ram
+INFO: [VRFC 10-311] analyzing module kws_dw_weight1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/kws_dw_weight2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kws_dw_weight2_0_ram
+INFO: [VRFC 10-311] analyzing module kws_dw_weight2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/kws_fadd_32ns_32nbkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kws_fadd_32ns_32nbkb
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/kws_fadd_32ns_32ndEe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kws_fadd_32ns_32ndEe
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/kws_faddfsub_32nsfYi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kws_faddfsub_32nsfYi
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/kws_fc_weights1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kws_fc_weights1_ram
+INFO: [VRFC 10-311] analyzing module kws_fc_weights1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/kws_fc_weights2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kws_fc_weights2_ram
+INFO: [VRFC 10-311] analyzing module kws_fc_weights2
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/kws_fcmp_32ns_32neOg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kws_fcmp_32ns_32neOg
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/kws_fmul_32ns_32ncud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kws_fmul_32ns_32ncud
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/kws_mux_432_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kws_mux_432_32_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/kws_pw_weight2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kws_pw_weight2_0_ram
+INFO: [VRFC 10-311] analyzing module kws_pw_weight2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/kws_weights_hw.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kws_weights_hw_ram
+INFO: [VRFC 10-311] analyzing module kws_weights_hw
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/kws_weights_ru_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kws_weights_ru_0_ram
+INFO: [VRFC 10-311] analyzing module kws_weights_ru_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/kws_weights_rw.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kws_weights_rw_ram
+INFO: [VRFC 10-311] analyzing module kws_weights_rw
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/mysigmoid.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mysigmoid
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/mytanh.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mytanh
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/pw_layer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pw_layer1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/pw_layer1_x_11_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pw_layer1_x_11_0_ram
+INFO: [VRFC 10-311] analyzing module pw_layer1_x_11_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/pw_layer1_y_9_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pw_layer1_y_9_0_ram
+INFO: [VRFC 10-311] analyzing module pw_layer1_y_9_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/pw_layer2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pw_layer2
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/pw_layer2_x_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pw_layer2_x_0_ram
+INFO: [VRFC 10-311] analyzing module pw_layer2_x_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/regslice_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regslice_both
+INFO: [VRFC 10-311] analyzing module regslice_forward
+INFO: [VRFC 10-311] analyzing module regslice_reverse
+INFO: [VRFC 10-311] analyzing module regslice_both_w1
+INFO: [VRFC 10-311] analyzing module regslice_forward_w1
+INFO: [VRFC 10-311] analyzing module regslice_reverse_w1
+INFO: [VRFC 10-311] analyzing module ibuf
+INFO: [VRFC 10-311] analyzing module obuf
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/weight_loader.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module weight_loader
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.ip_user_files/ipstatic/hdl/verilog/kws.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kws
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/E902_20191018.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cr_ahbl_if
+INFO: [VRFC 10-311] analyzing module cr_ahbl_req_arb
+INFO: [VRFC 10-311] analyzing module cr_bmu_dbus_if
+INFO: [VRFC 10-311] analyzing module cr_bmu_ibus_if
+INFO: [VRFC 10-311] analyzing module cr_bmu_top
+INFO: [VRFC 10-311] analyzing module cr_clic_arb
+INFO: [VRFC 10-311] analyzing module cr_clic_kid
+INFO: [VRFC 10-311] analyzing module cr_clic_reg_if
+INFO: [VRFC 10-311] analyzing module cr_clic_top
+INFO: [VRFC 10-311] analyzing module cr_clk_top
+INFO: [VRFC 10-311] analyzing module cr_clkrst_top
+INFO: [VRFC 10-311] analyzing module cr_core
+INFO: [VRFC 10-311] analyzing module cr_core_top
+INFO: [VRFC 10-311] analyzing module cr_coretim_top
+INFO: [VRFC 10-311] analyzing module cr_cp0_iui
+INFO: [VRFC 10-311] analyzing module cr_cp0_lpmd
+INFO: [VRFC 10-311] analyzing module cr_cp0_oreg
+INFO: [VRFC 10-311] analyzing module cr_cp0_randclk
+INFO: [VRFC 10-311] analyzing module cr_cp0_status
+INFO: [VRFC 10-311] analyzing module cr_cp0_top
+INFO: [VRFC 10-311] analyzing module E902_20191018
+INFO: [VRFC 10-311] analyzing module cr_iahbl_top
+INFO: [VRFC 10-311] analyzing module cr_ifu_ibuf
+INFO: [VRFC 10-311] analyzing module cr_ifu_ibuf_entry
+INFO: [VRFC 10-311] analyzing module cr_ifu_ibusif
+INFO: [VRFC 10-311] analyzing module cr_ifu_ifctrl
+INFO: [VRFC 10-311] analyzing module cr_ifu_ifdp
+INFO: [VRFC 10-311] analyzing module cr_ifu_randclk
+INFO: [VRFC 10-311] analyzing module cr_ifu_top
+INFO: [VRFC 10-311] analyzing module cr_iu_alu
+INFO: [VRFC 10-311] analyzing module cr_iu_branch
+INFO: [VRFC 10-311] analyzing module cr_iu_ctrl
+INFO: [VRFC 10-311] analyzing module cr_iu_decd
+INFO: [VRFC 10-311] analyzing module cr_iu_gated_clk_reg
+INFO: [VRFC 10-311] analyzing module cr_iu_gated_clk_reg_timing
+INFO: [VRFC 10-311] analyzing module cr_iu_hs_split
+INFO: [VRFC 10-311] analyzing module cr_iu_mad
+INFO: [VRFC 10-311] analyzing module cr_iu_oper
+INFO: [VRFC 10-311] analyzing module cr_iu_oper_gpr
+INFO: [VRFC 10-311] analyzing module cr_iu_pcgen
+INFO: [VRFC 10-311] analyzing module cr_iu_randclk
+INFO: [VRFC 10-311] analyzing module cr_iu_rbus
+INFO: [VRFC 10-311] analyzing module cr_iu_retire
+INFO: [VRFC 10-311] analyzing module cr_iu_special
+INFO: [VRFC 10-311] analyzing module cr_iu_top
+INFO: [VRFC 10-311] analyzing module cr_iu_vector
+INFO: [VRFC 10-311] analyzing module cr_iu_wb
+INFO: [VRFC 10-311] analyzing module cr_lsu_ctrl
+INFO: [VRFC 10-311] analyzing module cr_lsu_dp
+INFO: [VRFC 10-311] analyzing module cr_lsu_randclk
+INFO: [VRFC 10-311] analyzing module cr_lsu_top
+INFO: [VRFC 10-311] analyzing module cr_lsu_unalign
+INFO: [VRFC 10-311] analyzing module cr_pwrm_top_dummy
+INFO: [VRFC 10-311] analyzing module cr_rst_top
+INFO: [VRFC 10-311] analyzing module cr_sahbl_top
+INFO: [VRFC 10-311] analyzing module cr_sys_io
+INFO: [VRFC 10-311] analyzing module cr_tcipif_behavior_bus
+INFO: [VRFC 10-311] analyzing module cr_tcipif_dummy_bus
+INFO: [VRFC 10-311] analyzing module cr_tcipif_top
+INFO: [VRFC 10-311] analyzing module A186a0
+INFO: [VRFC 10-311] analyzing module A15
+INFO: [VRFC 10-311] analyzing module A1867b
+INFO: [VRFC 10-311] analyzing module A45
+INFO: [VRFC 10-311] analyzing module A1864d
+INFO: [VRFC 10-311] analyzing module A1862c
+INFO: [VRFC 10-311] analyzing module A7f
+INFO: [VRFC 10-311] analyzing module A10a
+INFO: [VRFC 10-311] analyzing module cr_had_top
+INFO: [VRFC 10-311] analyzing module A15e
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/sim_lib/PAD_DIG_IO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PAD_DIG_IO
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/sim_lib/PAD_OSC_IO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PAD_OSC_IO
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/sim_lib/STD_CELL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Standard_Cell_CLK_GATE
+INFO: [VRFC 10-311] analyzing module Standard_Cell_CLK_MUX2
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ahb_axi_kws
+INFO: [VRFC 10-2458] undeclared symbol weight_in_axi_awready, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:210]
+INFO: [VRFC 10-2458] undeclared symbol control_in_axi_awready, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:211]
+INFO: [VRFC 10-2458] undeclared symbol data_out_axi_awready, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:212]
+INFO: [VRFC 10-2458] undeclared symbol weight_in_axi_arready, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:215]
+INFO: [VRFC 10-2458] undeclared symbol control_in_axi_arready, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:216]
+INFO: [VRFC 10-2458] undeclared symbol weight_in_axi_bvalid, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:224]
+INFO: [VRFC 10-2458] undeclared symbol weight_in_axi_bresp, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:225]
+INFO: [VRFC 10-2458] undeclared symbol weight_in_axi_bid, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:226]
+INFO: [VRFC 10-2458] undeclared symbol control_in_axi_bvalid, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:228]
+INFO: [VRFC 10-2458] undeclared symbol control_in_axi_bresp, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:229]
+INFO: [VRFC 10-2458] undeclared symbol control_in_axi_bid, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:230]
+INFO: [VRFC 10-2458] undeclared symbol control_in_axi_rid, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:231]
+INFO: [VRFC 10-2458] undeclared symbol data_out_axi_bvalid, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:233]
+INFO: [VRFC 10-2458] undeclared symbol data_out_axi_bresp, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:234]
+INFO: [VRFC 10-2458] undeclared symbol data_out_axi_bid, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:235]
+INFO: [VRFC 10-2458] undeclared symbol weight_in_axi_rdata, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:246]
+INFO: [VRFC 10-2458] undeclared symbol weight_in_axi_rresp, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:247]
+INFO: [VRFC 10-2458] undeclared symbol weight_in_axi_rlast, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:248]
+INFO: [VRFC 10-2458] undeclared symbol weight_in_axi_rvalid, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:249]
+INFO: [VRFC 10-2458] undeclared symbol weight_in_axi_rid, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:250]
+INFO: [VRFC 10-2458] undeclared symbol control_in_axi_rdata, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:252]
+INFO: [VRFC 10-2458] undeclared symbol control_in_axi_rresp, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:253]
+INFO: [VRFC 10-2458] undeclared symbol control_in_axi_rlast, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:254]
+INFO: [VRFC 10-2458] undeclared symbol control_in_axi_rvalid, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:255]
+INFO: [VRFC 10-2458] undeclared symbol data_out_axi_wready, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:259]
+INFO: [VRFC 10-2458] undeclared symbol data_out_axi_wlast, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:260]
+INFO: [VRFC 10-2458] undeclared symbol data_out_axi_rid, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:261]
+INFO: [VRFC 10-2458] undeclared symbol data_out_axi_rresp, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:262]
+INFO: [VRFC 10-2458] undeclared symbol data_out_axi_rlast, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:263]
+WARNING: [VRFC 10-2938] 'weight_in_axi_awready' is already implicitly declared on line 210 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:331]
+WARNING: [VRFC 10-2938] 'weight_in_axi_bid' is already implicitly declared on line 226 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:338]
+WARNING: [VRFC 10-2938] 'weight_in_axi_bresp' is already implicitly declared on line 225 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:339]
+WARNING: [VRFC 10-2938] 'weight_in_axi_bvalid' is already implicitly declared on line 224 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:340]
+WARNING: [VRFC 10-2938] 'weight_in_axi_arready' is already implicitly declared on line 215 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:351]
+WARNING: [VRFC 10-2938] 'weight_in_axi_rid' is already implicitly declared on line 250 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:352]
+WARNING: [VRFC 10-2938] 'weight_in_axi_rdata' is already implicitly declared on line 246 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:353]
+WARNING: [VRFC 10-2938] 'weight_in_axi_rresp' is already implicitly declared on line 247 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:354]
+WARNING: [VRFC 10-2938] 'weight_in_axi_rvalid' is already implicitly declared on line 249 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:355]
+WARNING: [VRFC 10-2938] 'weight_in_axi_rlast' is already implicitly declared on line 248 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:356]
+WARNING: [VRFC 10-2938] 'control_in_axi_awready' is already implicitly declared on line 211 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:422]
+WARNING: [VRFC 10-2938] 'control_in_axi_bid' is already implicitly declared on line 230 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:429]
+WARNING: [VRFC 10-2938] 'control_in_axi_bresp' is already implicitly declared on line 229 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:430]
+WARNING: [VRFC 10-2938] 'control_in_axi_bvalid' is already implicitly declared on line 228 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:431]
+WARNING: [VRFC 10-2938] 'control_in_axi_arready' is already implicitly declared on line 216 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:442]
+WARNING: [VRFC 10-2938] 'control_in_axi_rid' is already implicitly declared on line 231 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:443]
+WARNING: [VRFC 10-2938] 'control_in_axi_rdata' is already implicitly declared on line 252 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:444]
+WARNING: [VRFC 10-2938] 'control_in_axi_rresp' is already implicitly declared on line 253 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:445]
+WARNING: [VRFC 10-2938] 'control_in_axi_rvalid' is already implicitly declared on line 255 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:446]
+WARNING: [VRFC 10-2938] 'control_in_axi_rlast' is already implicitly declared on line 254 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:447]
+WARNING: [VRFC 10-2938] 'data_out_axi_awready' is already implicitly declared on line 212 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:512]
+WARNING: [VRFC 10-2938] 'data_out_axi_wlast' is already implicitly declared on line 260 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:516]
+WARNING: [VRFC 10-2938] 'data_out_axi_wready' is already implicitly declared on line 259 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:518]
+WARNING: [VRFC 10-2938] 'data_out_axi_bid' is already implicitly declared on line 235 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:519]
+WARNING: [VRFC 10-2938] 'data_out_axi_bresp' is already implicitly declared on line 234 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:520]
+WARNING: [VRFC 10-2938] 'data_out_axi_bvalid' is already implicitly declared on line 233 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:521]
+WARNING: [VRFC 10-2938] 'data_out_axi_rid' is already implicitly declared on line 261 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:533]
+WARNING: [VRFC 10-2938] 'data_out_axi_rresp' is already implicitly declared on line 262 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:535]
+WARNING: [VRFC 10-2938] 'data_out_axi_rlast' is already implicitly declared on line 263 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:537]
+INFO: [VRFC 10-2458] undeclared symbol data_out_axi_rvalid_one_word_wire, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:588]
+INFO: [VRFC 10-2458] undeclared symbol data_out_axi_rlast_one_word_wire, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:589]
+WARNING: [VRFC 10-2938] 'data_out_axi_rvalid_one_word_wire' is already implicitly declared on line 588 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:694]
+WARNING: [VRFC 10-2938] 'data_out_axi_rlast_one_word_wire' is already implicitly declared on line 589 [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:696]
+WARNING: [VRFC 10-3380] identifier 'data_out_axi_rready_one_word_wire' is used before its declaration [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:263]
+WARNING: [VRFC 10-3380] identifier 'data_out_axi_arready_one_word' is used before its declaration [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:669]
+WARNING: [VRFC 10-3380] identifier 'data_out_axi_rready_one_word' is used before its declaration [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:670]
+WARNING: [VRFC 10-3380] identifier 'data_out_axi_arready_one_word' is used before its declaration [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:674]
+WARNING: [VRFC 10-3380] identifier 'data_out_axi_rready_one_word' is used before its declaration [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:675]
+WARNING: [VRFC 10-3380] identifier 'data_out_axi_arready_one_word' is used before its declaration [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:677]
+WARNING: [VRFC 10-3380] identifier 'data_out_axi_rready_one_word' is used before its declaration [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:678]
+WARNING: [VRFC 10-3380] identifier 'data_out_axi_arready_one_word' is used before its declaration [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:680]
+WARNING: [VRFC 10-3380] identifier 'data_out_axi_rready_one_word' is used before its declaration [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:681]
+WARNING: [VRFC 10-3380] identifier 'data_out_axi_arready_one_word' is used before its declaration [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:683]
+WARNING: [VRFC 10-3380] identifier 'data_out_axi_rready_one_word' is used before its declaration [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_axi_kws.v:684]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_main_dmem_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ahb_main_dmem_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ahb_matrix_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ahb_matrix_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/aou_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aou_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/apb0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb0_leaf_mux
+INFO: [VRFC 10-311] analyzing module apb0_state_ctrl
+INFO: [VRFC 10-2458] undeclared symbol pslverr, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/apb0.v:140]
+INFO: [VRFC 10-311] analyzing module csky_apb0_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/apb0_sub_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb0_sub_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/apb1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb1_leaf_mux
+INFO: [VRFC 10-311] analyzing module apb1_state_ctrl
+INFO: [VRFC 10-2458] undeclared symbol pslverr, assumed default net type wire [F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/apb1.v:140]
+INFO: [VRFC 10-311] analyzing module csky_apb1_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/apb1_sub_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb1_sub_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/clkgen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pmu_dummy_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/common.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_mux2
+INFO: [VRFC 10-311] analyzing module gated_clk_cell
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/core_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/dmac.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_ctrl
+INFO: [VRFC 10-311] analyzing module bmux_ctrl
+INFO: [VRFC 10-311] analyzing module ch_ctrl
+INFO: [VRFC 10-311] analyzing module chntrg_latch
+INFO: [VRFC 10-311] analyzing module chregc0
+INFO: [VRFC 10-311] analyzing module chregc10
+INFO: [VRFC 10-311] analyzing module chregc11
+INFO: [VRFC 10-311] analyzing module chregc12
+INFO: [VRFC 10-311] analyzing module chregc13
+INFO: [VRFC 10-311] analyzing module chregc14
+INFO: [VRFC 10-311] analyzing module chregc15
+INFO: [VRFC 10-311] analyzing module chregc1
+INFO: [VRFC 10-311] analyzing module chregc2
+INFO: [VRFC 10-311] analyzing module chregc3
+INFO: [VRFC 10-311] analyzing module chregc4
+INFO: [VRFC 10-311] analyzing module chregc5
+INFO: [VRFC 10-311] analyzing module chregc6
+INFO: [VRFC 10-311] analyzing module chregc7
+INFO: [VRFC 10-311] analyzing module chregc8
+INFO: [VRFC 10-311] analyzing module chregc9
+INFO: [VRFC 10-311] analyzing module dmac_top
+INFO: [VRFC 10-311] analyzing module fsmc
+INFO: [VRFC 10-311] analyzing module gbregc
+INFO: [VRFC 10-311] analyzing module hpchn_decd
+INFO: [VRFC 10-311] analyzing module reg_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/dummy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_dummy_top
+INFO: [VRFC 10-311] analyzing module ahb_dummy_top
+INFO: [VRFC 10-311] analyzing module ahbm_dummy_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/sim_lib/fpga_byte_spram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga_byte_spram
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/sim_lib/fpga_spram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga_spram
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/gpio0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio0
+INFO: [VRFC 10-311] analyzing module gpio0_sec_top
+INFO: [VRFC 10-311] analyzing module gpio_apbif
+INFO: [VRFC 10-311] analyzing module gpio_ctrl
+INFO: [VRFC 10-311] analyzing module gpio_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/ls_sub_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ls_sub_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/matrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module afifo_35x2
+INFO: [VRFC 10-311] analyzing module afifo_77x2
+INFO: [VRFC 10-311] analyzing module ahb_matrix_1_6_sub_dec
+INFO: [VRFC 10-311] analyzing module ahb_matrix_1_6_sub
+INFO: [VRFC 10-311] analyzing module ahb_matrix_7_12_arb
+INFO: [VRFC 10-311] analyzing module ahb_matrix_7_12_dec
+INFO: [VRFC 10-311] analyzing module ahb_matrix_7_12_main
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/pdu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pdu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/pwm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm
+INFO: [VRFC 10-311] analyzing module pwm_apbif
+INFO: [VRFC 10-311] analyzing module pwm_ctrl
+INFO: [VRFC 10-311] analyzing module pwm_gen
+INFO: [VRFC 10-311] analyzing module pwm_sec_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/retu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module retu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/rtc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rtc0_sec_top
+INFO: [VRFC 10-311] analyzing module rtc_aou_apbif
+INFO: [VRFC 10-311] analyzing module rtc_aou_top
+INFO: [VRFC 10-311] analyzing module rtc_cdr_sync
+INFO: [VRFC 10-311] analyzing module rtc_clk_div
+INFO: [VRFC 10-311] analyzing module rtc_clr_sync
+INFO: [VRFC 10-311] analyzing module rtc_cnt
+INFO: [VRFC 10-311] analyzing module rtc_ig
+INFO: [VRFC 10-311] analyzing module rtc_pdu_apbif
+INFO: [VRFC 10-311] analyzing module rtc_pdu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/sms.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sms_bank_64k_top
+INFO: [VRFC 10-311] analyzing module sms_sms_ahbs_bk2
+INFO: [VRFC 10-311] analyzing module sms_sram_bk2
+INFO: [VRFC 10-311] analyzing module sms_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/smu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module smu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/tim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tim0_sec_top
+INFO: [VRFC 10-311] analyzing module timers_apbif
+INFO: [VRFC 10-311] analyzing module timers_frc
+INFO: [VRFC 10-311] analyzing module timers_top
+INFO: [VRFC 10-311] analyzing module tim_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/tim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tim1_sec_top
+INFO: [VRFC 10-311] analyzing module tim1_tim_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/tim2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tim2_sec_top
+INFO: [VRFC 10-311] analyzing module tim2_tim_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/tim3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tim3_sec_top
+INFO: [VRFC 10-311] analyzing module tim3_tim_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/tim4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tim4_sec_top
+INFO: [VRFC 10-311] analyzing module tim4_tim_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/tim5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tim5_sec_top
+INFO: [VRFC 10-311] analyzing module tim5_tim_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/tim6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tim6_sec_top
+INFO: [VRFC 10-311] analyzing module tim6_tim_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/tim7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tim7_sec_top
+INFO: [VRFC 10-311] analyzing module tim7_tim_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/usi0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_if
+INFO: [VRFC 10-311] analyzing module i2cm
+INFO: [VRFC 10-311] analyzing module i2cs
+INFO: [VRFC 10-311] analyzing module i2c_top
+INFO: [VRFC 10-311] analyzing module sdata_if
+INFO: [VRFC 10-311] analyzing module spi
+INFO: [VRFC 10-311] analyzing module sync_fifo_16x16
+INFO: [VRFC 10-311] analyzing module uart
+INFO: [VRFC 10-311] analyzing module usi0_sec_top
+INFO: [VRFC 10-311] analyzing module usi_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/usi1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module usi1_sec_top
+INFO: [VRFC 10-311] analyzing module usi2_sec_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/tb/virtual_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module virtual_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/wdt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wdt_biu
+INFO: [VRFC 10-311] analyzing module wdt_cnt
+INFO: [VRFC 10-311] analyzing module wdt_isrc
+INFO: [VRFC 10-311] analyzing module wdt_isrg
+INFO: [VRFC 10-311] analyzing module wdt_regfile
+INFO: [VRFC 10-311] analyzing module wdt_sec_top
+INFO: [VRFC 10-311] analyzing module wdt
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/soc/wujian100_open_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wujian100_open_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/tb/busmnt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module busmnt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/tb/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wujian100_open_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/wujiankws_opensource/wujiankws_opensource/wujiankws.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

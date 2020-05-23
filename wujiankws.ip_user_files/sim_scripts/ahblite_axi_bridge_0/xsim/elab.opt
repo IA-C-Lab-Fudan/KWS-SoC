@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L ahblite_axi_bridge_v3_0_15 -L xil_defaultlib -L secureip -L xpm --snapshot ahblite_axi_bridge_0 xil_defaultlib.ahblite_axi_bridge_0 -log elaborate.log
