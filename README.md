@@ -1,5 +1,5 @@
 # KWS-SoC
-This is an accelerating kernel of neural network based on [wujian100_open](https://github.com/T-head-Semi/wujian100_open) platform, which is a low power open source MCU by T-Head. Specially, the accelerating kernel is designed for Keyword Spotting(KWS). Thus far, the current version is only for simulation.
+This is a SoC for neural-network acceleration based on [wujian100_open](https://github.com/T-head-Semi/wujian100_open) platform, which is a low power open source MCU by T-Head. Specially, the accelerating kernel is designed for Keyword Spotting(KWS). Thus far, the current version is only for simulation.
 ## QUICK START ##
 This repository includes folders as following:<br>
 `reference model`: <br>
