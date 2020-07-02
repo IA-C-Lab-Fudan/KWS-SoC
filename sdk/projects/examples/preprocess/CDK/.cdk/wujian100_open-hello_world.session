@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Session Name="D:\wulian\wujian100_open-master\sdk\projects\examples\preprocess\CDK\wujian100_open-hello_world.cdkws">
+  <int Value="0" Name="m_selectedTab"/>
+  <wxString Value="D:\wulian\wujian100_open-master\sdk\projects\examples\preprocess\CDK\wujian100_open-hello_world.cdkws" Name="m_workspaceName"/>
+  <TabInfoArray Name="TabInfoArray">
+    <TabInfo>
+      <wxString Value="D:\wulian\wujian100_open-master\sdk\projects\examples\preprocess\main.c" Name="FileName"/>
+      <int Value="21" Name="FirstVisibleLine"/>
+      <int Value="171" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\wulian\wujian100_open-master\sdk\csi_driver\wujian100_open\wj_usi_usart.c" Name="FileName"/>
+      <int Value="727" Name="FirstVisibleLine"/>
+      <int Value="728" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+  </TabInfoArray>
+  <SerializedObject Name="m_breakpoints">
+    <long Value="0" Name="Count"/>
+  </SerializedObject>
+</Session>

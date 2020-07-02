@@ -1,0 +1,6 @@
+xpm_cdc.sv,systemverilog,xpm,../../../../../../Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,
+xpm_memory.sv,systemverilog,xpm,../../../../../../Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../Xilinx/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd,
+axi_bram_ctrl_v4_1_rfs.vhd,vhdl,axi_bram_ctrl_v4_1_2,../../../ipstatic/hdl/axi_bram_ctrl_v4_1_rfs.vhd,
+axi_bram_ctrl_0.vhd,vhdl,xil_defaultlib,../../../../KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/sim/axi_bram_ctrl_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

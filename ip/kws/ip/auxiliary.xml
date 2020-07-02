@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="kws" xd:componentRef="kws" xd:initiationInterval="60126" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="data_in.data" xd:originalName="data_in" xd:direction="in" xd:interfaceRef="data_in" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="data_in.last" xd:originalName="data_in" xd:direction="in" xd:interfaceRef="data_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="weight_in.data" xd:originalName="weight_in" xd:direction="in" xd:interfaceRef="weight_in" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="weight_in.last" xd:originalName="weight_in" xd:direction="in" xd:interfaceRef="weight_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="control_in.data" xd:originalName="control_in" xd:direction="in" xd:interfaceRef="control_in" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="control_in.last" xd:originalName="control_in" xd:direction="in" xd:interfaceRef="control_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="keep_in.data" xd:originalName="keep_in" xd:direction="in" xd:interfaceRef="keep_in" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="keep_in.last" xd:originalName="keep_in" xd:direction="in" xd:interfaceRef="keep_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="data_out.data" xd:originalName="data_out" xd:direction="out" xd:interfaceRef="data_out" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="data_out.last" xd:originalName="data_out" xd:direction="out" xd:interfaceRef="data_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="35913" xd:worst-case="60125" xd:average-case="47795"/>
+  <xd:resourceEstimates xd:LUT="25688" xd:FF="32142" xd:BRAM="59" xd:DSP="104"/>
+</xd:acceleratorMap>

@@ -1,7 +1,0 @@
-Running: xsim.dir/wujian100_open_tb_behav/xsimk.exe -simmode gui -wdb wujian100_open_tb_behav.wdb -simrunnum 0 -socket 3184
-Design successfully loaded
-Design Loading Memory Usage: 44992 KB (Peak: 44992 KB)
-Design Loading CPU Usage: 78 ms
-Simulation completed
-Simulation Memory Usage: 70112 KB (Peak: 70112 KB)
-Simulation CPU Usage: 13874 ms

@@ -1,0 +1,2 @@
+axi_bram_ctrl_0.vhd,vhdl,xil_defaultlib,../../../../KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/sim/axi_bram_ctrl_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

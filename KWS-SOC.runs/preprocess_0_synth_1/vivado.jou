@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Jul  1 22:45:30 2020
+# Process ID: 21456
+# Current directory: D:/wulian/KWS-SOC/KWS-SOC.runs/preprocess_0_synth_1
+# Command line: vivado.exe -log preprocess_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source preprocess_0.tcl
+# Log file: D:/wulian/KWS-SOC/KWS-SOC.runs/preprocess_0_synth_1/preprocess_0.vds
+# Journal file: D:/wulian/KWS-SOC/KWS-SOC.runs/preprocess_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source preprocess_0.tcl -notrace

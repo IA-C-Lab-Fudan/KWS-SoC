@@ -185,6 +185,7 @@ sms_sram_bk2  x_sms_sram (
 );
 assign resp_cfg[3:0] = 4'b1000;
 endmodule
+
 `define RAM_USAGE
 module sms_sms_ahbs_bk2(
   ahbs_harb_hrdata,

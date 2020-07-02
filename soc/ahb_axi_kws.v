@@ -71,7 +71,20 @@ module ahb_axi_kws(
   htrans3,
   hwdata3,
   hwrite3,
-  intr3
+  intr3,
+  haddr4,
+  hclk4,
+  hprot4,
+  hrdata4,
+  hready4,
+  hresp4,
+  hrst_b4,
+  hsel4,
+  hsize4,
+  htrans4,
+  hwdata4,
+  hwrite4,
+  intr4
 );
 
 input   [31:0]  haddr0;        
@@ -127,19 +140,74 @@ output          hready3;
 output  [1:0]  hresp3;    
 output		intr3; 
 
+input   [31:0]  haddr4;        
+input           hclk4;         
+input   [3 :0]  hprot4;        
+input           hrst_b4;       
+input           hsel4;         
+input   [2 :0]  hsize4;        
+input   [1 :0]  htrans4;       
+input   [31:0]  hwdata4;       
+input           hwrite4;       
+output  [31:0]  hrdata4;       
+output          hready4;  
+output  [1:0]  hresp4;    
+output		intr4; 
+
 wire intr0;
 wire intr1;
 wire intr2;
 wire intr3;
+wire intr4;
 wire hclk0;
 wire hclk1;
 wire hclk2;
 wire hclk3;
+wire hclk4;
 wire hrst_b0;
 wire hrst_b1;
 wire hrst_b2;
 wire hrst_b3;
+wire hrst_b4;
 
+
+
+wire [3:0] data_out_axi_awid;
+wire [7:0] data_out_axi_awlen;
+wire [2:0]data_out_axi_awsize;
+wire [1:0]data_out_axi_awburst;
+wire [3:0]data_out_axi_awcache;
+wire [31:0]data_out_axi_awaddr;
+wire [2:0]data_out_axi_awprot;
+wire data_out_axi_awvalid;
+wire data_out_axi_awready;
+wire data_out_axi_awlock;
+wire [31:0]data_out_axi_wdata;
+wire [3:0]data_out_axi_wstrb;
+wire  data_out_axi_wlast;
+wire  data_out_axi_wvalid;
+wire  data_out_axi_wready;
+wire [3:0]data_out_axi_bid;
+wire [1:0]data_out_axi_bresp;
+wire data_out_axi_bvalid;
+wire data_out_axi_bready;
+wire [3:0]data_out_axi_arid;
+wire [7:0]data_out_axi_arlen;
+wire [2:0]data_out_axi_arsize;
+wire [1:0]data_out_axi_arburst;
+wire [2:0]data_out_axi_arprot;
+wire [3:0]data_out_axi_arcache;
+wire data_out_axi_arvalid;
+wire [31:0]data_out_axi_araddr;
+wire data_out_axi_arlock;
+wire  data_out_axi_arready;
+wire [3:0]data_out_axi_rid;
+wire [31:0]data_out_axi_rdata;
+wire [1:0]data_out_axi_rresp;
+wire  data_out_axi_rvalid;
+wire data_out_axi_rlast;
+wire data_out_axi_rready; 
+wire data_out_hresp;
 
 wire [3:0] data_in_axi_awid;
 wire [7:0] data_in_axi_awlen;
@@ -177,16 +245,143 @@ wire  data_in_axi_rvalid;
 wire data_in_axi_rlast;
 wire data_in_axi_rready; 
 
+reg data_out_axi_arready_one_word;
+reg data_out_axi_rready_one_word;
+assign data_out_axi_arready = data_out_axi_arready_one_word;
+wire data_out_axi_rready_one_word_wire;
+assign data_out_axi_rready_one_word_wire = data_out_axi_rready_one_word;
+wire data_out_axi_rvalid_one_word_wire;
+assign data_out_axi_rvalid_one_word_wire= data_out_axi_rready_one_word;
+wire data_out_axi_rlast_one_word_wire;
+assign data_out_axi_rlast_one_word_wire = data_out_axi_rready_one_word;
+
+
+
+wire [3:0] weight_in_axi_awid;
+wire [7:0] weight_in_axi_awlen;
+wire [2:0]weight_in_axi_awsize;
+wire [1:0]weight_in_axi_awburst;
+wire [3:0]weight_in_axi_awcache;
+wire [31:0]weight_in_axi_awaddr;
+wire [2:0]weight_in_axi_awprot;
+wire weight_in_axi_awvalid;
+wire weight_in_axi_awready;
+wire weight_in_axi_awlock;
+wire [31:0]weight_in_axi_wdata;
+wire [3:0]weight_in_axi_wstrb;
+wire  weight_in_axi_wlast;
+wire  weight_in_axi_wvalid;
+wire  weight_in_axi_wready;
+wire [3:0]weight_in_axi_bid;
+wire [1:0]weight_in_axi_bresp;
+wire weight_in_axi_bvalid;
+wire weight_in_axi_bready;
+wire [3:0]weight_in_axi_arid;
+wire [7:0]weight_in_axi_arlen;
+wire [2:0]weight_in_axi_arsize;
+wire [1:0]weight_in_axi_arburst;
+wire [2:0]weight_in_axi_arprot;
+wire [3:0]weight_in_axi_arcache;
+wire weight_in_axi_arvalid;
+wire [31:0]weight_in_axi_araddr;
+wire weight_in_axi_arlock;
+wire  weight_in_axi_arready;
+wire [3:0]weight_in_axi_rid;
+wire [31:0]weight_in_axi_rdata;
+wire [1:0]weight_in_axi_rresp;
+wire  weight_in_axi_rvalid;
+wire weight_in_axi_rlast;
+wire weight_in_axi_rready; 
+wire weight_in_hresp;
+
+
+
+wire [3:0] control_in_axi_awid;
+wire [7:0] control_in_axi_awlen;
+wire [2:0]control_in_axi_awsize;
+wire [1:0]control_in_axi_awburst;
+wire [3:0]control_in_axi_awcache;
+wire [31:0]control_in_axi_awaddr;
+wire [2:0]control_in_axi_awprot;
+wire control_in_axi_awvalid;
+wire control_in_axi_awready;
+wire control_in_axi_awlock;
+wire [31:0]control_in_axi_wdata;
+wire [3:0]control_in_axi_wstrb;
+wire  control_in_axi_wlast;
+wire  control_in_axi_wvalid;
+wire  control_in_axi_wready;
+wire [3:0]control_in_axi_bid;
+wire [1:0]control_in_axi_bresp;
+wire control_in_axi_bvalid;
+wire control_in_axi_bready;
+wire [3:0]control_in_axi_arid;
+wire [7:0]control_in_axi_arlen;
+wire [2:0]control_in_axi_arsize;
+wire [1:0]control_in_axi_arburst;
+wire [2:0]control_in_axi_arprot;
+wire [3:0]control_in_axi_arcache;
+wire control_in_axi_arvalid;
+wire [31:0]control_in_axi_araddr;
+wire control_in_axi_arlock;
+wire  control_in_axi_arready;
+wire [3:0]control_in_axi_rid;
+wire [31:0]control_in_axi_rdata;
+wire [1:0]control_in_axi_rresp;
+wire  control_in_axi_rvalid;
+wire control_in_axi_rlast;
+wire control_in_axi_rready; 
+wire control_in_hresp;
+
+wire [3:0] keep_in_axi_awid;
+wire [7:0] keep_in_axi_awlen;
+wire [2:0]keep_in_axi_awsize;
+wire [1:0]keep_in_axi_awburst;
+wire [3:0]keep_in_axi_awcache;
+wire [31:0]keep_in_axi_awaddr;
+wire [2:0]keep_in_axi_awprot;
+wire keep_in_axi_awvalid;
+wire keep_in_axi_awready;
+wire keep_in_axi_awlock;
+wire [31:0]keep_in_axi_wdata;
+wire [3:0]keep_in_axi_wstrb;
+wire  keep_in_axi_wlast;
+wire  keep_in_axi_wvalid;
+wire  keep_in_axi_wready;
+wire [3:0]keep_in_axi_bid;
+wire [1:0]keep_in_axi_bresp;
+wire keep_in_axi_bvalid;
+wire keep_in_axi_bready;
+wire [3:0]keep_in_axi_arid;
+wire [7:0]keep_in_axi_arlen;
+wire [2:0]keep_in_axi_arsize;
+wire [1:0]keep_in_axi_arburst;
+wire [2:0]keep_in_axi_arprot;
+wire [3:0]keep_in_axi_arcache;
+wire keep_in_axi_arvalid;
+wire [31:0]keep_in_axi_araddr;
+wire keep_in_axi_arlock;
+wire keep_in_axi_arready;
+wire [3:0]keep_in_axi_rid;
+wire [31:0]keep_in_axi_rdata;
+wire [1:0]keep_in_axi_rresp;
+wire keep_in_axi_rvalid;
+wire keep_in_axi_rlast;
+wire keep_in_axi_rready; 
+wire keep_in_hresp;
+
 
 
 assign intr0 = 1'b0;
 assign intr1 = 1'b0;
 assign intr2 = 1'b0;
 assign intr3 = 1'b0;
+assign intr4 = 1'b0;
 assign hresp0 = 2'b0;
 assign hresp1 = 2'b0;
 assign hresp2 = 2'b0;
 assign hresp3 = 2'b0;
+assign hresp4 = 2'b0;
 
 //assign hready0 = (data_in_axi_awready&data_in_axi_wready) ? 1'b1: 1'b0 ;
 //assign hready1 = (weight_in_axi_awready&weight_in_axi_wready) ? 1'b1: 1'b0 ;
@@ -197,6 +392,7 @@ wire hready0;
 wire hready1;
 wire hready2;
 wire hready3;
+wire hready4;
 
 //burst setting
 wire [2:0] s_ahb_hburst;
@@ -209,11 +405,13 @@ wire data_in_hresp;
 assign data_in_axi_awready = 1'b1;
 assign weight_in_axi_awready = 1'b1;
 assign control_in_axi_awready = 1'b1;
+assign keep_in_axi_awready = 1'b1;
 assign data_out_axi_awready = 1'b1;
 
 assign data_in_axi_arready = 1'b1;
 assign weight_in_axi_arready = 1'b1;
 assign control_in_axi_arready = 1'b1;
+assign keep_in_axi_arready = 1'b1;
 
 
 //response
@@ -229,6 +427,12 @@ assign control_in_axi_bvalid = 1'b1;
 assign control_in_axi_bresp = 2'b0;
 assign control_in_axi_bid = 3'b000;
 assign control_in_axi_rid = 3'b000;
+
+assign keep_in_axi_bvalid = 1'b1;
+assign keep_in_axi_bresp = 2'b0;
+assign keep_in_axi_bid = 3'b000;
+assign keep_in_axi_rid = 3'b000;
+
 
 assign data_out_axi_bvalid = 1'b1;
 assign data_out_axi_bresp = 2'b0;
@@ -254,13 +458,19 @@ assign control_in_axi_rresp = 2'b0;
 assign control_in_axi_rlast = 1'b0;
 assign control_in_axi_rvalid = 1'b0;
 
+assign keep_in_axi_rdata = 32'b0;
+assign keep_in_axi_rresp = 2'b0;
+assign keep_in_axi_rlast = 1'b0;
+assign keep_in_axi_rvalid = 1'b0;
+
+
 
 //assign data_out_axi_wdata = 32'b0;
 assign data_out_axi_wready = 1'b1;
 assign data_out_axi_wlast = 1'b0;
 assign data_out_axi_rid = 3'b000;
 assign data_out_axi_rresp = 2'b0;
-assign data_out_axi_rlast = data_out_axi_rready_one_word_wire;
+//assign data_out_axi_rlast = data_out_axi_rready_one_word_wire;
 
 wire [2:0] data_in_burst;
 assign data_in_burst = 3'b001;
@@ -319,44 +529,6 @@ ahblite_axi_bridge_0 kws_data_in_axi_bridge (
 
 
 
-
-wire [3:0] weight_in_axi_awid;
-wire [7:0] weight_in_axi_awlen;
-wire [2:0]weight_in_axi_awsize;
-wire [1:0]weight_in_axi_awburst;
-wire [3:0]weight_in_axi_awcache;
-wire [31:0]weight_in_axi_awaddr;
-wire [2:0]weight_in_axi_awprot;
-wire weight_in_axi_awvalid;
-wire weight_in_axi_awready;
-wire weight_in_axi_awlock;
-wire [31:0]weight_in_axi_wdata;
-wire [3:0]weight_in_axi_wstrb;
-wire  weight_in_axi_wlast;
-wire  weight_in_axi_wvalid;
-wire  weight_in_axi_wready;
-wire [3:0]weight_in_axi_bid;
-wire [1:0]weight_in_axi_bresp;
-wire weight_in_axi_bvalid;
-wire weight_in_axi_bready;
-wire [3:0]weight_in_axi_arid;
-wire [7:0]weight_in_axi_arlen;
-wire [2:0]weight_in_axi_arsize;
-wire [1:0]weight_in_axi_arburst;
-wire [2:0]weight_in_axi_arprot;
-wire [3:0]weight_in_axi_arcache;
-wire weight_in_axi_arvalid;
-wire [31:0]weight_in_axi_araddr;
-wire weight_in_axi_arlock;
-wire  weight_in_axi_arready;
-wire [3:0]weight_in_axi_rid;
-wire [31:0]weight_in_axi_rdata;
-wire [1:0]weight_in_axi_rresp;
-wire  weight_in_axi_rvalid;
-wire weight_in_axi_rlast;
-wire weight_in_axi_rready; 
-wire weight_in_hresp;
-
 ahblite_axi_bridge_0 kws_weight_in_axi_bridge (
   .s_ahb_hclk(hclk1),              // input wire s_ahb_hclk
   .s_ahb_hresetn(hrst_b1),        // input wire s_ahb_hresetn
@@ -411,43 +583,6 @@ ahblite_axi_bridge_0 kws_weight_in_axi_bridge (
 
 
 
-wire [3:0] control_in_axi_awid;
-wire [7:0] control_in_axi_awlen;
-wire [2:0]control_in_axi_awsize;
-wire [1:0]control_in_axi_awburst;
-wire [3:0]control_in_axi_awcache;
-wire [31:0]control_in_axi_awaddr;
-wire [2:0]control_in_axi_awprot;
-wire control_in_axi_awvalid;
-wire control_in_axi_awready;
-wire control_in_axi_awlock;
-wire [31:0]control_in_axi_wdata;
-wire [3:0]control_in_axi_wstrb;
-wire  control_in_axi_wlast;
-wire  control_in_axi_wvalid;
-wire  control_in_axi_wready;
-wire [3:0]control_in_axi_bid;
-wire [1:0]control_in_axi_bresp;
-wire control_in_axi_bvalid;
-wire control_in_axi_bready;
-wire [3:0]control_in_axi_arid;
-wire [7:0]control_in_axi_arlen;
-wire [2:0]control_in_axi_arsize;
-wire [1:0]control_in_axi_arburst;
-wire [2:0]control_in_axi_arprot;
-wire [3:0]control_in_axi_arcache;
-wire control_in_axi_arvalid;
-wire [31:0]control_in_axi_araddr;
-wire control_in_axi_arlock;
-wire  control_in_axi_arready;
-wire [3:0]control_in_axi_rid;
-wire [31:0]control_in_axi_rdata;
-wire [1:0]control_in_axi_rresp;
-wire  control_in_axi_rvalid;
-wire control_in_axi_rlast;
-wire control_in_axi_rready; 
-wire control_in_hresp;
-
 ahblite_axi_bridge_0 kws_control_in_axi_bridge (
   .s_ahb_hclk(hclk2),              // input wire s_ahb_hclk
   .s_ahb_hresetn(hrst_b2),        // input wire s_ahb_hresetn
@@ -501,43 +636,6 @@ ahblite_axi_bridge_0 kws_control_in_axi_bridge (
 );
 
 
-wire [3:0] data_out_axi_awid;
-wire [7:0] data_out_axi_awlen;
-wire [2:0]data_out_axi_awsize;
-wire [1:0]data_out_axi_awburst;
-wire [3:0]data_out_axi_awcache;
-wire [31:0]data_out_axi_awaddr;
-wire [2:0]data_out_axi_awprot;
-wire data_out_axi_awvalid;
-wire data_out_axi_awready;
-wire data_out_axi_awlock;
-wire [31:0]data_out_axi_wdata;
-wire [3:0]data_out_axi_wstrb;
-wire  data_out_axi_wlast;
-wire  data_out_axi_wvalid;
-wire  data_out_axi_wready;
-wire [3:0]data_out_axi_bid;
-wire [1:0]data_out_axi_bresp;
-wire data_out_axi_bvalid;
-wire data_out_axi_bready;
-wire [3:0]data_out_axi_arid;
-wire [7:0]data_out_axi_arlen;
-wire [2:0]data_out_axi_arsize;
-wire [1:0]data_out_axi_arburst;
-wire [2:0]data_out_axi_arprot;
-wire [3:0]data_out_axi_arcache;
-wire data_out_axi_arvalid;
-wire [31:0]data_out_axi_araddr;
-wire data_out_axi_arlock;
-wire  data_out_axi_arready;
-wire [3:0]data_out_axi_rid;
-wire [31:0]data_out_axi_rdata;
-wire [1:0]data_out_axi_rresp;
-wire  data_out_axi_rvalid;
-wire data_out_axi_rlast;
-wire data_out_axi_rready; 
-wire data_out_hresp;
-
 ahblite_axi_bridge_0 kws_data_out_axi_bridge (
   .s_ahb_hclk(hclk3),              // input wire s_ahb_hclk
   .s_ahb_hresetn(hrst_b3),        // input wire s_ahb_hresetn
@@ -588,6 +686,58 @@ ahblite_axi_bridge_0 kws_data_out_axi_bridge (
   .m_axi_rvalid(data_out_axi_rvalid_one_word_wire),          // input wire m_axi_rvalid
   .m_axi_rlast(data_out_axi_rlast_one_word_wire),            // input wire m_axi_rlast
   .m_axi_rready(data_out_axi_rready)          // output wire m_axi_rready
+);
+
+ahblite_axi_bridge_0 kws_keep_in_axi_bridge (
+  .s_ahb_hclk(hclk4),              // input wire s_ahb_hclk
+  .s_ahb_hresetn(hrst_b4),        // input wire s_ahb_hresetn
+  .s_ahb_hsel(hsel4),              // input wire s_ahb_hsel
+  .s_ahb_haddr(haddr4),            // input wire [31 : 0] s_ahb_haddr
+  .s_ahb_hprot(hprot4),            // input wire [3 : 0] s_ahb_hprot
+  .s_ahb_htrans(htrans4),          // input wire [1 : 0] s_ahb_htrans
+  .s_ahb_hsize(hsize4),            // input wire [2 : 0] s_ahb_hsize
+  .s_ahb_hwrite(hwrite4),          // input wire s_ahb_hwrite
+  .s_ahb_hburst(s_ahb_hburst),          // input wire [2 : 0] s_ahb_hburst
+  .s_ahb_hwdata(hwdata4),          // input wire [31 : 0] s_ahb_hwdata
+  .s_ahb_hready_out(hready4),  // output wire s_ahb_hready_out
+  .s_ahb_hready_in(s_ahb_aready_in),    // input wire s_ahb_hready_in
+  .s_ahb_hrdata(hrdata4),          // output wire [31 : 0] s_ahb_hrdata
+  .s_ahb_hresp(keep_in_hresp),            // output wire s_ahb_hresp
+  .m_axi_awid(keep_in_axi_awid),              // output wire [3 : 0] m_axi_awid
+  .m_axi_awlen(keep_in_axi_awlen),            // output wire [7 : 0] m_axi_awlen
+  .m_axi_awsize(keep_in_axi_awsize),          // output wire [2 : 0] m_axi_awsize
+  .m_axi_awburst(keep_in_axi_awburst),        // output wire [1 : 0] m_axi_awburst
+  .m_axi_awcache(keep_in_axi_awcache),        // output wire [3 : 0] m_axi_awcache
+  .m_axi_awaddr(keep_in_axi_awaddr),          // output wire [31 : 0] m_axi_awaddr
+  .m_axi_awprot(keep_in_axi_awprot),          // output wire [2 : 0] m_axi_awprot
+  .m_axi_awvalid(keep_in_axi_awvalid),        // output wire m_axi_awvalid
+  .m_axi_awready(keep_in_axi_awready),        // input wire m_axi_awready
+  .m_axi_awlock(keep_in_axi_awlock),          // output wire m_axi_awlock
+  .m_axi_wdata(keep_in_axi_wdata),            // output wire [31 : 0] m_axi_wdata
+  .m_axi_wstrb(keep_in_axi_wstrb),            // output wire [3 : 0] m_axi_wstrb
+  .m_axi_wlast(keep_in_axi_wlast),            // output wire m_axi_wlast
+  .m_axi_wvalid(keep_in_axi_wvalid),          // output wire m_axi_wvalid
+  .m_axi_wready(keep_in_axi_wready),          // input wire m_axi_wready
+  .m_axi_bid(keep_in_axi_bid),                // input wire [3 : 0] m_axi_bid
+  .m_axi_bresp(keep_in_axi_bresp),            // input wire [1 : 0] m_axi_bresp
+  .m_axi_bvalid(keep_in_axi_bvalid),          // input wire m_axi_bvalid
+  .m_axi_bready(keep_in_axi_bready),          // output wire m_axi_bready
+  .m_axi_arid(keep_in_axi_arid),              // output wire [3 : 0] m_axi_arid
+  .m_axi_arlen(keep_in_axi_arlen),            // output wire [7 : 0] m_axi_arlen
+  .m_axi_arsize(keep_in_axi_arsize),          // output wire [2 : 0] m_axi_arsize
+  .m_axi_arburst(keep_in_axi_arburst),        // output wire [1 : 0] m_axi_arburst
+  .m_axi_arprot(keep_in_axi_arprot),          // output wire [2 : 0] m_axi_arprot
+  .m_axi_arcache(keep_in_axi_arcache),        // output wire [3 : 0] m_axi_arcache
+  .m_axi_arvalid(keep_in_axi_arvalid),        // output wire m_axi_arvalid
+  .m_axi_araddr(keep_in_axi_araddr),          // output wire [31 : 0] m_axi_araddr
+  .m_axi_arlock(keep_in_axi_arlock),          // output wire m_axi_arlock
+  .m_axi_arready(keep_in_axi_arready),        // input wire m_axi_arready
+  .m_axi_rid(keep_in_axi_rid),                // input wire [3 : 0] m_axi_rid
+  .m_axi_rdata(keep_in_axi_rdata),            // input wire [31 : 0] m_axi_rdata
+  .m_axi_rresp(keep_in_axi_rresp),            // input wire [1 : 0] m_axi_rresp
+  .m_axi_rvalid(keep_in_axi_rvalid),          // input wire m_axi_rvalid
+  .m_axi_rlast(keep_in_axi_rlast),            // input wire m_axi_rlast
+  .m_axi_rready(keep_in_axi_rready)          // output wire m_axi_rready
 );
 
 
@@ -686,15 +836,6 @@ begin
          endcase
 end
 
-reg data_out_axi_arready_one_word;
-reg data_out_axi_rready_one_word;
-assign data_out_axi_arready = data_out_axi_arready_one_word;
-wire data_out_axi_rready_one_word_wire;
-assign data_out_axi_rready_one_word_wire = data_out_axi_rready_one_word;
-wire data_out_axi_rvalid_one_word_wire;
-assign data_out_axi_rvalid_one_word_wire= data_out_axi_rready_one_word;
-wire data_out_axi_rlast_one_word_wire;
-assign data_out_axi_rlast_one_word_wire = data_out_axi_rready_one_word;
 
 kws_0  x_kws_0(
         .data_in_TDATA(data_in_axi_wdata),
@@ -714,6 +855,11 @@ kws_0  x_kws_0(
         .data_in_TVALID(data_in_axi_wvalid),
         .data_in_TREADY(data_in_axi_wready),
         .data_out_TVALID(data_out_axi_rvalid),
-        .data_out_TREADY(data_out_axi_rready_one_word_wire)
+        .data_out_TREADY(data_out_axi_rready_one_word_wire),
+        .keep_in_TDATA(keep_in_axi_wdata),
+        .keep_in_TLAST(keep_in_axi_wlast),
+        .keep_in_TVALID(keep_in_axi_wvalid),
+        .keep_in_TREADY(keep_in_axi_wready)
+
 );
 endmodule
