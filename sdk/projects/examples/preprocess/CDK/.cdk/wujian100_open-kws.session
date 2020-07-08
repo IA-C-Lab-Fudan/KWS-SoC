@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Session Name="D:\wulian\KWS-SOC\sdk\projects\examples\preprocess\CDK\wujian100_open-kws.cdkws">
-  <int Value="0" Name="m_selectedTab"/>
-  <wxString Value="D:\wulian\KWS-SOC\sdk\projects\examples\preprocess\CDK\wujian100_open-kws.cdkws" Name="m_workspaceName"/>
-  <TabInfoArray Name="TabInfoArray"/>
-  <SerializedObject Name="m_breakpoints">
-    <long Value="0" Name="Count"/>
-  </SerializedObject>
-</Session>
