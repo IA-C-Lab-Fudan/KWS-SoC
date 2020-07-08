@@ -38,7 +38,7 @@ def Receiving():  # 接收函数
 
 if __name__ == "__main__":
 
-    print("Start loading data...\n")
+    print("Start loading data...")
     time_start = time.time()
     m=[]
     output=[]
@@ -60,12 +60,11 @@ if __name__ == "__main__":
 
     for i in range(0,40):
         ser.write(output[i])
-        time.sleep(0.012) 
+        time.sleep(0.015) 
     time_stop = time.time()
 
-    print("Finish loading data...\n")
-    print('time cost P1',time_middle-time_start,'s\n')
-    print('time cost P2',time_stop-time_middle,'s\n')
+    print("Finish loading data...")
+    print("Data loads run for {:.5f}s".format(time_stop-time_start))
 
     a=0
     while a<2:

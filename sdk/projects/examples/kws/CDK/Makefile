@@ -5,7 +5,7 @@ All:
 	@
 	@make -f "wujian100_open-kws.mk" MakeIntermediateDirs && make -f "wujian100_open-kws.mk" -j 8
 	@echo Executing Post Build commands ...
-	@export CDKPath="D:/C-Sky/CDK" ProjectPath="D:/wulian/KWS-SOC/sdk/projects/examples/preprocess/CDK" && "D:/wulian/KWS-SOC/sdk/projects/examples/preprocess/CDK//../../../../utilities//aft_build.sh"
+	@export CDKPath="D:/C-Sky/CDK" ProjectPath="D:/wulian/github/KWS-SoC/sdk/projects/examples/kws/CDK" && "D:/wulian/github/KWS-SoC/sdk/projects/examples/kws/CDK//../../../../utilities//aft_build.sh"
 	@echo Done
 
 clean:

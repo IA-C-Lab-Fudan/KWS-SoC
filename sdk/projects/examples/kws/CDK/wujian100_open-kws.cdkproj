@@ -326,7 +326,7 @@
   </VirtualDirectory>
   <VirtualDirectory Name="projects">
     <VirtualDirectory Name="examples">
-      <VirtualDirectory Name="preprocess">
+      <VirtualDirectory Name="kws">
         <VirtualDirectory Name="configs">
           <File Name="../configs/csi_config.h">
             <FileOption/>
@@ -440,7 +440,7 @@
         <Undefine/>
         <Optim>Optimize size (-Os)</Optim>
         <DebugLevel>Maximum (-g3)</DebugLevel>
-        <IncludePath>$(ProjectPath);$(ProjectPath)/../../../../csi_core/include;$(ProjectPath)/../../../../csi_driver/include;$(ProjectPath)/../../../../libs/include;$(ProjectPath)/../../../../csi_driver/wujian100_open/include;$(ProjectPath)/../../../../csi_kernel/include;;$(ProjectPath)/../../../../board/wujian100_open_evb/include;;;;;;;;;$(ProjectPath)/../../../../projects/examples/hello_world/configs</IncludePath>
+        <IncludePath>$(ProjectPath);$(ProjectPath)/../../../../csi_core/include;$(ProjectPath)/../../../../csi_driver/include;$(ProjectPath)/../../../../libs/include;$(ProjectPath)/../../../../csi_driver/wujian100_open/include;$(ProjectPath)/../../../../csi_kernel/include;;$(ProjectPath)/../../../../board/wujian100_open_evb/include;;;;;;;;;$(ProjectPath)/../../../../projects/examples/kws/configs</IncludePath>
         <OtherFlags>-ffunction-sections -fdata-sections</OtherFlags>
         <Verbose>no</Verbose>
         <Ansi>no</Ansi>
@@ -456,7 +456,7 @@
       <Asm>
         <Define/>
         <Undefine/>
-        <IncludePath>$(ProjectPath);;$(ProjectPath)/../../../../projects/examples/preprocess/configs</IncludePath>
+        <IncludePath>$(ProjectPath);;$(ProjectPath)/../../../../projects/examples/kws/configs</IncludePath>
         <OtherFlags/>
         <DebugLevel>gdwarf2</DebugLevel>
       </Asm>
