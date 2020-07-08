@@ -6,6 +6,8 @@ import binascii
 
 ser=serial.Serial('com5',115200,timeout=1)
 
+k=[]
+
 def wavread(path):
     wavfile =  wave.open(path,"rb")
     params = wavfile.getparams()
@@ -32,6 +34,7 @@ def Receiving():  # 接收函数
      while True: # 循环接收数据
          if ser.in_waiting:  # 当接收缓冲区中的数据不为零时，执行下面的代码
             str=ser.read(ser.in_waiting).decode("gbk")
+            k.append(str)
             print(str,end='')
 
 
@@ -40,10 +43,13 @@ if __name__ == "__main__":
 
     print("Start loading data...")
     time_start = time.time()
+
     m=[]
     output=[]
+    word_list = []
+    result=[]
 
-    datause = wavread('./test1.wav')
+    datause = wavread('./test2.wav')
     for i in datause:
         m.append(struct.pack('>f', i).hex()) 
     
@@ -65,8 +71,37 @@ if __name__ == "__main__":
 
     print("Finish loading data...")
     print("Data loads run for {:.5f}s".format(time_stop-time_start))
+    print("Results are:")
 
-    a=0
-    while a<2:
-        a=0
+    time.sleep(1)
 
+    with open('./ds_rnn_labels.txt','r') as f:
+        line = f.readline()
+        while line:
+            word = line.strip('\n')
+            word_list.append(word)
+            line = f.readline()
+    
+    count=0
+
+    with open('./kws_result_data.txt',"w",newline="") as f:
+        for i in range(len(k)-1):
+            f.write(str(k[i]))
+
+    with open('./kws_result_data.txt',"r") as f:
+        line = f.readline()
+        
+        while line:
+            count = count+1
+            if(count>12):
+                break
+            word = line.strip('\n')
+            result.append(float(word))
+            line = f.readline()
+        
+    max_location = result.index(max(result))
+
+    with open('./kws_result_data.txt',"a",newline="") as f:
+        f.write('THE RESULT IS:'+word_list[max_location])
+
+    print('\nTHE RESULT IS:'+word_list[max_location])
