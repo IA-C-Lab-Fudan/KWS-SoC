@@ -10,27 +10,26 @@
 
 source wujian100_open_top.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/wulian/kws_hls/kws_hls_1/kws_hls_1/solution1/impl/ip'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/wulian/MFCCHLS_V1/PreProcess/solution1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/wulian/DD/KWS-SOC-8bit-detective/kws-ip/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'.
-Command: synth_design -top wujian100_open_top -part xc7a200tfbg484-1 -fanout_limit 800
+Command: synth_design -top wujian100_open_top -part xc7a200tfbg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Device 21-403] Loading part xc7a200tfbg484-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5212 
+INFO: Helper process launched with PID 15900 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1031.750 ; gain = 251.711
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1033.297 ; gain = 251.449
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'wujian100_open_top' [D:/wulian/KWS-SOC/sourcefile/wujian100_open_fpga_top.v:39]
-INFO: [Synth 8-6157] synthesizing module 'aou_top' [D:/wulian/KWS-SOC/sourcefile/aou_top.v:11]
-INFO: [Synth 8-6157] synthesizing module 'pmu_dummy_top' [D:/wulian/KWS-SOC/sourcefile/clkgen.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'pmu_dummy_top' (1#1) [D:/wulian/KWS-SOC/sourcefile/clkgen.v:11]
-INFO: [Synth 8-6157] synthesizing module 'gpio0_sec_top' [D:/wulian/KWS-SOC/sourcefile/gpio0.v:89]
-INFO: [Synth 8-6157] synthesizing module 'gpio0' [D:/wulian/KWS-SOC/sourcefile/gpio0.v:19]
-INFO: [Synth 8-6157] synthesizing module 'gpio_top' [D:/wulian/KWS-SOC/sourcefile/gpio0.v:1134]
-INFO: [Synth 8-6157] synthesizing module 'gpio_apbif' [D:/wulian/KWS-SOC/sourcefile/gpio0.v:166]
+INFO: [Synth 8-6157] synthesizing module 'wujian100_open_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/wujian100_open_fpga_top.v:39]
+INFO: [Synth 8-6157] synthesizing module 'aou_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/aou_top.v:11]
+INFO: [Synth 8-6157] synthesizing module 'pmu_dummy_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/clkgen.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'pmu_dummy_top' (1#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/clkgen.v:11]
+INFO: [Synth 8-6157] synthesizing module 'gpio0_sec_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/gpio0.v:89]
+INFO: [Synth 8-6157] synthesizing module 'gpio0' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/gpio0.v:19]
+INFO: [Synth 8-6157] synthesizing module 'gpio_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/gpio0.v:1134]
+INFO: [Synth 8-6157] synthesizing module 'gpio_apbif' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/gpio0.v:166]
 	Parameter GPIO_SW_DATA_OFFSET bound to: 5'b00000 
 	Parameter GPIO_SW_DIR_OFFSET bound to: 5'b00001 
 	Parameter GPIO_SW_HW_CTRL_OFFSET bound to: 5'b00010 
@@ -44,42 +43,42 @@ INFO: [Synth 8-6157] synthesizing module 'gpio_apbif' [D:/wulian/KWS-SOC/sourcef
 	Parameter GPIO_INT_CLR_OFFSET bound to: 5'b10011 
 	Parameter GPIO_EXT_DATA_OFFSET bound to: 5'b10100 
 	Parameter GPIO_INT_LEVEL_SYNC_OFFSET bound to: 5'b11000 
-INFO: [Synth 8-6155] done synthesizing module 'gpio_apbif' (2#1) [D:/wulian/KWS-SOC/sourcefile/gpio0.v:166]
-INFO: [Synth 8-6157] synthesizing module 'gpio_ctrl' [D:/wulian/KWS-SOC/sourcefile/gpio0.v:525]
-INFO: [Synth 8-6155] done synthesizing module 'gpio_ctrl' (3#1) [D:/wulian/KWS-SOC/sourcefile/gpio0.v:525]
-INFO: [Synth 8-6155] done synthesizing module 'gpio_top' (4#1) [D:/wulian/KWS-SOC/sourcefile/gpio0.v:1134]
-INFO: [Synth 8-6155] done synthesizing module 'gpio0' (5#1) [D:/wulian/KWS-SOC/sourcefile/gpio0.v:19]
-INFO: [Synth 8-6155] done synthesizing module 'gpio0_sec_top' (6#1) [D:/wulian/KWS-SOC/sourcefile/gpio0.v:89]
-INFO: [Synth 8-6157] synthesizing module 'rtc0_sec_top' [D:/wulian/KWS-SOC/sourcefile/rtc.v:21]
-INFO: [Synth 8-6157] synthesizing module 'rtc_pdu_top' [D:/wulian/KWS-SOC/sourcefile/rtc.v:1014]
-INFO: [Synth 8-6157] synthesizing module 'rtc_pdu_apbif' [D:/wulian/KWS-SOC/sourcefile/rtc.v:700]
-INFO: [Synth 8-6157] synthesizing module 'gated_clk_cell' [D:/wulian/KWS-SOC/sourcefile/common.v:43]
-INFO: [Synth 8-6155] done synthesizing module 'gated_clk_cell' (7#1) [D:/wulian/KWS-SOC/sourcefile/common.v:43]
-INFO: [Synth 8-6155] done synthesizing module 'rtc_pdu_apbif' (8#1) [D:/wulian/KWS-SOC/sourcefile/rtc.v:700]
-INFO: [Synth 8-6157] synthesizing module 'rtc_cdr_sync' [D:/wulian/KWS-SOC/sourcefile/rtc.v:371]
-INFO: [Synth 8-6155] done synthesizing module 'rtc_cdr_sync' (9#1) [D:/wulian/KWS-SOC/sourcefile/rtc.v:371]
-INFO: [Synth 8-6157] synthesizing module 'rtc_clr_sync' [D:/wulian/KWS-SOC/sourcefile/rtc.v:481]
-INFO: [Synth 8-6155] done synthesizing module 'rtc_clr_sync' (10#1) [D:/wulian/KWS-SOC/sourcefile/rtc.v:481]
-INFO: [Synth 8-6155] done synthesizing module 'rtc_pdu_top' (11#1) [D:/wulian/KWS-SOC/sourcefile/rtc.v:1014]
-INFO: [Synth 8-6157] synthesizing module 'rtc_aou_top' [D:/wulian/KWS-SOC/sourcefile/rtc.v:241]
-INFO: [Synth 8-6157] synthesizing module 'rtc_cnt' [D:/wulian/KWS-SOC/sourcefile/rtc.v:564]
-INFO: [Synth 8-6155] done synthesizing module 'rtc_cnt' (12#1) [D:/wulian/KWS-SOC/sourcefile/rtc.v:564]
-INFO: [Synth 8-6157] synthesizing module 'rtc_ig' [D:/wulian/KWS-SOC/sourcefile/rtc.v:619]
-INFO: [Synth 8-6155] done synthesizing module 'rtc_ig' (13#1) [D:/wulian/KWS-SOC/sourcefile/rtc.v:619]
-INFO: [Synth 8-6157] synthesizing module 'rtc_clk_div' [D:/wulian/KWS-SOC/sourcefile/rtc.v:431]
-INFO: [Synth 8-6155] done synthesizing module 'rtc_clk_div' (14#1) [D:/wulian/KWS-SOC/sourcefile/rtc.v:431]
-INFO: [Synth 8-6157] synthesizing module 'rtc_aou_apbif' [D:/wulian/KWS-SOC/sourcefile/rtc.v:135]
-INFO: [Synth 8-6155] done synthesizing module 'rtc_aou_apbif' (15#1) [D:/wulian/KWS-SOC/sourcefile/rtc.v:135]
-INFO: [Synth 8-6155] done synthesizing module 'rtc_aou_top' (16#1) [D:/wulian/KWS-SOC/sourcefile/rtc.v:241]
-INFO: [Synth 8-6155] done synthesizing module 'rtc0_sec_top' (17#1) [D:/wulian/KWS-SOC/sourcefile/rtc.v:21]
-INFO: [Synth 8-6155] done synthesizing module 'aou_top' (18#1) [D:/wulian/KWS-SOC/sourcefile/aou_top.v:11]
-INFO: [Synth 8-6157] synthesizing module 'pdu_top' [D:/wulian/KWS-SOC/sourcefile/pdu_top.v:11]
-INFO: [Synth 8-6157] synthesizing module 'ahb_matrix_top' [D:/wulian/KWS-SOC/sourcefile/ahb_matrix_top.v:11]
-INFO: [Synth 8-6157] synthesizing module 'ahb_matrix_7_12_main' [D:/wulian/KWS-SOC/sourcefile/matrix.v:34729]
-INFO: [Synth 8-6157] synthesizing module 'ahb_matrix_7_12_dec' [D:/wulian/KWS-SOC/sourcefile/matrix.v:31794]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_apbif' (2#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/gpio0.v:166]
+INFO: [Synth 8-6157] synthesizing module 'gpio_ctrl' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/gpio0.v:525]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_ctrl' (3#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/gpio0.v:525]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_top' (4#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/gpio0.v:1134]
+INFO: [Synth 8-6155] done synthesizing module 'gpio0' (5#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/gpio0.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'gpio0_sec_top' (6#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/gpio0.v:89]
+INFO: [Synth 8-6157] synthesizing module 'rtc0_sec_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/rtc.v:21]
+INFO: [Synth 8-6157] synthesizing module 'rtc_pdu_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/rtc.v:1014]
+INFO: [Synth 8-6157] synthesizing module 'rtc_pdu_apbif' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/rtc.v:700]
+INFO: [Synth 8-6157] synthesizing module 'gated_clk_cell' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/common.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'gated_clk_cell' (7#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/common.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'rtc_pdu_apbif' (8#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/rtc.v:700]
+INFO: [Synth 8-6157] synthesizing module 'rtc_cdr_sync' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/rtc.v:371]
+INFO: [Synth 8-6155] done synthesizing module 'rtc_cdr_sync' (9#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/rtc.v:371]
+INFO: [Synth 8-6157] synthesizing module 'rtc_clr_sync' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/rtc.v:481]
+INFO: [Synth 8-6155] done synthesizing module 'rtc_clr_sync' (10#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/rtc.v:481]
+INFO: [Synth 8-6155] done synthesizing module 'rtc_pdu_top' (11#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/rtc.v:1014]
+INFO: [Synth 8-6157] synthesizing module 'rtc_aou_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/rtc.v:241]
+INFO: [Synth 8-6157] synthesizing module 'rtc_cnt' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/rtc.v:564]
+INFO: [Synth 8-6155] done synthesizing module 'rtc_cnt' (12#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/rtc.v:564]
+INFO: [Synth 8-6157] synthesizing module 'rtc_ig' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/rtc.v:619]
+INFO: [Synth 8-6155] done synthesizing module 'rtc_ig' (13#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/rtc.v:619]
+INFO: [Synth 8-6157] synthesizing module 'rtc_clk_div' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/rtc.v:431]
+INFO: [Synth 8-6155] done synthesizing module 'rtc_clk_div' (14#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/rtc.v:431]
+INFO: [Synth 8-6157] synthesizing module 'rtc_aou_apbif' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/rtc.v:135]
+INFO: [Synth 8-6155] done synthesizing module 'rtc_aou_apbif' (15#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/rtc.v:135]
+INFO: [Synth 8-6155] done synthesizing module 'rtc_aou_top' (16#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/rtc.v:241]
+INFO: [Synth 8-6155] done synthesizing module 'rtc0_sec_top' (17#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/rtc.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'aou_top' (18#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/aou_top.v:11]
+INFO: [Synth 8-6157] synthesizing module 'pdu_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/pdu_top.v:11]
+INFO: [Synth 8-6157] synthesizing module 'ahb_matrix_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/ahb_matrix_top.v:11]
+INFO: [Synth 8-6157] synthesizing module 'ahb_matrix_7_12_main' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/matrix.v:34729]
+INFO: [Synth 8-6157] synthesizing module 'ahb_matrix_7_12_dec' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/matrix.v:31794]
 	Parameter BUS_WIDTH bound to: 45 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'ahb_matrix_7_12_dec' (19#1) [D:/wulian/KWS-SOC/sourcefile/matrix.v:31794]
-INFO: [Synth 8-6157] synthesizing module 'ahb_matrix_7_12_arb' [D:/wulian/KWS-SOC/sourcefile/matrix.v:1859]
+INFO: [Synth 8-6155] done synthesizing module 'ahb_matrix_7_12_dec' (19#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/matrix.v:31794]
+INFO: [Synth 8-6157] synthesizing module 'ahb_matrix_7_12_arb' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/matrix.v:1859]
 	Parameter S_IDLE bound to: 49'b0000000000000000000000000000000000000000000000001 
 	Parameter S_S0_GNT bound to: 49'b0000000000000000000000000000000000000000000000010 
 	Parameter S_S0_WAIT bound to: 49'b0000000000000000000000000000000000000000000000100 
@@ -129,27 +128,33 @@ INFO: [Synth 8-6157] synthesizing module 'ahb_matrix_7_12_arb' [D:/wulian/KWS-SO
 	Parameter S_S11_WAIT bound to: 49'b0010000000000000000000000000000000000000000000000 
 	Parameter S_S11_CMD bound to: 49'b0100000000000000000000000000000000000000000000000 
 	Parameter S_S11_DATA bound to: 49'b1000000000000000000000000000000000000000000000000 
-INFO: [Synth 8-6155] done synthesizing module 'ahb_matrix_7_12_arb' (20#1) [D:/wulian/KWS-SOC/sourcefile/matrix.v:1859]
-INFO: [Synth 8-6155] done synthesizing module 'ahb_matrix_7_12_main' (21#1) [D:/wulian/KWS-SOC/sourcefile/matrix.v:34729]
-INFO: [Synth 8-6157] synthesizing module 'ahbm_dummy_top' [D:/wulian/KWS-SOC/sourcefile/dummy.v:73]
-INFO: [Synth 8-6155] done synthesizing module 'ahbm_dummy_top' (22#1) [D:/wulian/KWS-SOC/sourcefile/dummy.v:73]
-INFO: [Synth 8-6157] synthesizing module 'ahb_main_dmem_top' [D:/wulian/KWS-SOC/sourcefile/ahb_main_dmem_top.v:1]
-INFO: [Synth 8-6157] synthesizing module 'ahblite_axi_bridge_0' [D:/wulian/KWS-SOC/KWS-SOC.runs/synth_1/.Xil/Vivado-2232-LAPTOP-5KE3GPT6/realtime/ahblite_axi_bridge_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ahblite_axi_bridge_0' (23#1) [D:/wulian/KWS-SOC/KWS-SOC.runs/synth_1/.Xil/Vivado-2232-LAPTOP-5KE3GPT6/realtime/ahblite_axi_bridge_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'axi_bram_ctrl_0' [D:/wulian/KWS-SOC/KWS-SOC.runs/synth_1/.Xil/Vivado-2232-LAPTOP-5KE3GPT6/realtime/axi_bram_ctrl_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'axi_bram_ctrl_0' (24#1) [D:/wulian/KWS-SOC/KWS-SOC.runs/synth_1/.Xil/Vivado-2232-LAPTOP-5KE3GPT6/realtime/axi_bram_ctrl_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/wulian/KWS-SOC/KWS-SOC.runs/synth_1/.Xil/Vivado-2232-LAPTOP-5KE3GPT6/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (25#1) [D:/wulian/KWS-SOC/KWS-SOC.runs/synth_1/.Xil/Vivado-2232-LAPTOP-5KE3GPT6/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ahb_main_dmem_top' (26#1) [D:/wulian/KWS-SOC/sourcefile/ahb_main_dmem_top.v:1]
-INFO: [Synth 8-6157] synthesizing module 'dmac_top' [D:/wulian/KWS-SOC/sourcefile/dmac.v:13123]
-INFO: [Synth 8-6157] synthesizing module 'bmux_ctrl' [D:/wulian/KWS-SOC/sourcefile/dmac.v:631]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/KWS-SOC/sourcefile/dmac.v:933]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/KWS-SOC/sourcefile/dmac.v:965]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/KWS-SOC/sourcefile/dmac.v:986]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/KWS-SOC/sourcefile/dmac.v:1007]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/KWS-SOC/sourcefile/dmac.v:1029]
-INFO: [Synth 8-6155] done synthesizing module 'bmux_ctrl' (27#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:631]
-INFO: [Synth 8-6157] synthesizing module 'reg_ctrl' [D:/wulian/KWS-SOC/sourcefile/dmac.v:16237]
+INFO: [Synth 8-6155] done synthesizing module 'ahb_matrix_7_12_arb' (20#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/matrix.v:1859]
+INFO: [Synth 8-6155] done synthesizing module 'ahb_matrix_7_12_main' (21#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/matrix.v:34729]
+INFO: [Synth 8-6157] synthesizing module 'ahbm_dummy_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dummy.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'ahbm_dummy_top' (22#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dummy.v:73]
+INFO: [Synth 8-6157] synthesizing module 'ahb_dummy_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dummy.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'ahb_dummy_top' (23#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dummy.v:36]
+INFO: [Synth 8-6157] synthesizing module 'ahb_main_dmem_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/ahb_main_dmem_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ahblite_axi_bridge_0' [D:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.runs/synth_1/.Xil/Vivado-18100-LAPTOP-5KE3GPT6/realtime/ahblite_axi_bridge_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ahblite_axi_bridge_0' (24#1) [D:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.runs/synth_1/.Xil/Vivado-18100-LAPTOP-5KE3GPT6/realtime/ahblite_axi_bridge_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_bram_ctrl_0' [D:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.runs/synth_1/.Xil/Vivado-18100-LAPTOP-5KE3GPT6/realtime/axi_bram_ctrl_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_bram_ctrl_0' (25#1) [D:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.runs/synth_1/.Xil/Vivado-18100-LAPTOP-5KE3GPT6/realtime/axi_bram_ctrl_0_stub.v:6]
+WARNING: [Synth 8-689] width (18) of port connection 's_axi_awaddr' does not match port width (16) of module 'axi_bram_ctrl_0' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/ahb_main_dmem_top.v:163]
+WARNING: [Synth 8-689] width (18) of port connection 's_axi_araddr' does not match port width (16) of module 'axi_bram_ctrl_0' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/ahb_main_dmem_top.v:174]
+WARNING: [Synth 8-689] width (18) of port connection 'bram_addr_a' does not match port width (16) of module 'axi_bram_ctrl_0' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/ahb_main_dmem_top.v:186]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.runs/synth_1/.Xil/Vivado-18100-LAPTOP-5KE3GPT6/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (26#1) [D:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.runs/synth_1/.Xil/Vivado-18100-LAPTOP-5KE3GPT6/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (14) of module 'blk_mem_gen_0' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/ahb_main_dmem_top.v:200]
+INFO: [Synth 8-6155] done synthesizing module 'ahb_main_dmem_top' (27#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/ahb_main_dmem_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dmac_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:13123]
+INFO: [Synth 8-6157] synthesizing module 'bmux_ctrl' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:631]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:933]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:965]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:986]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:1007]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:1029]
+INFO: [Synth 8-6155] done synthesizing module 'bmux_ctrl' (28#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:631]
+INFO: [Synth 8-6157] synthesizing module 'reg_ctrl' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:16237]
 	Parameter NONSEQ bound to: 2'b10 
 	Parameter SEQ bound to: 2'b11 
 	Parameter CH0_BAS_ADR bound to: 10'b0000000000 
@@ -168,15 +173,15 @@ INFO: [Synth 8-6157] synthesizing module 'reg_ctrl' [D:/wulian/KWS-SOC/sourcefil
 	Parameter CH13_BAS_ADR bound to: 10'b1001110000 
 	Parameter CH14_BAS_ADR bound to: 10'b1010100000 
 	Parameter CH15_BAS_ADR bound to: 10'b1011010000 
-INFO: [Synth 8-6157] synthesizing module 'gbregc' [D:/wulian/KWS-SOC/sourcefile/dmac.v:15929]
+INFO: [Synth 8-6157] synthesizing module 'gbregc' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:15929]
 	Parameter NONSEQ bound to: 2'b10 
 	Parameter SEQ bound to: 2'b11 
 	Parameter GLB_BAS_ADR bound to: 10'b1100110000 
 	Parameter CHPENDIFR_ADR bound to: 10'b1100110000 
 	Parameter CHSR_ADR bound to: 10'b1100111000 
 	Parameter DMACCFG_ADR bound to: 10'b1100111100 
-INFO: [Synth 8-6155] done synthesizing module 'gbregc' (28#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:15929]
-INFO: [Synth 8-6157] synthesizing module 'chregc0' [D:/wulian/KWS-SOC/sourcefile/dmac.v:3587]
+INFO: [Synth 8-6155] done synthesizing module 'gbregc' (29#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:15929]
+INFO: [Synth 8-6157] synthesizing module 'chregc0' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:3587]
 	Parameter NONSEQ bound to: 2'b10 
 	Parameter SEQ bound to: 2'b11 
 	Parameter CHN_BAS_ADR bound to: 10'b0000000000 
@@ -190,8 +195,8 @@ INFO: [Synth 8-6157] synthesizing module 'chregc0' [D:/wulian/KWS-SOC/sourcefile
 	Parameter CHN_SOFT_REQ_ADR bound to: 10'b0000011100 
 	Parameter CHN_EN_ADR bound to: 10'b0000100000 
 	Parameter CHN_GRP_LEN_EXT bound to: 10'b0000100100 
-INFO: [Synth 8-6155] done synthesizing module 'chregc0' (29#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:3587]
-INFO: [Synth 8-6157] synthesizing module 'chregc1' [D:/wulian/KWS-SOC/sourcefile/dmac.v:7759]
+INFO: [Synth 8-6155] done synthesizing module 'chregc0' (30#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:3587]
+INFO: [Synth 8-6157] synthesizing module 'chregc1' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:7759]
 	Parameter NONSEQ bound to: 2'b10 
 	Parameter SEQ bound to: 2'b11 
 	Parameter CHN_BAS_ADR bound to: 10'b0000110000 
@@ -205,8 +210,8 @@ INFO: [Synth 8-6157] synthesizing module 'chregc1' [D:/wulian/KWS-SOC/sourcefile
 	Parameter CHN_SOFT_REQ_ADR bound to: 10'b0001001100 
 	Parameter CHN_EN_ADR bound to: 10'b0001010000 
 	Parameter CHN_GRP_LEN_EXT bound to: 10'b0001010100 
-INFO: [Synth 8-6155] done synthesizing module 'chregc1' (30#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:7759]
-INFO: [Synth 8-6157] synthesizing module 'chregc2' [D:/wulian/KWS-SOC/sourcefile/dmac.v:8355]
+INFO: [Synth 8-6155] done synthesizing module 'chregc1' (31#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:7759]
+INFO: [Synth 8-6157] synthesizing module 'chregc2' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:8355]
 	Parameter NONSEQ bound to: 2'b10 
 	Parameter SEQ bound to: 2'b11 
 	Parameter CHN_BAS_ADR bound to: 10'b0001100000 
@@ -220,8 +225,8 @@ INFO: [Synth 8-6157] synthesizing module 'chregc2' [D:/wulian/KWS-SOC/sourcefile
 	Parameter CHN_SOFT_REQ_ADR bound to: 10'b0001111100 
 	Parameter CHN_EN_ADR bound to: 10'b0010000000 
 	Parameter CHN_GRP_LEN_EXT bound to: 10'b0010000100 
-INFO: [Synth 8-6155] done synthesizing module 'chregc2' (31#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:8355]
-INFO: [Synth 8-6157] synthesizing module 'chregc3' [D:/wulian/KWS-SOC/sourcefile/dmac.v:8951]
+INFO: [Synth 8-6155] done synthesizing module 'chregc2' (32#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:8355]
+INFO: [Synth 8-6157] synthesizing module 'chregc3' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:8951]
 	Parameter NONSEQ bound to: 2'b10 
 	Parameter SEQ bound to: 2'b11 
 	Parameter CHN_BAS_ADR bound to: 10'b0010010000 
@@ -235,8 +240,8 @@ INFO: [Synth 8-6157] synthesizing module 'chregc3' [D:/wulian/KWS-SOC/sourcefile
 	Parameter CHN_SOFT_REQ_ADR bound to: 10'b0010101100 
 	Parameter CHN_EN_ADR bound to: 10'b0010110000 
 	Parameter CHN_GRP_LEN_EXT bound to: 10'b0010110100 
-INFO: [Synth 8-6155] done synthesizing module 'chregc3' (32#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:8951]
-INFO: [Synth 8-6157] synthesizing module 'chregc4' [D:/wulian/KWS-SOC/sourcefile/dmac.v:9547]
+INFO: [Synth 8-6155] done synthesizing module 'chregc3' (33#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:8951]
+INFO: [Synth 8-6157] synthesizing module 'chregc4' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:9547]
 	Parameter NONSEQ bound to: 2'b10 
 	Parameter SEQ bound to: 2'b11 
 	Parameter CHN_BAS_ADR bound to: 10'b0011000000 
@@ -250,8 +255,8 @@ INFO: [Synth 8-6157] synthesizing module 'chregc4' [D:/wulian/KWS-SOC/sourcefile
 	Parameter CHN_SOFT_REQ_ADR bound to: 10'b0011011100 
 	Parameter CHN_EN_ADR bound to: 10'b0011100000 
 	Parameter CHN_GRP_LEN_EXT bound to: 10'b0011100100 
-INFO: [Synth 8-6155] done synthesizing module 'chregc4' (33#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:9547]
-INFO: [Synth 8-6157] synthesizing module 'chregc5' [D:/wulian/KWS-SOC/sourcefile/dmac.v:10143]
+INFO: [Synth 8-6155] done synthesizing module 'chregc4' (34#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:9547]
+INFO: [Synth 8-6157] synthesizing module 'chregc5' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:10143]
 	Parameter NONSEQ bound to: 2'b10 
 	Parameter SEQ bound to: 2'b11 
 	Parameter CHN_BAS_ADR bound to: 10'b0011110000 
@@ -265,8 +270,8 @@ INFO: [Synth 8-6157] synthesizing module 'chregc5' [D:/wulian/KWS-SOC/sourcefile
 	Parameter CHN_SOFT_REQ_ADR bound to: 10'b0100001100 
 	Parameter CHN_EN_ADR bound to: 10'b0100010000 
 	Parameter CHN_GRP_LEN_EXT bound to: 10'b0100010100 
-INFO: [Synth 8-6155] done synthesizing module 'chregc5' (34#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:10143]
-INFO: [Synth 8-6157] synthesizing module 'chregc6' [D:/wulian/KWS-SOC/sourcefile/dmac.v:10739]
+INFO: [Synth 8-6155] done synthesizing module 'chregc5' (35#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:10143]
+INFO: [Synth 8-6157] synthesizing module 'chregc6' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:10739]
 	Parameter NONSEQ bound to: 2'b10 
 	Parameter SEQ bound to: 2'b11 
 	Parameter CHN_BAS_ADR bound to: 10'b0100100000 
@@ -280,8 +285,8 @@ INFO: [Synth 8-6157] synthesizing module 'chregc6' [D:/wulian/KWS-SOC/sourcefile
 	Parameter CHN_SOFT_REQ_ADR bound to: 10'b0100111100 
 	Parameter CHN_EN_ADR bound to: 10'b0101000000 
 	Parameter CHN_GRP_LEN_EXT bound to: 10'b0101000100 
-INFO: [Synth 8-6155] done synthesizing module 'chregc6' (35#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:10739]
-INFO: [Synth 8-6157] synthesizing module 'chregc7' [D:/wulian/KWS-SOC/sourcefile/dmac.v:11335]
+INFO: [Synth 8-6155] done synthesizing module 'chregc6' (36#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:10739]
+INFO: [Synth 8-6157] synthesizing module 'chregc7' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:11335]
 	Parameter NONSEQ bound to: 2'b10 
 	Parameter SEQ bound to: 2'b11 
 	Parameter CHN_BAS_ADR bound to: 10'b0101010000 
@@ -295,8 +300,8 @@ INFO: [Synth 8-6157] synthesizing module 'chregc7' [D:/wulian/KWS-SOC/sourcefile
 	Parameter CHN_SOFT_REQ_ADR bound to: 10'b0101101100 
 	Parameter CHN_EN_ADR bound to: 10'b0101110000 
 	Parameter CHN_GRP_LEN_EXT bound to: 10'b0101110100 
-INFO: [Synth 8-6155] done synthesizing module 'chregc7' (36#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:11335]
-INFO: [Synth 8-6157] synthesizing module 'chregc8' [D:/wulian/KWS-SOC/sourcefile/dmac.v:11931]
+INFO: [Synth 8-6155] done synthesizing module 'chregc7' (37#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:11335]
+INFO: [Synth 8-6157] synthesizing module 'chregc8' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:11931]
 	Parameter NONSEQ bound to: 2'b10 
 	Parameter SEQ bound to: 2'b11 
 	Parameter CHN_BAS_ADR bound to: 10'b0110000000 
@@ -310,8 +315,8 @@ INFO: [Synth 8-6157] synthesizing module 'chregc8' [D:/wulian/KWS-SOC/sourcefile
 	Parameter CHN_SOFT_REQ_ADR bound to: 10'b0110011100 
 	Parameter CHN_EN_ADR bound to: 10'b0110100000 
 	Parameter CHN_GRP_LEN_EXT bound to: 10'b0110100100 
-INFO: [Synth 8-6155] done synthesizing module 'chregc8' (37#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:11931]
-INFO: [Synth 8-6157] synthesizing module 'chregc9' [D:/wulian/KWS-SOC/sourcefile/dmac.v:12527]
+INFO: [Synth 8-6155] done synthesizing module 'chregc8' (38#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:11931]
+INFO: [Synth 8-6157] synthesizing module 'chregc9' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:12527]
 	Parameter NONSEQ bound to: 2'b10 
 	Parameter SEQ bound to: 2'b11 
 	Parameter CHN_BAS_ADR bound to: 10'b0110110000 
@@ -325,8 +330,8 @@ INFO: [Synth 8-6157] synthesizing module 'chregc9' [D:/wulian/KWS-SOC/sourcefile
 	Parameter CHN_SOFT_REQ_ADR bound to: 10'b0111001100 
 	Parameter CHN_EN_ADR bound to: 10'b0111010000 
 	Parameter CHN_GRP_LEN_EXT bound to: 10'b0111010100 
-INFO: [Synth 8-6155] done synthesizing module 'chregc9' (38#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:12527]
-INFO: [Synth 8-6157] synthesizing module 'chregc10' [D:/wulian/KWS-SOC/sourcefile/dmac.v:4183]
+INFO: [Synth 8-6155] done synthesizing module 'chregc9' (39#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:12527]
+INFO: [Synth 8-6157] synthesizing module 'chregc10' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:4183]
 	Parameter NONSEQ bound to: 2'b10 
 	Parameter SEQ bound to: 2'b11 
 	Parameter CHN_BAS_ADR bound to: 10'b0111100000 
@@ -340,8 +345,8 @@ INFO: [Synth 8-6157] synthesizing module 'chregc10' [D:/wulian/KWS-SOC/sourcefil
 	Parameter CHN_SOFT_REQ_ADR bound to: 10'b0111111100 
 	Parameter CHN_EN_ADR bound to: 10'b1000000000 
 	Parameter CHN_GRP_LEN_EXT bound to: 10'b1000000100 
-INFO: [Synth 8-6155] done synthesizing module 'chregc10' (39#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:4183]
-INFO: [Synth 8-6157] synthesizing module 'chregc11' [D:/wulian/KWS-SOC/sourcefile/dmac.v:4779]
+INFO: [Synth 8-6155] done synthesizing module 'chregc10' (40#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:4183]
+INFO: [Synth 8-6157] synthesizing module 'chregc11' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:4779]
 	Parameter NONSEQ bound to: 2'b10 
 	Parameter SEQ bound to: 2'b11 
 	Parameter CHN_BAS_ADR bound to: 10'b1000010000 
@@ -355,8 +360,8 @@ INFO: [Synth 8-6157] synthesizing module 'chregc11' [D:/wulian/KWS-SOC/sourcefil
 	Parameter CHN_SOFT_REQ_ADR bound to: 10'b1000101100 
 	Parameter CHN_EN_ADR bound to: 10'b1000110000 
 	Parameter CHN_GRP_LEN_EXT bound to: 10'b1000110100 
-INFO: [Synth 8-6155] done synthesizing module 'chregc11' (40#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:4779]
-INFO: [Synth 8-6157] synthesizing module 'chregc12' [D:/wulian/KWS-SOC/sourcefile/dmac.v:5375]
+INFO: [Synth 8-6155] done synthesizing module 'chregc11' (41#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:4779]
+INFO: [Synth 8-6157] synthesizing module 'chregc12' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:5375]
 	Parameter NONSEQ bound to: 2'b10 
 	Parameter SEQ bound to: 2'b11 
 	Parameter CHN_BAS_ADR bound to: 10'b1001000000 
@@ -370,8 +375,8 @@ INFO: [Synth 8-6157] synthesizing module 'chregc12' [D:/wulian/KWS-SOC/sourcefil
 	Parameter CHN_SOFT_REQ_ADR bound to: 10'b1001011100 
 	Parameter CHN_EN_ADR bound to: 10'b1001100000 
 	Parameter CHN_GRP_LEN_EXT bound to: 10'b1001100100 
-INFO: [Synth 8-6155] done synthesizing module 'chregc12' (41#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:5375]
-INFO: [Synth 8-6157] synthesizing module 'chregc13' [D:/wulian/KWS-SOC/sourcefile/dmac.v:5971]
+INFO: [Synth 8-6155] done synthesizing module 'chregc12' (42#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:5375]
+INFO: [Synth 8-6157] synthesizing module 'chregc13' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:5971]
 	Parameter NONSEQ bound to: 2'b10 
 	Parameter SEQ bound to: 2'b11 
 	Parameter CHN_BAS_ADR bound to: 10'b1001110000 
@@ -385,8 +390,8 @@ INFO: [Synth 8-6157] synthesizing module 'chregc13' [D:/wulian/KWS-SOC/sourcefil
 	Parameter CHN_SOFT_REQ_ADR bound to: 10'b1010001100 
 	Parameter CHN_EN_ADR bound to: 10'b1010010000 
 	Parameter CHN_GRP_LEN_EXT bound to: 10'b1010010100 
-INFO: [Synth 8-6155] done synthesizing module 'chregc13' (42#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:5971]
-INFO: [Synth 8-6157] synthesizing module 'chregc14' [D:/wulian/KWS-SOC/sourcefile/dmac.v:6567]
+INFO: [Synth 8-6155] done synthesizing module 'chregc13' (43#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:5971]
+INFO: [Synth 8-6157] synthesizing module 'chregc14' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:6567]
 	Parameter NONSEQ bound to: 2'b10 
 	Parameter SEQ bound to: 2'b11 
 	Parameter CHN_BAS_ADR bound to: 10'b1010100000 
@@ -400,8 +405,8 @@ INFO: [Synth 8-6157] synthesizing module 'chregc14' [D:/wulian/KWS-SOC/sourcefil
 	Parameter CHN_SOFT_REQ_ADR bound to: 10'b1010111100 
 	Parameter CHN_EN_ADR bound to: 10'b1011000000 
 	Parameter CHN_GRP_LEN_EXT bound to: 10'b1011000100 
-INFO: [Synth 8-6155] done synthesizing module 'chregc14' (43#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:6567]
-INFO: [Synth 8-6157] synthesizing module 'chregc15' [D:/wulian/KWS-SOC/sourcefile/dmac.v:7163]
+INFO: [Synth 8-6155] done synthesizing module 'chregc14' (44#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:6567]
+INFO: [Synth 8-6157] synthesizing module 'chregc15' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:7163]
 	Parameter NONSEQ bound to: 2'b10 
 	Parameter SEQ bound to: 2'b11 
 	Parameter CHN_BAS_ADR bound to: 10'b1011010000 
@@ -415,37 +420,41 @@ INFO: [Synth 8-6157] synthesizing module 'chregc15' [D:/wulian/KWS-SOC/sourcefil
 	Parameter CHN_SOFT_REQ_ADR bound to: 10'b1011101100 
 	Parameter CHN_EN_ADR bound to: 10'b1011110000 
 	Parameter CHN_GRP_LEN_EXT bound to: 10'b1011110100 
-INFO: [Synth 8-6155] done synthesizing module 'chregc15' (44#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:7163]
-INFO: [Synth 8-6155] done synthesizing module 'reg_ctrl' (45#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:16237]
-INFO: [Synth 8-6157] synthesizing module 'arb_ctrl' [D:/wulian/KWS-SOC/sourcefile/dmac.v:11]
-INFO: [Synth 8-6157] synthesizing module 'chntrg_latch' [D:/wulian/KWS-SOC/sourcefile/dmac.v:3549]
-INFO: [Synth 8-6155] done synthesizing module 'chntrg_latch' (46#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:3549]
-INFO: [Synth 8-6157] synthesizing module 'hpchn_decd' [D:/wulian/KWS-SOC/sourcefile/dmac.v:16224]
+INFO: [Synth 8-6155] done synthesizing module 'chregc15' (45#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:7163]
+INFO: [Synth 8-6155] done synthesizing module 'reg_ctrl' (46#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:16237]
+INFO: [Synth 8-6157] synthesizing module 'arb_ctrl' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:11]
+INFO: [Synth 8-6157] synthesizing module 'chntrg_latch' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:3549]
+INFO: [Synth 8-6155] done synthesizing module 'chntrg_latch' (47#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:3549]
+INFO: [Synth 8-6157] synthesizing module 'hpchn_decd' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:16224]
 	Parameter CHN_MUX_W bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'hpchn_decd' (47#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:16224]
-INFO: [Synth 8-6155] done synthesizing module 'arb_ctrl' (48#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:11]
-INFO: [Synth 8-6157] synthesizing module 'ch_ctrl' [D:/wulian/KWS-SOC/sourcefile/dmac.v:1077]
-INFO: [Synth 8-6157] synthesizing module 'fsmc' [D:/wulian/KWS-SOC/sourcefile/dmac.v:15225]
+INFO: [Synth 8-6155] done synthesizing module 'hpchn_decd' (48#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:16224]
+INFO: [Synth 8-6155] done synthesizing module 'arb_ctrl' (49#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:11]
+INFO: [Synth 8-6157] synthesizing module 'ch_ctrl' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:1077]
+INFO: [Synth 8-6157] synthesizing module 'fsmc' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:15225]
 	Parameter IDLE_BUS bound to: 5'b00001 
 	Parameter WAIT_RRDY_DRADR_BUS bound to: 5'b00010 
 	Parameter WAIT_RRDY_DWADR_BUS bound to: 5'b10000 
 	Parameter WAIT_WRDY_DWADR_BUS bound to: 5'b11000 
 	Parameter WAIT_WRDY_DRADR_BUS bound to: 5'b00100 
-INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/dmac.v:15479]
-INFO: [Synth 8-6155] done synthesizing module 'fsmc' (49#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:15225]
-INFO: [Synth 8-6155] done synthesizing module 'ch_ctrl' (50#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:1077]
-INFO: [Synth 8-6155] done synthesizing module 'dmac_top' (51#1) [D:/wulian/KWS-SOC/sourcefile/dmac.v:13123]
-INFO: [Synth 8-6157] synthesizing module 'ahb_axi_kws' [D:/wulian/KWS-SOC/sourcefile/ahb_axi_kws.v:22]
+INFO: [Synth 8-226] default block is never used [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:15479]
+INFO: [Synth 8-6155] done synthesizing module 'fsmc' (50#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:15225]
+INFO: [Synth 8-6155] done synthesizing module 'ch_ctrl' (51#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:1077]
+INFO: [Synth 8-6155] done synthesizing module 'dmac_top' (52#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:13123]
+INFO: [Synth 8-6157] synthesizing module 'ahb_axi_kws' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/ahb_axi_kws.v:20]
 	Parameter DATA_OUT_IDLE bound to: 3'b000 
 	Parameter DATA_OUT_ADDR_READY bound to: 3'b001 
 	Parameter DATA_OUT_TRANS_RREADY bound to: 3'b010 
-INFO: [Synth 8-6157] synthesizing module 'kws_0' [D:/wulian/KWS-SOC/KWS-SOC.runs/synth_1/.Xil/Vivado-2232-LAPTOP-5KE3GPT6/realtime/kws_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'kws_0' (52#1) [D:/wulian/KWS-SOC/KWS-SOC.runs/synth_1/.Xil/Vivado-2232-LAPTOP-5KE3GPT6/realtime/kws_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ahb_axi_kws' (53#1) [D:/wulian/KWS-SOC/sourcefile/ahb_axi_kws.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'ahb_matrix_top' (54#1) [D:/wulian/KWS-SOC/sourcefile/ahb_matrix_top.v:11]
-INFO: [Synth 8-6157] synthesizing module 'ls_sub_top' [D:/wulian/KWS-SOC/sourcefile/ls_sub_top.v:11]
-INFO: [Synth 8-6157] synthesizing module 'ahb_matrix_1_6_sub' [D:/wulian/KWS-SOC/sourcefile/matrix.v:1386]
-INFO: [Synth 8-6157] synthesizing module 'ahb_matrix_1_6_sub_dec' [D:/wulian/KWS-SOC/sourcefile/matrix.v:467]
+INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_0' [D:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.runs/synth_1/.Xil/Vivado-18100-LAPTOP-5KE3GPT6/realtime/axis_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axis_data_fifo_0' (53#1) [D:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.runs/synth_1/.Xil/Vivado-18100-LAPTOP-5KE3GPT6/realtime/axis_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'kws_0' [D:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.runs/synth_1/.Xil/Vivado-18100-LAPTOP-5KE3GPT6/realtime/kws_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kws_0' (54#1) [D:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.runs/synth_1/.Xil/Vivado-18100-LAPTOP-5KE3GPT6/realtime/kws_0_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'control_in_TDATA' does not match port width (16) of module 'kws_0' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/ahb_axi_kws.v:724]
+WARNING: [Synth 8-3848] Net data_in_axi_wlast_fo in module/entity ahb_axi_kws does not have driver. [D:/wulian/DD/KWS-SOC-8bit-detective/soc/ahb_axi_kws.v:704]
+INFO: [Synth 8-6155] done synthesizing module 'ahb_axi_kws' (55#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/ahb_axi_kws.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'ahb_matrix_top' (56#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/ahb_matrix_top.v:11]
+INFO: [Synth 8-6157] synthesizing module 'ls_sub_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/ls_sub_top.v:11]
+INFO: [Synth 8-6157] synthesizing module 'ahb_matrix_1_6_sub' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/matrix.v:1386]
+INFO: [Synth 8-6157] synthesizing module 'ahb_matrix_1_6_sub_dec' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/matrix.v:467]
 	Parameter BUS_WIDTH bound to: 43 - type: integer 
 	Parameter S_IDLE bound to: 13'b0000000000001 
 	Parameter S_S0_CMD bound to: 13'b0000000000010 
@@ -460,37 +469,29 @@ INFO: [Synth 8-6157] synthesizing module 'ahb_matrix_1_6_sub_dec' [D:/wulian/KWS
 	Parameter S_S4_DATA bound to: 13'b0010000000000 
 	Parameter S_S5_CMD bound to: 13'b0100000000000 
 	Parameter S_S5_DATA bound to: 13'b1000000000000 
-INFO: [Synth 8-6155] done synthesizing module 'ahb_matrix_1_6_sub_dec' (55#1) [D:/wulian/KWS-SOC/sourcefile/matrix.v:467]
-INFO: [Synth 8-6157] synthesizing module 'afifo_77x2' [D:/wulian/KWS-SOC/sourcefile/matrix.v:239]
+INFO: [Synth 8-6155] done synthesizing module 'ahb_matrix_1_6_sub_dec' (57#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/matrix.v:467]
+INFO: [Synth 8-6157] synthesizing module 'afifo_77x2' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/matrix.v:239]
 	Parameter W bound to: 77 - type: integer 
 	Parameter DP bound to: 2 - type: integer 
 	Parameter WR_FAST bound to: 1'b0 
 	Parameter RD_FAST bound to: 1'b1 
 	Parameter AW bound to: 1 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element empty_q_reg was removed.  [D:/wulian/KWS-SOC/sourcefile/matrix.v:334]
-WARNING: [Synth 8-6014] Unused sequential element rd_data_q_reg was removed.  [D:/wulian/KWS-SOC/sourcefile/matrix.v:356]
-INFO: [Synth 8-6155] done synthesizing module 'afifo_77x2' (56#1) [D:/wulian/KWS-SOC/sourcefile/matrix.v:239]
-INFO: [Synth 8-6157] synthesizing module 'afifo_35x2' [D:/wulian/KWS-SOC/sourcefile/matrix.v:11]
+WARNING: [Synth 8-6014] Unused sequential element empty_q_reg was removed.  [D:/wulian/DD/KWS-SOC-8bit-detective/soc/matrix.v:334]
+WARNING: [Synth 8-6014] Unused sequential element rd_data_q_reg was removed.  [D:/wulian/DD/KWS-SOC-8bit-detective/soc/matrix.v:356]
+INFO: [Synth 8-6155] done synthesizing module 'afifo_77x2' (58#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/matrix.v:239]
+INFO: [Synth 8-6157] synthesizing module 'afifo_35x2' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/matrix.v:11]
 	Parameter W bound to: 35 - type: integer 
 	Parameter DP bound to: 2 - type: integer 
 	Parameter WR_FAST bound to: 1'b0 
 	Parameter RD_FAST bound to: 1'b1 
 	Parameter AW bound to: 1 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element empty_q_reg was removed.  [D:/wulian/KWS-SOC/sourcefile/matrix.v:106]
-WARNING: [Synth 8-6014] Unused sequential element rd_data_q_reg was removed.  [D:/wulian/KWS-SOC/sourcefile/matrix.v:128]
-INFO: [Synth 8-6155] done synthesizing module 'afifo_35x2' (57#1) [D:/wulian/KWS-SOC/sourcefile/matrix.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'ahb_matrix_1_6_sub' (58#1) [D:/wulian/KWS-SOC/sourcefile/matrix.v:1386]
-INFO: [Synth 8-6157] synthesizing module 'ahb_axi_preprocess' [D:/wulian/KWS-SOC/sourcefile/ahb_axi_preprocess.v:22]
-	Parameter DATA_OUT_IDLE bound to: 3'b000 
-	Parameter DATA_OUT_ADDR_READY bound to: 3'b001 
-	Parameter DATA_OUT_TRANS_RREADY bound to: 3'b010 
-INFO: [Synth 8-6157] synthesizing module 'preprocess_0' [D:/wulian/KWS-SOC/KWS-SOC.runs/synth_1/.Xil/Vivado-2232-LAPTOP-5KE3GPT6/realtime/preprocess_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'preprocess_0' (59#1) [D:/wulian/KWS-SOC/KWS-SOC.runs/synth_1/.Xil/Vivado-2232-LAPTOP-5KE3GPT6/realtime/preprocess_0_stub.v:6]
-WARNING: [Synth 8-689] width (32) of port connection 'control_in_TDATA' does not match port width (16) of module 'preprocess_0' [D:/wulian/KWS-SOC/sourcefile/ahb_axi_preprocess.v:709]
-INFO: [Synth 8-6155] done synthesizing module 'ahb_axi_preprocess' (60#1) [D:/wulian/KWS-SOC/sourcefile/ahb_axi_preprocess.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'ls_sub_top' (61#1) [D:/wulian/KWS-SOC/sourcefile/ls_sub_top.v:11]
-INFO: [Synth 8-6157] synthesizing module 'apb0_sub_top' [D:/wulian/KWS-SOC/sourcefile/apb0_sub_top.v:11]
-INFO: [Synth 8-6157] synthesizing module 'csky_apb0_top' [D:/wulian/KWS-SOC/sourcefile/apb0.v:357]
+WARNING: [Synth 8-6014] Unused sequential element empty_q_reg was removed.  [D:/wulian/DD/KWS-SOC-8bit-detective/soc/matrix.v:106]
+WARNING: [Synth 8-6014] Unused sequential element rd_data_q_reg was removed.  [D:/wulian/DD/KWS-SOC-8bit-detective/soc/matrix.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'afifo_35x2' (59#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/matrix.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'ahb_matrix_1_6_sub' (60#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/matrix.v:1386]
+INFO: [Synth 8-6155] done synthesizing module 'ls_sub_top' (61#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/ls_sub_top.v:11]
+INFO: [Synth 8-6157] synthesizing module 'apb0_sub_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/apb0_sub_top.v:11]
+INFO: [Synth 8-6157] synthesizing module 'csky_apb0_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/apb0.v:357]
 	Parameter AHB_APB_BRIDGE_EN bound to: 1'b1 
 	Parameter APB_LEAF_SLV_NUM bound to: 5'b10000 
 	Parameter APB_LEAF_SLV0_START_ADDR bound to: 1342177280 - type: integer 
@@ -525,7 +526,7 @@ INFO: [Synth 8-6157] synthesizing module 'csky_apb0_top' [D:/wulian/KWS-SOC/sour
 	Parameter APB_LEAF_SLV14_END_ADDR bound to: 1342341119 - type: integer 
 	Parameter APB_LEAF_SLV15_START_ADDR bound to: 1342373888 - type: integer 
 	Parameter APB_LEAF_SLV15_END_ADDR bound to: 1342390271 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'apb0_state_ctrl' [D:/wulian/KWS-SOC/sourcefile/apb0.v:83]
+INFO: [Synth 8-6157] synthesizing module 'apb0_state_ctrl' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/apb0.v:83]
 	Parameter IDLE bound to: 7'b0000001 
 	Parameter WTW bound to: 7'b0000010 
 	Parameter SPW bound to: 7'b0000100 
@@ -533,8 +534,8 @@ INFO: [Synth 8-6157] synthesizing module 'apb0_state_ctrl' [D:/wulian/KWS-SOC/so
 	Parameter WTR bound to: 7'b0010000 
 	Parameter SPR bound to: 7'b0100000 
 	Parameter ASR bound to: 7'b1000000 
-INFO: [Synth 8-6155] done synthesizing module 'apb0_state_ctrl' (62#1) [D:/wulian/KWS-SOC/sourcefile/apb0.v:83]
-INFO: [Synth 8-6157] synthesizing module 'apb0_leaf_mux' [D:/wulian/KWS-SOC/sourcefile/apb0.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'apb0_state_ctrl' (62#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/apb0.v:83]
+INFO: [Synth 8-6157] synthesizing module 'apb0_leaf_mux' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/apb0.v:11]
 	Parameter AHB_APB_BRIDGE_EN bound to: 1'b1 
 	Parameter APB_LEAF_SLV_NUM bound to: 5'b10000 
 	Parameter APB_LEAF_SLV0_START_ADDR bound to: 1342177280 - type: integer 
@@ -569,11 +570,11 @@ INFO: [Synth 8-6157] synthesizing module 'apb0_leaf_mux' [D:/wulian/KWS-SOC/sour
 	Parameter APB_LEAF_SLV14_END_ADDR bound to: 1342341119 - type: integer 
 	Parameter APB_LEAF_SLV15_START_ADDR bound to: 1342373888 - type: integer 
 	Parameter APB_LEAF_SLV15_END_ADDR bound to: 1342390271 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'apb0_leaf_mux' (63#1) [D:/wulian/KWS-SOC/sourcefile/apb0.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'csky_apb0_top' (64#1) [D:/wulian/KWS-SOC/sourcefile/apb0.v:357]
-INFO: [Synth 8-6157] synthesizing module 'tim0_sec_top' [D:/wulian/KWS-SOC/sourcefile/tim.v:11]
-INFO: [Synth 8-6157] synthesizing module 'tim_top' [D:/wulian/KWS-SOC/sourcefile/tim.v:672]
-INFO: [Synth 8-6157] synthesizing module 'timers_top' [D:/wulian/KWS-SOC/sourcefile/tim.v:535]
+INFO: [Synth 8-6155] done synthesizing module 'apb0_leaf_mux' (63#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/apb0.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'csky_apb0_top' (64#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/apb0.v:357]
+INFO: [Synth 8-6157] synthesizing module 'tim0_sec_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim.v:11]
+INFO: [Synth 8-6157] synthesizing module 'tim_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim.v:672]
+INFO: [Synth 8-6157] synthesizing module 'timers_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim.v:535]
 	Parameter TIMER1_WIDTH bound to: 6'b100000 
 	Parameter TIMER1_METASTABLE bound to: 1'b0 
 	Parameter TIMER1_PULSE_EXTD bound to: 1'b1 
@@ -582,7 +583,7 @@ INFO: [Synth 8-6157] synthesizing module 'timers_top' [D:/wulian/KWS-SOC/sourcef
 	Parameter TIMER2_PULSE_EXTD bound to: 1'b1 
 	Parameter TIMER_ADDR_LHS bound to: 5'b00111 
 	Parameter TIMER_CTRL_WIDTH bound to: 6'b000101 
-INFO: [Synth 8-6157] synthesizing module 'timers_apbif' [D:/wulian/KWS-SOC/sourcefile/tim.v:92]
+INFO: [Synth 8-6157] synthesizing module 'timers_apbif' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim.v:92]
 	Parameter TIMER1_WIDTH bound to: 6'b100000 
 	Parameter TIMER1_METASTABLE bound to: 1'b0 
 	Parameter TIMER1_PULSE_EXTD bound to: 1'b1 
@@ -604,47 +605,47 @@ INFO: [Synth 8-6157] synthesizing module 'timers_apbif' [D:/wulian/KWS-SOC/sourc
 	Parameter TIMERSINTST_OFFSET bound to: 8'b00101000 
 	Parameter TIMERSEOI_OFFSET bound to: 8'b00101001 
 	Parameter TIMERSRAW_OFFSET bound to: 8'b00101010 
-WARNING: [Synth 8-6014] Unused sequential element timer1_int_ff1_reg was removed.  [D:/wulian/KWS-SOC/sourcefile/tim.v:343]
-WARNING: [Synth 8-6014] Unused sequential element timer1_int_ff2_reg was removed.  [D:/wulian/KWS-SOC/sourcefile/tim.v:344]
-WARNING: [Synth 8-6014] Unused sequential element timer2_int_ff1_reg was removed.  [D:/wulian/KWS-SOC/sourcefile/tim.v:345]
-WARNING: [Synth 8-6014] Unused sequential element timer2_int_ff2_reg was removed.  [D:/wulian/KWS-SOC/sourcefile/tim.v:346]
-INFO: [Synth 8-6155] done synthesizing module 'timers_apbif' (65#1) [D:/wulian/KWS-SOC/sourcefile/tim.v:92]
-INFO: [Synth 8-6157] synthesizing module 'timers_frc' [D:/wulian/KWS-SOC/sourcefile/tim.v:432]
+WARNING: [Synth 8-6014] Unused sequential element timer1_int_ff1_reg was removed.  [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim.v:343]
+WARNING: [Synth 8-6014] Unused sequential element timer1_int_ff2_reg was removed.  [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim.v:344]
+WARNING: [Synth 8-6014] Unused sequential element timer2_int_ff1_reg was removed.  [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim.v:345]
+WARNING: [Synth 8-6014] Unused sequential element timer2_int_ff2_reg was removed.  [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim.v:346]
+INFO: [Synth 8-6155] done synthesizing module 'timers_apbif' (65#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim.v:92]
+INFO: [Synth 8-6157] synthesizing module 'timers_frc' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim.v:432]
 	Parameter TIMER_WIDTH bound to: 6'b100000 
 	Parameter TIMER_PULSE_EXTD bound to: 1'b1 
-WARNING: [Synth 8-6014] Unused sequential element extend2_reg was removed.  [D:/wulian/KWS-SOC/sourcefile/tim.v:512]
-WARNING: [Synth 8-6014] Unused sequential element extend3_reg was removed.  [D:/wulian/KWS-SOC/sourcefile/tim.v:513]
-INFO: [Synth 8-6155] done synthesizing module 'timers_frc' (66#1) [D:/wulian/KWS-SOC/sourcefile/tim.v:432]
-INFO: [Synth 8-6155] done synthesizing module 'timers_top' (67#1) [D:/wulian/KWS-SOC/sourcefile/tim.v:535]
-INFO: [Synth 8-6155] done synthesizing module 'tim_top' (68#1) [D:/wulian/KWS-SOC/sourcefile/tim.v:672]
-INFO: [Synth 8-6155] done synthesizing module 'tim0_sec_top' (69#1) [D:/wulian/KWS-SOC/sourcefile/tim.v:11]
-INFO: [Synth 8-6157] synthesizing module 'tim2_sec_top' [D:/wulian/KWS-SOC/sourcefile/tim2.v:11]
-INFO: [Synth 8-6157] synthesizing module 'tim2_tim_top' [D:/wulian/KWS-SOC/sourcefile/tim2.v:94]
-INFO: [Synth 8-6155] done synthesizing module 'tim2_tim_top' (70#1) [D:/wulian/KWS-SOC/sourcefile/tim2.v:94]
-INFO: [Synth 8-6155] done synthesizing module 'tim2_sec_top' (71#1) [D:/wulian/KWS-SOC/sourcefile/tim2.v:11]
-INFO: [Synth 8-6157] synthesizing module 'tim4_sec_top' [D:/wulian/KWS-SOC/sourcefile/tim4.v:11]
-INFO: [Synth 8-6157] synthesizing module 'tim4_tim_top' [D:/wulian/KWS-SOC/sourcefile/tim4.v:93]
-INFO: [Synth 8-6155] done synthesizing module 'tim4_tim_top' (72#1) [D:/wulian/KWS-SOC/sourcefile/tim4.v:93]
-INFO: [Synth 8-6155] done synthesizing module 'tim4_sec_top' (73#1) [D:/wulian/KWS-SOC/sourcefile/tim4.v:11]
-INFO: [Synth 8-6157] synthesizing module 'tim6_sec_top' [D:/wulian/KWS-SOC/sourcefile/tim6.v:11]
-INFO: [Synth 8-6157] synthesizing module 'tim6_tim_top' [D:/wulian/KWS-SOC/sourcefile/tim6.v:93]
-INFO: [Synth 8-6155] done synthesizing module 'tim6_tim_top' (74#1) [D:/wulian/KWS-SOC/sourcefile/tim6.v:93]
-INFO: [Synth 8-6155] done synthesizing module 'tim6_sec_top' (75#1) [D:/wulian/KWS-SOC/sourcefile/tim6.v:11]
-INFO: [Synth 8-6157] synthesizing module 'usi0_sec_top' [D:/wulian/KWS-SOC/sourcefile/usi0.v:3765]
-INFO: [Synth 8-6157] synthesizing module 'usi_top' [D:/wulian/KWS-SOC/sourcefile/usi0.v:3916]
-INFO: [Synth 8-6157] synthesizing module 'uart' [D:/wulian/KWS-SOC/sourcefile/usi0.v:3335]
+WARNING: [Synth 8-6014] Unused sequential element extend2_reg was removed.  [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim.v:512]
+WARNING: [Synth 8-6014] Unused sequential element extend3_reg was removed.  [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim.v:513]
+INFO: [Synth 8-6155] done synthesizing module 'timers_frc' (66#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim.v:432]
+INFO: [Synth 8-6155] done synthesizing module 'timers_top' (67#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim.v:535]
+INFO: [Synth 8-6155] done synthesizing module 'tim_top' (68#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim.v:672]
+INFO: [Synth 8-6155] done synthesizing module 'tim0_sec_top' (69#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim.v:11]
+INFO: [Synth 8-6157] synthesizing module 'tim2_sec_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim2.v:11]
+INFO: [Synth 8-6157] synthesizing module 'tim2_tim_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim2.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'tim2_tim_top' (70#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim2.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'tim2_sec_top' (71#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim2.v:11]
+INFO: [Synth 8-6157] synthesizing module 'tim4_sec_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim4.v:11]
+INFO: [Synth 8-6157] synthesizing module 'tim4_tim_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim4.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'tim4_tim_top' (72#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim4.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'tim4_sec_top' (73#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim4.v:11]
+INFO: [Synth 8-6157] synthesizing module 'tim6_sec_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim6.v:11]
+INFO: [Synth 8-6157] synthesizing module 'tim6_tim_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim6.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'tim6_tim_top' (74#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim6.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'tim6_sec_top' (75#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/tim6.v:11]
+INFO: [Synth 8-6157] synthesizing module 'usi0_sec_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:3765]
+INFO: [Synth 8-6157] synthesizing module 'usi_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:3916]
+INFO: [Synth 8-6157] synthesizing module 'uart' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:3335]
 	Parameter UART_IDLE bound to: 3'b000 
 	Parameter UART_STOP bound to: 3'b001 
 	Parameter UART_START bound to: 3'b011 
 	Parameter UART_DATA bound to: 3'b010 
 	Parameter UART_PARITY bound to: 3'b110 
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/KWS-SOC/sourcefile/usi0.v:3555]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/KWS-SOC/sourcefile/usi0.v:3581]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/KWS-SOC/sourcefile/usi0.v:3616]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/KWS-SOC/sourcefile/usi0.v:3669]
-INFO: [Synth 8-6155] done synthesizing module 'uart' (76#1) [D:/wulian/KWS-SOC/sourcefile/usi0.v:3335]
-INFO: [Synth 8-6157] synthesizing module 'i2c_top' [D:/wulian/KWS-SOC/sourcefile/usi0.v:2134]
-INFO: [Synth 8-6157] synthesizing module 'i2cm' [D:/wulian/KWS-SOC/sourcefile/usi0.v:602]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:3555]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:3581]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:3616]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:3669]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (76#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:3335]
+INFO: [Synth 8-6157] synthesizing module 'i2c_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:2134]
+INFO: [Synth 8-6157] synthesizing module 'i2cm' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:602]
 	Parameter I2CM_IDLE bound to: 3'b000 
 	Parameter I2CM_START bound to: 3'b001 
 	Parameter I2CM_SPECIAL bound to: 3'b011 
@@ -653,54 +654,54 @@ INFO: [Synth 8-6157] synthesizing module 'i2cm' [D:/wulian/KWS-SOC/sourcefile/us
 	Parameter I2CM_ADDR1 bound to: 3'b111 
 	Parameter I2CM_DATA bound to: 3'b101 
 	Parameter I2CM_STOP bound to: 3'b100 
-INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/usi0.v:860]
-INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/usi0.v:1018]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/KWS-SOC/sourcefile/usi0.v:1066]
-INFO: [Synth 8-6155] done synthesizing module 'i2cm' (77#1) [D:/wulian/KWS-SOC/sourcefile/usi0.v:602]
-INFO: [Synth 8-6157] synthesizing module 'i2cs' [D:/wulian/KWS-SOC/sourcefile/usi0.v:1625]
+INFO: [Synth 8-226] default block is never used [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:860]
+INFO: [Synth 8-226] default block is never used [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:1018]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:1066]
+INFO: [Synth 8-6155] done synthesizing module 'i2cm' (77#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:602]
+INFO: [Synth 8-6157] synthesizing module 'i2cs' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:1625]
 	Parameter I2CS_IDLE bound to: 2'b00 
 	Parameter I2CS_ADDR0 bound to: 2'b01 
 	Parameter I2CS_ADDR1 bound to: 2'b11 
 	Parameter I2CS_DATA bound to: 2'b10 
-INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/usi0.v:1788]
-INFO: [Synth 8-6155] done synthesizing module 'i2cs' (78#1) [D:/wulian/KWS-SOC/sourcefile/usi0.v:1625]
-INFO: [Synth 8-6155] done synthesizing module 'i2c_top' (79#1) [D:/wulian/KWS-SOC/sourcefile/usi0.v:2134]
-INFO: [Synth 8-6157] synthesizing module 'spi' [D:/wulian/KWS-SOC/sourcefile/usi0.v:2625]
+INFO: [Synth 8-226] default block is never used [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:1788]
+INFO: [Synth 8-6155] done synthesizing module 'i2cs' (78#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:1625]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_top' (79#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:2134]
+INFO: [Synth 8-6157] synthesizing module 'spi' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:2625]
 	Parameter SPIM_IDLE bound to: 2'b00 
 	Parameter SPIM_START bound to: 2'b01 
 	Parameter SPIM_DATA bound to: 2'b11 
 	Parameter SPIM_STOP bound to: 2'b10 
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/KWS-SOC/sourcefile/usi0.v:2839]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/KWS-SOC/sourcefile/usi0.v:2866]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/KWS-SOC/sourcefile/usi0.v:2916]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/KWS-SOC/sourcefile/usi0.v:2981]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/KWS-SOC/sourcefile/usi0.v:3071]
-INFO: [Synth 8-6155] done synthesizing module 'spi' (80#1) [D:/wulian/KWS-SOC/sourcefile/usi0.v:2625]
-INFO: [Synth 8-6157] synthesizing module 'sdata_if' [D:/wulian/KWS-SOC/sourcefile/usi0.v:2399]
-INFO: [Synth 8-6155] done synthesizing module 'sdata_if' (81#1) [D:/wulian/KWS-SOC/sourcefile/usi0.v:2399]
-INFO: [Synth 8-6157] synthesizing module 'apb_if' [D:/wulian/KWS-SOC/sourcefile/usi0.v:39]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:2839]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:2866]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:2916]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:2981]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:3071]
+INFO: [Synth 8-6155] done synthesizing module 'spi' (80#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:2625]
+INFO: [Synth 8-6157] synthesizing module 'sdata_if' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:2399]
+INFO: [Synth 8-6155] done synthesizing module 'sdata_if' (81#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:2399]
+INFO: [Synth 8-6157] synthesizing module 'apb_if' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:39]
 	Parameter TP bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'apb_if' (82#1) [D:/wulian/KWS-SOC/sourcefile/usi0.v:39]
-INFO: [Synth 8-6157] synthesizing module 'sync_fifo_16x16' [D:/wulian/KWS-SOC/sourcefile/usi0.v:3107]
+INFO: [Synth 8-6155] done synthesizing module 'apb_if' (82#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:39]
+INFO: [Synth 8-6157] synthesizing module 'sync_fifo_16x16' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:3107]
 	Parameter FIFO_DW bound to: 16 - type: integer 
 	Parameter FIFO_AW bound to: 4 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element full_d_reg was removed.  [D:/wulian/KWS-SOC/sourcefile/usi0.v:3266]
-INFO: [Synth 8-6155] done synthesizing module 'sync_fifo_16x16' (83#1) [D:/wulian/KWS-SOC/sourcefile/usi0.v:3107]
-INFO: [Synth 8-6155] done synthesizing module 'usi_top' (84#1) [D:/wulian/KWS-SOC/sourcefile/usi0.v:3916]
-INFO: [Synth 8-6155] done synthesizing module 'usi0_sec_top' (85#1) [D:/wulian/KWS-SOC/sourcefile/usi0.v:3765]
-INFO: [Synth 8-6157] synthesizing module 'usi2_sec_top' [D:/wulian/KWS-SOC/sourcefile/usi1.v:162]
-INFO: [Synth 8-6155] done synthesizing module 'usi2_sec_top' (86#1) [D:/wulian/KWS-SOC/sourcefile/usi1.v:162]
-INFO: [Synth 8-6157] synthesizing module 'apb_dummy_top' [D:/wulian/KWS-SOC/sourcefile/dummy.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'apb_dummy_top' (87#1) [D:/wulian/KWS-SOC/sourcefile/dummy.v:11]
-INFO: [Synth 8-6157] synthesizing module 'wdt_sec_top' [D:/wulian/KWS-SOC/sourcefile/wdt.v:519]
-INFO: [Synth 8-6157] synthesizing module 'wdt' [D:/wulian/KWS-SOC/sourcefile/wdt.v:588]
+WARNING: [Synth 8-6014] Unused sequential element full_d_reg was removed.  [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:3266]
+INFO: [Synth 8-6155] done synthesizing module 'sync_fifo_16x16' (83#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:3107]
+INFO: [Synth 8-6155] done synthesizing module 'usi_top' (84#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:3916]
+INFO: [Synth 8-6155] done synthesizing module 'usi0_sec_top' (85#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:3765]
+INFO: [Synth 8-6157] synthesizing module 'usi2_sec_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi1.v:162]
+INFO: [Synth 8-6155] done synthesizing module 'usi2_sec_top' (86#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi1.v:162]
+INFO: [Synth 8-6157] synthesizing module 'apb_dummy_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dummy.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'apb_dummy_top' (87#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dummy.v:11]
+INFO: [Synth 8-6157] synthesizing module 'wdt_sec_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/wdt.v:519]
+INFO: [Synth 8-6157] synthesizing module 'wdt' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/wdt.v:588]
 	Parameter WDT_ADDR_LHS bound to: 5'b00111 
 	Parameter WDT_CLK_EN bound to: 1'b0 
 	Parameter WDT_PAUSE bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'wdt_biu' [D:/wulian/KWS-SOC/sourcefile/wdt.v:11]
+INFO: [Synth 8-6157] synthesizing module 'wdt_biu' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/wdt.v:11]
 	Parameter WDT_ADDR_LHS bound to: 5'b00111 
-INFO: [Synth 8-6155] done synthesizing module 'wdt_biu' (88#1) [D:/wulian/KWS-SOC/sourcefile/wdt.v:11]
-INFO: [Synth 8-6157] synthesizing module 'wdt_regfile' [D:/wulian/KWS-SOC/sourcefile/wdt.v:242]
+INFO: [Synth 8-6155] done synthesizing module 'wdt_biu' (88#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/wdt.v:11]
+INFO: [Synth 8-6157] synthesizing module 'wdt_regfile' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/wdt.v:242]
 	Parameter WDT_CNT_WIDTH bound to: 6'b100000 
 	Parameter WDT_DUAL_TOP bound to: 1'b1 
 	Parameter WDT_DFLT_TOP bound to: 4'b0000 
@@ -776,8 +777,8 @@ INFO: [Synth 8-6157] synthesizing module 'wdt_regfile' [D:/wulian/KWS-SOC/source
 	Parameter WDT_RPL_5 bound to: 63 - type: integer 
 	Parameter WDT_RPL_6 bound to: 127 - type: integer 
 	Parameter WDT_RPL_7 bound to: 255 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'wdt_regfile' (89#1) [D:/wulian/KWS-SOC/sourcefile/wdt.v:242]
-INFO: [Synth 8-6157] synthesizing module 'wdt_isrc' [D:/wulian/KWS-SOC/sourcefile/wdt.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'wdt_regfile' (89#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/wdt.v:242]
+INFO: [Synth 8-6157] synthesizing module 'wdt_isrc' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/wdt.v:116]
 	Parameter WDT_CNT_WIDTH bound to: 6'b100000 
 	Parameter WDT_DUAL_TOP bound to: 1'b1 
 	Parameter WDT_DFLT_TOP bound to: 4'b0000 
@@ -823,7 +824,7 @@ INFO: [Synth 8-6157] synthesizing module 'wdt_isrc' [D:/wulian/KWS-SOC/sourcefil
 	Parameter WDT_TOP_RST bound to: 8'b00000000 
 	Parameter WDT_CNT_RST bound to: 65535 - type: integer 
 	Parameter WDT_ADDR_LHS bound to: 5'b00111 
-INFO: [Synth 8-6157] synthesizing module 'wdt_cnt' [D:/wulian/KWS-SOC/sourcefile/wdt.v:43]
+INFO: [Synth 8-6157] synthesizing module 'wdt_cnt' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/wdt.v:43]
 	Parameter WDT_CNT_WIDTH bound to: 6'b100000 
 	Parameter WDT_DUAL_TOP bound to: 1'b1 
 	Parameter WDT_DFLT_TOP bound to: 4'b0000 
@@ -869,10 +870,10 @@ INFO: [Synth 8-6157] synthesizing module 'wdt_cnt' [D:/wulian/KWS-SOC/sourcefile
 	Parameter WDT_TOP_RST bound to: 8'b00000000 
 	Parameter WDT_CNT_RST bound to: 65535 - type: integer 
 	Parameter WDT_ADDR_LHS bound to: 5'b00111 
-WARNING: [Synth 8-6014] Unused sequential element ext_rise_edge_reg was removed.  [D:/wulian/KWS-SOC/sourcefile/wdt.v:95]
-WARNING: [Synth 8-6014] Unused sequential element extend_reg was removed.  [D:/wulian/KWS-SOC/sourcefile/wdt.v:111]
-INFO: [Synth 8-6155] done synthesizing module 'wdt_cnt' (90#1) [D:/wulian/KWS-SOC/sourcefile/wdt.v:43]
-INFO: [Synth 8-6157] synthesizing module 'wdt_isrg' [D:/wulian/KWS-SOC/sourcefile/wdt.v:165]
+WARNING: [Synth 8-6014] Unused sequential element ext_rise_edge_reg was removed.  [D:/wulian/DD/KWS-SOC-8bit-detective/soc/wdt.v:95]
+WARNING: [Synth 8-6014] Unused sequential element extend_reg was removed.  [D:/wulian/DD/KWS-SOC-8bit-detective/soc/wdt.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'wdt_cnt' (90#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/wdt.v:43]
+INFO: [Synth 8-6157] synthesizing module 'wdt_isrg' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/wdt.v:165]
 	Parameter WDT_CNT_WIDTH bound to: 6'b100000 
 	Parameter WDT_DUAL_TOP bound to: 1'b1 
 	Parameter WDT_DFLT_TOP bound to: 4'b0000 
@@ -918,23 +919,23 @@ INFO: [Synth 8-6157] synthesizing module 'wdt_isrg' [D:/wulian/KWS-SOC/sourcefil
 	Parameter WDT_TOP_RST bound to: 8'b00000000 
 	Parameter WDT_CNT_RST bound to: 65535 - type: integer 
 	Parameter WDT_ADDR_LHS bound to: 5'b00111 
-WARNING: [Synth 8-6014] Unused sequential element extend_reg was removed.  [D:/wulian/KWS-SOC/sourcefile/wdt.v:208]
-INFO: [Synth 8-6155] done synthesizing module 'wdt_isrg' (91#1) [D:/wulian/KWS-SOC/sourcefile/wdt.v:165]
-INFO: [Synth 8-6155] done synthesizing module 'wdt_isrc' (92#1) [D:/wulian/KWS-SOC/sourcefile/wdt.v:116]
-INFO: [Synth 8-6155] done synthesizing module 'wdt' (93#1) [D:/wulian/KWS-SOC/sourcefile/wdt.v:588]
-INFO: [Synth 8-6155] done synthesizing module 'wdt_sec_top' (94#1) [D:/wulian/KWS-SOC/sourcefile/wdt.v:519]
-INFO: [Synth 8-6157] synthesizing module 'pwm_sec_top' [D:/wulian/KWS-SOC/sourcefile/pwm.v:5314]
-INFO: [Synth 8-6157] synthesizing module 'pwm' [D:/wulian/KWS-SOC/sourcefile/pwm.v:64]
-INFO: [Synth 8-6157] synthesizing module 'pwm_ctrl' [D:/wulian/KWS-SOC/sourcefile/pwm.v:3113]
+WARNING: [Synth 8-6014] Unused sequential element extend_reg was removed.  [D:/wulian/DD/KWS-SOC-8bit-detective/soc/wdt.v:208]
+INFO: [Synth 8-6155] done synthesizing module 'wdt_isrg' (91#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/wdt.v:165]
+INFO: [Synth 8-6155] done synthesizing module 'wdt_isrc' (92#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/wdt.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'wdt' (93#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/wdt.v:588]
+INFO: [Synth 8-6155] done synthesizing module 'wdt_sec_top' (94#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/wdt.v:519]
+INFO: [Synth 8-6157] synthesizing module 'pwm_sec_top' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/pwm.v:5314]
+INFO: [Synth 8-6157] synthesizing module 'pwm' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/pwm.v:64]
+INFO: [Synth 8-6157] synthesizing module 'pwm_ctrl' [D:/wulian/DD/KWS-SOC-8bit-detective/soc/pwm.v:3113]
 INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/pwm.v:4154]
-INFO: [Synth 8-6155] done synthesizing module 'clk_mux2' (95#1) [D:/wulian/KWS-SOC/sourcefile/common.v:11]
-INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/pwm.v:5087]
-INFO: [Synth 8-6155] done synthesizing module 'pwm_gen' (96#1) [D:/wulian/KWS-SOC/sourcefile/pwm.v:4772]
-INFO: [Synth 8-6155] done synthesizing module 'pwm_ctrl' (97#1) [D:/wulian/KWS-SOC/sourcefile/pwm.v:3113]
-INFO: [Synth 8-6155] done synthesizing module 'pwm_apbif' (98#1) [D:/wulian/KWS-SOC/sourcefile/pwm.v:1147]
-INFO: [Synth 8-6155] done synthesizing module 'pwm' (99#1) [D:/wulian/KWS-SOC/sourcefile/pwm.v:64]
-INFO: [Synth 8-6155] done synthesizing module 'pwm_sec_top' (100#1) [D:/wulian/KWS-SOC/sourcefile/pwm.v:5314]
+INFO: [Synth 8-226] default block is never used [D:/wulian/DD/KWS-SOC-8bit-detective/soc/pwm.v:4154]
+INFO: [Synth 8-6155] done synthesizing module 'clk_mux2' (95#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/common.v:11]
+INFO: [Synth 8-226] default block is never used [D:/wulian/DD/KWS-SOC-8bit-detective/soc/pwm.v:5087]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_gen' (96#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/pwm.v:4772]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_ctrl' (97#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/pwm.v:3113]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_apbif' (98#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/pwm.v:1147]
+INFO: [Synth 8-6155] done synthesizing module 'pwm' (99#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/pwm.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_sec_top' (100#1) [D:/wulian/DD/KWS-SOC-8bit-detective/soc/pwm.v:5314]
 INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 	Parameter AHB_APB_BRIDGE_EN bound to: 1'b1 
 	Parameter APB_LEAF_SLV_NUM bound to: 5'b10000 
@@ -1018,7 +1019,7 @@ INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instan
 	Parameter WFD1WFD2 bound to: 3'b110 
 	Parameter ABORT_IDLE bound to: 1'b0 
 	Parameter ABORT_VLD bound to: 1'b1 
-INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:9761]
+INFO: [Synth 8-226] default block is never used [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:9761]
 	Parameter IDLE bound to: 2'b00 
 	Parameter POP1_EN bound to: 2'b01 
 	Parameter POP2_EN bound to: 2'b10 
@@ -1041,39 +1042,39 @@ INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/E9
 	Parameter SRA bound to: 4'bx001 
 	Parameter SLL bound to: 4'bx010 
 	Parameter SRL bound to: 4'bx100 
-INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:12049]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:13734]
-INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:10719]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:12049]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:13734]
+INFO: [Synth 8-226] default block is never used [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:10719]
 	Parameter IDLE bound to: 3'b000 
 	Parameter WFI1 bound to: 3'b001 
 	Parameter SPLIT bound to: 3'b010 
 	Parameter WFI2 bound to: 3'b011 
 	Parameter PAIR bound to: 3'b110 
 	Parameter PAIRS bound to: 3'b111 
-INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:12840]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:12942]
-WARNING: [Synth 8-6014] Unused sequential element mad_neg_reg was removed.  [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:12891]
+INFO: [Synth 8-226] default block is never used [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:12840]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:12942]
+WARNING: [Synth 8-6014] Unused sequential element mad_neg_reg was removed.  [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:12891]
 	Parameter BKPT_IDLE bound to: 1'b0 
 	Parameter BKPT_ACK bound to: 1'b1 
 	Parameter TRACE_IDLE bound to: 1'b0 
 	Parameter TRACE_ACK bound to: 1'b1 
 	Parameter BR_DBG_IDLE bound to: 2'b00 
 	Parameter BR_DBG_ACK bound to: 2'b10 
-INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:15451]
-INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:15488]
+INFO: [Synth 8-226] default block is never used [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:15451]
+INFO: [Synth 8-226] default block is never used [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:15488]
 	Parameter IDLE bound to: 2'b00 
 	Parameter LOAD bound to: 2'b11 
 	Parameter STORE bound to: 2'b10 
 	Parameter ALU bound to: 2'b01 
-INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:17687]
+INFO: [Synth 8-226] default block is never used [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:17687]
 	Parameter IDLE bound to: 1'b0 
 	Parameter WAIT_IDLE bound to: 1'b1 
 	Parameter FETCH_IDLE bound to: 1'b0 
 	Parameter FETCH_MASK bound to: 1'b1 
 	Parameter EMMU_IDLE bound to: 1'b0 
 	Parameter EMMU_WAIT_IDLE bound to: 1'b1 
-INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:14312]
-INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:14338]
+INFO: [Synth 8-226] default block is never used [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:14312]
+INFO: [Synth 8-226] default block is never used [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:14338]
 	Parameter IDLE bound to: 4'b0000 
 	Parameter BUF_VBR bound to: 4'b0001 
 	Parameter WAIT_IDLE bound to: 4'b0010 
@@ -1088,21 +1089,21 @@ INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/E9
 	Parameter LE bound to: 2'b00 
 	Parameter BE_V1 bound to: 2'b10 
 	Parameter BE_V2 bound to: 2'b01 
-INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:18538]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:18568]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:18598]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:18628]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:18704]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:18746]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:18776]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:18800]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:18538]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:18568]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:18598]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:18628]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:18704]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:18746]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:18776]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:18800]
 	Parameter IDLE bound to: 1'b0 
 	Parameter WAIT_DATA bound to: 1'b1 
 	Parameter MISL_VEC bound to: 5'b00100 
 	Parameter MISS_VEC bound to: 5'b00110 
 	Parameter ACCL_VEC bound to: 5'b00101 
 	Parameter ACCS_VEC bound to: 5'b00111 
-INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:18062]
+INFO: [Synth 8-226] default block is never used [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:18062]
 	Parameter MSTATUS bound to: 12'b001100000000 
 	Parameter MISA bound to: 12'b001100000001 
 	Parameter MIE bound to: 12'b001100000100 
@@ -1152,7 +1153,7 @@ INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/E9
 	Parameter WFACK bound to: 2'b01 
 	Parameter WFCPLT bound to: 2'b11 
 	Parameter CPLT bound to: 2'b10 
-INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:6117]
+INFO: [Synth 8-226] default block is never used [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:6117]
 	Parameter TCIPIF_BASE bound to: 4'b1110 
 	Parameter CIDLE bound to: 3'b000 
 	Parameter SAHBL bound to: 3'b001 
@@ -1205,7 +1206,7 @@ INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/E9
 	Parameter CMMU_IN2 bound to: 24'b111000000001000000000001 
 	Parameter IDLE bound to: 1'b0 
 	Parameter ERROR bound to: 1'b1 
-INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:20306]
+INFO: [Synth 8-226] default block is never used [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:20306]
 	Parameter CLICINTNUM bound to: 64 - type: integer 
 	Parameter CLICMASK bound to: 8 - type: integer 
 	Parameter CLICINTBITS bound to: 3 - type: integer 
@@ -1220,7 +1221,7 @@ INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/E9
 	Parameter CLICMASK bound to: 8 - type: integer 
 	Parameter CLICINTBITS bound to: 3 - type: integer 
 	Parameter NLMASK bound to: 3 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element cpu_pmu_srst_b_reg was removed.  [D:/wulian/KWS-SOC/sourcefile/core_top.v:469]
+WARNING: [Synth 8-6014] Unused sequential element cpu_pmu_srst_b_reg was removed.  [D:/wulian/DD/KWS-SOC-8bit-detective/soc/core_top.v:469]
 	Parameter NONSEQ bound to: 2'b10 
 	Parameter SEQ bound to: 2'b11 
 	Parameter ERROR bound to: 2'b01 
@@ -1234,18 +1235,18 @@ WARNING: [Synth 8-6014] Unused sequential element cpu_pmu_srst_b_reg was removed
 	Parameter OKAY bound to: 2'b00 
 	Parameter ERROR bound to: 2'b01 
 	Parameter RETRY bound to: 2'b10 
-INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/KWS-SOC/sourcefile/sms.v:346]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/KWS-SOC/sourcefile/sms.v:467]
-INFO: [Synth 8-226] default block is never used [D:/wulian/KWS-SOC/sourcefile/sms.v:467]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/wulian/DD/KWS-SOC-8bit-detective/soc/sms.v:346]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/DD/KWS-SOC-8bit-detective/soc/sms.v:467]
+INFO: [Synth 8-226] default block is never used [D:/wulian/DD/KWS-SOC-8bit-detective/soc/sms.v:467]
 	Parameter BYTE bound to: 3'b000 
 	Parameter HALFWORD bound to: 3'b001 
 	Parameter WORD bound to: 3'b010 
 	Parameter DATAWIDTH bound to: 32 - type: integer 
 	Parameter ADDRWIDTH bound to: 14 - type: integer 
 	Parameter MEMDEPTH bound to: 16384 - type: integer 
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/KWS-SOC/sourcefile/sms.v:556]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/KWS-SOC/sourcefile/sms.v:558]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/KWS-SOC/sourcefile/sms.v:569]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/DD/KWS-SOC-8bit-detective/soc/sms.v:556]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/DD/KWS-SOC-8bit-detective/soc/sms.v:558]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/wulian/DD/KWS-SOC-8bit-detective/soc/sms.v:569]
 	Parameter DATAWIDTH bound to: 32 - type: integer 
 	Parameter ADDRWIDTH bound to: 14 - type: integer 
 	Parameter MEMDEPTH bound to: 16384 - type: integer 
@@ -1354,7 +1355,7 @@ WARNING: [Synth 8-3331] design cr_clic_arb has unconnected port ctrl_arb_int_sec
 WARNING: [Synth 8-3331] design cr_clic_arb has unconnected port ctrl_arb_int_sec[15]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1516.797 ; gain = 736.758
+Finished RTL Elaboration : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1517.949 ; gain = 736.102
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1367,70 +1368,58 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1516.797 ; gain = 736.758
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1517.949 ; gain = 736.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1516.797 ; gain = 736.758
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1517.949 ; gain = 736.102
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1516.797 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1517.949 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_ahb_axi_ctrl0'
-Finished Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_ahb_axi_ctrl0'
-Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/kws_data_in_axi_bridge'
-Finished Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/kws_data_in_axi_bridge'
-Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/kws_weight_in_axi_bridge'
-Finished Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/kws_weight_in_axi_bridge'
-Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/kws_control_in_axi_bridge'
-Finished Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/kws_control_in_axi_bridge'
-Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/kws_data_out_axi_bridge'
-Finished Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/kws_data_out_axi_bridge'
-Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/kws_keep_in_axi_bridge'
-Finished Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/kws_keep_in_axi_bridge'
-Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_sub_ls_top/x_ahb_axi_preprocess/preprocess_data_in_axi_bridge'
-Finished Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_sub_ls_top/x_ahb_axi_preprocess/preprocess_data_in_axi_bridge'
-Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_sub_ls_top/x_ahb_axi_preprocess/preprocess_cosines_in_axi_bridge'
-Finished Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_sub_ls_top/x_ahb_axi_preprocess/preprocess_cosines_in_axi_bridge'
-Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_sub_ls_top/x_ahb_axi_preprocess/preprocess_control_in_axi_bridge'
-Finished Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_sub_ls_top/x_ahb_axi_preprocess/preprocess_control_in_axi_bridge'
-Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_sub_ls_top/x_ahb_axi_preprocess/preprocess_data_out_axi_bridge'
-Finished Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_sub_ls_top/x_ahb_axi_preprocess/preprocess_data_out_axi_bridge'
-Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/preprocess_0/preprocess_0/preprocess_0_in_context.xdc] for cell 'x_pdu_top/x_sub_ls_top/x_ahb_axi_preprocess/x_preprocess_0'
-Finished Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/preprocess_0/preprocess_0/preprocess_0_in_context.xdc] for cell 'x_pdu_top/x_sub_ls_top/x_ahb_axi_preprocess/x_preprocess_0'
-Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/kws_0/kws_0/kws_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_kws_0'
-Finished Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/kws_0/kws_0/kws_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_kws_0'
-Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/axi_bram_ctrl_0/axi_bram_ctrl_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_axi_bram_ctrl0'
-Finished Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/axi_bram_ctrl_0/axi_bram_ctrl_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_axi_bram_ctrl0'
-Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0'
-Finished Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0'
-Parsing XDC File [D:/wulian/KWS-SOC/constrain/XC7A200T3B.xdc]
-WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: PAD_JTAG_TCLK). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [D:/wulian/KWS-SOC/constrain/XC7A200T3B.xdc:92]
-Finished Parsing XDC File [D:/wulian/KWS-SOC/constrain/XC7A200T3B.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/wulian/KWS-SOC/constrain/XC7A200T3B.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/wujian100_open_top_propImpl.xdc].
+Parsing XDC File [d:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_ahb_axi_ctrl0'
+Finished Parsing XDC File [d:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_ahb_axi_ctrl0'
+Parsing XDC File [d:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/preprocess_data_in_axi_bridge'
+Finished Parsing XDC File [d:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/preprocess_data_in_axi_bridge'
+Parsing XDC File [d:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/preprocess_cosines_in_axi_bridge'
+Finished Parsing XDC File [d:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/preprocess_cosines_in_axi_bridge'
+Parsing XDC File [d:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/preprocess_control_in_axi_bridge'
+Finished Parsing XDC File [d:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/preprocess_control_in_axi_bridge'
+Parsing XDC File [d:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/preprocess_data_out_axi_bridge'
+Finished Parsing XDC File [d:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0/ahblite_axi_bridge_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/preprocess_data_out_axi_bridge'
+Parsing XDC File [d:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/axi_bram_ctrl_0/axi_bram_ctrl_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_axi_bram_ctrl0'
+Finished Parsing XDC File [d:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/axi_bram_ctrl_0/axi_bram_ctrl_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_axi_bram_ctrl0'
+Parsing XDC File [d:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0'
+Finished Parsing XDC File [d:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0'
+Parsing XDC File [d:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0/axis_data_fifo_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo'
+Finished Parsing XDC File [d:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0/axis_data_fifo_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo'
+Parsing XDC File [d:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.srcs/sources_1/ip/kws_0/kws_0/kws_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_kws_0'
+Finished Parsing XDC File [d:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.srcs/sources_1/ip/kws_0/kws_0/kws_0_in_context.xdc] for cell 'x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_kws_0'
+Parsing XDC File [D:/wulian/DD/KWS-SOC-8bit-detective/constraints/XC7A200T3B.xdc]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: PAD_JTAG_TCLK). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [D:/wulian/DD/KWS-SOC-8bit-detective/constraints/XC7A200T3B.xdc:99]
+Finished Parsing XDC File [D:/wulian/DD/KWS-SOC-8bit-detective/constraints/XC7A200T3B.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/wulian/DD/KWS-SOC-8bit-detective/constraints/XC7A200T3B.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/wujian100_open_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/wujian100_open_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [D:/wulian/KWS-SOC/constrain/wujian100_open_edif.xdc]
-Finished Parsing XDC File [D:/wulian/KWS-SOC/constrain/wujian100_open_edif.xdc]
-write_xdc: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 1762.402 ; gain = 34.141
+Parsing XDC File [D:/wulian/DD/KWS-SOC-8bit-detective/constraints/wujian100_open_edif.xdc]
+Finished Parsing XDC File [D:/wulian/DD/KWS-SOC-8bit-detective/constraints/wujian100_open_edif.xdc]
+write_xdc: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1741.766 ; gain = 16.098
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1763.211 ; gain = 0.074
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1742.543 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.358 . Memory (MB): peak = 1763.473 ; gain = 0.262
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.423 . Memory (MB): peak = 1742.691 ; gain = 0.148
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:24 ; elapsed = 00:01:16 . Memory (MB): peak = 1781.352 ; gain = 1001.313
+Finished Constraint Validation : Time (s): cpu = 00:01:20 ; elapsed = 00:01:16 . Memory (MB): peak = 1760.566 ; gain = 978.719
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg484-1
----------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:24 ; elapsed = 00:01:16 . Memory (MB): peak = 1781.352 ; gain = 1001.313
 INFO: [Synth 8-5545] ROM "m0_s0_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "m0_s10_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "m0_s11_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
@@ -1515,7 +1504,7 @@ INFO: [Synth 8-5545] ROM "m6_s6_data" won't be mapped to RAM because address siz
 INFO: [Synth 8-5545] ROM "m6_s7_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "m6_s8_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "m6_s9_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/wulian/KWS-SOC/sourcefile/dmac.v:15714]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/wulian/DD/KWS-SOC-8bit-detective/soc/dmac.v:15714]
 INFO: [Synth 8-802] inferred FSM for state register 'hbus_stt_reg' in module 'fsmc'
 INFO: [Synth 8-802] inferred FSM for state register 'data_out_cstat_reg' in module 'ahb_axi_kws'
 INFO: [Synth 8-5546] ROM "s0_last_cmd" won't be mapped to RAM because it is too sparse
@@ -1524,7 +1513,6 @@ INFO: [Synth 8-5546] ROM "s2_last_cmd" won't be mapped to RAM because it is too 
 INFO: [Synth 8-5546] ROM "s3_last_cmd" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "s4_last_cmd" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "s5_last_cmd" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-802] inferred FSM for state register 'data_out_cstat_reg' in module 'ahb_axi_preprocess'
 INFO: [Synth 8-802] inferred FSM for state register 'cstate_reg' in module 'apb0_state_ctrl'
 INFO: [Synth 8-802] inferred FSM for state register 'uart_fsm_reg' in module 'uart'
 INFO: [Synth 8-802] inferred FSM for state register 'i2cm_fsm_reg' in module 'i2cm'
@@ -1533,13 +1521,13 @@ INFO: [Synth 8-5544] ROM "i2cs_rx" won't be mapped to Block RAM because address 
 INFO: [Synth 8-802] inferred FSM for state register 'spim_fsm_reg' in module 'spi'
 INFO: [Synth 8-5544] ROM "spim_rx" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "spis_rx" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/wulian/KWS-SOC/sourcefile/usi0.v:3226]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/wulian/DD/KWS-SOC-8bit-detective/soc/usi0.v:3226]
 INFO: [Synth 8-5544] ROM "int_top" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "int_top_init" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "rpl" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'cstate_reg' in module 'apb1_state_ctrl'
 INFO: [Synth 8-802] inferred FSM for state register 'cur_st_reg' in module 'cr_ifu_ibusif'
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/wulian/KWS-SOC/sourcefile/E902_20191018.v:13087]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/wulian/DD/KWS-SOC-8bit-detective/soc/E902_20191018.v:13087]
 INFO: [Synth 8-802] inferred FSM for state register 'cur_st_reg' in module 'cr_iu_mad'
 INFO: [Synth 8-802] inferred FSM for state register 'br_cur_state_reg' in module 'cr_iu_retire'
 INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'cr_iu_vector'
@@ -1578,14 +1566,6 @@ INFO: [Synth 8-3354] encoded FSM with state register 'hbus_stt_reg' using encodi
    DATA_OUT_TRANS_RREADY |                              100 |                              010
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'data_out_cstat_reg' using encoding 'one-hot' in module 'ahb_axi_kws'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-           DATA_OUT_IDLE |                              001 |                              000
-     DATA_OUT_ADDR_READY |                              010 |                              001
-   DATA_OUT_TRANS_RREADY |                              100 |                              010
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'data_out_cstat_reg' using encoding 'one-hot' in module 'ahb_axi_preprocess'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -1756,7 +1736,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'A1865c_reg' using encoding
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'A1864b_reg' using encoding 'one-hot' in module 'A1864d'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:07 ; elapsed = 00:02:01 . Memory (MB): peak = 1781.352 ; gain = 1001.313
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:00 ; elapsed = 00:01:58 . Memory (MB): peak = 1760.566 ; gain = 978.719
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1771,10 +1751,10 @@ Report RTL Partitions:
 |6     |ch_ctrl__GB1             |           1|     12594|
 |7     |ch_ctrl__GB2             |           1|     16792|
 |8     |dmac_top__GC0            |           1|     20458|
-|9     |ahb_matrix_top__GC0      |           1|      1324|
+|9     |ahb_matrix_top__GC0      |           1|      1166|
 |10    |pwm_sec_top              |           1|     30372|
 |11    |apb0_sub_top__GB1        |           1|     24158|
-|12    |pdu_top__GC0             |           1|     21438|
+|12    |pdu_top__GC0             |           1|     20625|
 |13    |wujian100_open_top__GCB0 |           1|     39334|
 |14    |wujian100_open_top__GCB1 |           1|      7424|
 +------+-------------------------+------------+----------+
@@ -1843,7 +1823,7 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 76    
 	                3 Bit    Registers := 172   
 	                2 Bit    Registers := 171   
-	                1 Bit    Registers := 1824  
+	                1 Bit    Registers := 1822  
 +---RAMs : 
 	             128K Bit         RAMs := 16    
 	              256 Bit         RAMs := 6     
@@ -1913,9 +1893,9 @@ Detailed RTL Component Info :
 	   5 Input      4 Bit        Muxes := 2     
 	  41 Input      4 Bit        Muxes := 1     
 	  13 Input      4 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 257   
+	   2 Input      3 Bit        Muxes := 256   
 	  20 Input      3 Bit        Muxes := 16    
-	   3 Input      3 Bit        Muxes := 9     
+	   3 Input      3 Bit        Muxes := 8     
 	  31 Input      3 Bit        Muxes := 3     
 	   4 Input      3 Bit        Muxes := 3     
 	  41 Input      3 Bit        Muxes := 1     
@@ -1931,7 +1911,7 @@ Detailed RTL Component Info :
 	  50 Input      1 Bit        Muxes := 266   
 	   2 Input      1 Bit        Muxes := 1770  
 	  25 Input      1 Bit        Muxes := 161   
-	   3 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 5     
 	   4 Input      1 Bit        Muxes := 36    
 	   5 Input      1 Bit        Muxes := 13    
 	  10 Input      1 Bit        Muxes := 7     
@@ -3487,14 +3467,6 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 3     
 	   2 Input      1 Bit        Muxes := 3     
-Module ahb_axi_preprocess 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 2     
-+---Muxes : 
-	   3 Input      3 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 1     
-	   3 Input      1 Bit        Muxes := 1     
 Module apb1_state_ctrl 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -5388,8 +5360,21 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_sub_ls
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (x_sub_apb1_top/x_apb1_sub_top/\U_APB1_STATE_CTRL/o_root_pprot_reg[1] )
 INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_sub_rd_afifo/sync_wr_ptr_1_reg[0]' (FDC) to 'x_sub_ls_top/x_sub_ls_top/wfifo_wr_en_reg'
 INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_sub_rd_afifo/sync_wr_ptr_1_reg[1]' (FDC) to 'x_sub_ls_top/x_sub_ls_top/wfifo_wr_en_reg'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_cur_st_reg[11]' (FDC) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_cur_st_reg[9]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_cur_st_reg[9]' (FDC) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_cur_st_reg[3]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_cur_st_reg[3]' (FDC) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_cur_st_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_cur_st_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_sub_ls_top/x_sub_ls_top/x_sub_wr_afifo/rd_ptr_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_sub_ls_top/x_sub_ls_top/x_sub_wr_afifo/rd_ptr_reg[1] )
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[30]' (FDCE) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[42]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[31]' (FDCE) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[42]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[32]' (FDCE) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[42]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[33]' (FDCE) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[42]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[34]' (FDCE) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[42]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[35]' (FDCE) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[42]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[36]' (FDCE) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[42]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[37]' (FDCE) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[42]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[38]' (FDCE) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[42]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[42] )
 INFO: [Synth 8-5546] ROM "imm_inv" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-3917] design wujian100_open_top__GCB0 has port cpu_hmain0_m1_haddr[31] driven by constant 0
@@ -5535,7 +5520,7 @@ INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_core_top/x_cr_sys_io/s
 WARNING: [Synth 8-3332] Sequential element (FSM_sequential_cur_st_reg[2]) is unused and will be removed from module cr_iu_mad.
 WARNING: [Synth 8-3332] Sequential element (FSM_sequential_br_cur_state_reg) is unused and will be removed from module cr_iu_retire.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:26 ; elapsed = 00:07:35 . Memory (MB): peak = 1781.352 ; gain = 1001.313
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:30 ; elapsed = 00:07:46 . Memory (MB): peak = 1760.566 ; gain = 978.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -5589,15 +5574,15 @@ Report RTL Partitions:
 |1     |ahb_matrix_7_12_arb__GB0 |           1|      6297|
 |2     |ahb_matrix_7_12_arb__GB1 |           1|      2125|
 |3     |ahb_matrix_7_12_arb__GB2 |           1|      3900|
-|4     |ahb_matrix_7_12_dec      |           1|     22724|
+|4     |ahb_matrix_7_12_dec      |           1|     22844|
 |5     |ch_ctrl__GB0             |           1|     16461|
 |6     |ch_ctrl__GB1             |           1|      5487|
 |7     |ch_ctrl__GB2             |           1|      7316|
 |8     |dmac_top__GC0            |           1|     12617|
-|9     |ahb_matrix_top__GC0      |           1|      1320|
+|9     |ahb_matrix_top__GC0      |           1|      1162|
 |10    |pwm_sec_top              |           1|     13105|
 |11    |apb0_sub_top__GB1        |           1|     13606|
-|12    |pdu_top__GC0             |           1|     10996|
+|12    |pdu_top__GC0             |           1|      9418|
 |13    |wujian100_open_top__GCB0 |           1|     20350|
 |14    |wujian100_open_top__GCB1 |           1|      2836|
 +------+-------------------------+------------+----------+
@@ -5605,43 +5590,31 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:07:39 ; elapsed = 00:07:49 . Memory (MB): peak = 1781.352 ; gain = 1001.313
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:07:44 ; elapsed = 00:08:00 . Memory (MB): peak = 1760.566 ; gain = 978.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m1_ctrl_bus_ff_reg[11]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m1_ctrl_bus_ff_reg[44]'
-INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m2_ctrl_bus_ff_reg[11]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m2_ctrl_bus_ff_reg[10]'
-INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m3_ctrl_bus_ff_reg[11]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m3_ctrl_bus_ff_reg[7]'
-INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m4_ctrl_bus_ff_reg[11]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m4_ctrl_bus_ff_reg[44]'
-INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m5_ctrl_bus_ff_reg[11]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m5_ctrl_bus_ff_reg[44]'
-INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m6_ctrl_bus_ff_reg[11]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m6_ctrl_bus_ff_reg[44]'
 INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m0_ctrl_bus_ff_reg[11]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m0_ctrl_bus_ff_reg[10]'
-INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m1_ctrl_bus_ff_reg[1]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m1_ctrl_bus_ff_reg[44]'
-INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m4_ctrl_bus_ff_reg[1]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m4_ctrl_bus_ff_reg[44]'
-INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m5_ctrl_bus_ff_reg[1]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m5_ctrl_bus_ff_reg[44]'
+INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m6_ctrl_bus_ff_reg[11]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m6_ctrl_bus_ff_reg[44]'
+INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m5_ctrl_bus_ff_reg[11]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m5_ctrl_bus_ff_reg[44]'
+INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m4_ctrl_bus_ff_reg[11]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m4_ctrl_bus_ff_reg[44]'
+INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m3_ctrl_bus_ff_reg[11]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m3_ctrl_bus_ff_reg[7]'
+INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m2_ctrl_bus_ff_reg[11]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m2_ctrl_bus_ff_reg[10]'
+INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m1_ctrl_bus_ff_reg[11]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m1_ctrl_bus_ff_reg[44]'
 INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m6_ctrl_bus_ff_reg[1]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m6_ctrl_bus_ff_reg[44]'
-INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m4_ctrl_bus_ff_reg[2]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m4_ctrl_bus_ff_reg[44]'
-INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m1_ctrl_bus_ff_reg[2]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m1_ctrl_bus_ff_reg[44]'
-INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m5_ctrl_bus_ff_reg[2]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m5_ctrl_bus_ff_reg[44]'
+INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m5_ctrl_bus_ff_reg[1]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m5_ctrl_bus_ff_reg[44]'
+INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m4_ctrl_bus_ff_reg[1]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m4_ctrl_bus_ff_reg[44]'
+INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m1_ctrl_bus_ff_reg[1]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m1_ctrl_bus_ff_reg[44]'
 INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m6_ctrl_bus_ff_reg[2]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m6_ctrl_bus_ff_reg[44]'
-INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m1_ctrl_bus_ff_reg[3]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m1_ctrl_bus_ff_reg[44]'
-INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m2_ctrl_bus_ff_reg[3]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m2_ctrl_bus_ff_reg[10]'
-INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m4_ctrl_bus_ff_reg[3]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m4_ctrl_bus_ff_reg[44]'
-INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m5_ctrl_bus_ff_reg[3]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m5_ctrl_bus_ff_reg[44]'
-INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m6_ctrl_bus_ff_reg[3]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m6_ctrl_bus_ff_reg[44]'
-INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m0_ctrl_bus_ff_reg[3]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m0_ctrl_bus_ff_reg[10]'
-INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m1_ctrl_bus_ff_reg[4]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m1_ctrl_bus_ff_reg[44]'
-INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m2_ctrl_bus_ff_reg[4]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m2_ctrl_bus_ff_reg[10]'
-INFO: [Synth 8-3886] merging instance 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m4_ctrl_bus_ff_reg[4]' (FDCE) to 'x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/m4_ctrl_bus_ff_reg[44]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec /\m3_ctrl_bus_ff_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec /\m2_ctrl_bus_ff_reg[10] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec /\m0_ctrl_bus_ff_reg[10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec /\m1_ctrl_bus_ff_reg[28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec /\m4_ctrl_bus_ff_reg[28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec /\m5_ctrl_bus_ff_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec /\m2_ctrl_bus_ff_reg[10] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec /\m6_ctrl_bus_ff_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec /\m5_ctrl_bus_ff_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec /\m4_ctrl_bus_ff_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec /\m1_ctrl_bus_ff_reg[28] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (x_matrix_arbi_2/\m6_cur_st_reg[27] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\x_cpu_top/CPU/x_cr_core_top/pad_cpu_halt_ff1_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top /\INT_KID[52].x_cr_clic_kid /int_pending_reg)
@@ -5650,11 +5623,10 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\x_cp
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top /\INT_KID[44].x_cr_clic_kid /int_pending_reg)
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top /\INT_KID[60].x_cr_clic_kid /int_pending_reg)
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top /\INT_KID[49].x_cr_clic_kid /int_pending_reg)
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top /\INT_KID[45].x_cr_clic_kid /int_pending_reg)
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top /\INT_KID[53].x_cr_clic_kid /int_pending_reg)
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:12:33 ; elapsed = 00:12:46 . Memory (MB): peak = 2117.051 ; gain = 1337.012
+Finished Timing Optimization : Time (s): cpu = 00:12:21 ; elapsed = 00:12:40 . Memory (MB): peak = 2056.184 ; gain = 1274.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -5703,16 +5675,16 @@ Report RTL Partitions:
 +------+--------------------------+------------+----------+
 |      |RTL Partition             |Replication |Instances |
 +------+--------------------------+------------+----------+
-|1     |ahb_matrix_7_12_dec       |           1|      8592|
+|1     |ahb_matrix_7_12_dec       |           1|      7779|
 |2     |ch_ctrl__GB0              |           1|     16398|
 |3     |ch_ctrl__GB1              |           1|      5466|
 |4     |ch_ctrl__GB2              |           1|      7288|
 |5     |dmac_top__GC0             |           1|     12566|
-|6     |ahb_matrix_top__GC0       |           1|      1320|
+|6     |ahb_matrix_top__GC0       |           1|      1162|
 |7     |pwm_sec_top               |           1|     12434|
 |8     |wujian100_open_top__GCB1  |           1|      2813|
-|9     |wujian100_open_top_GT0    |           1|     23662|
-|10    |wujian100_open_top_GT0__2 |           1|     23704|
+|9     |wujian100_open_top_GT0    |           1|     22865|
+|10    |wujian100_open_top_GT0__2 |           1|     23281|
 +------+--------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -5782,23 +5754,23 @@ INFO: [Synth 8-7053] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_
 INFO: [Synth 8-7053] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:12:58 ; elapsed = 00:13:30 . Memory (MB): peak = 2117.051 ; gain = 1337.012
+Finished Technology Mapping : Time (s): cpu = 00:12:47 ; elapsed = 00:13:23 . Memory (MB): peak = 2056.184 ; gain = 1274.336
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+--------------------------+------------+----------+
 |      |RTL Partition             |Replication |Instances |
 +------+--------------------------+------------+----------+
-|1     |ahb_matrix_7_12_dec       |           1|      2281|
+|1     |ahb_matrix_7_12_dec       |           1|      2054|
 |2     |ch_ctrl__GB0              |           1|      6914|
 |3     |ch_ctrl__GB1              |           1|      2306|
 |4     |ch_ctrl__GB2              |           1|      3074|
 |5     |dmac_top__GC0             |           1|      4818|
-|6     |ahb_matrix_top__GC0       |           1|      1317|
+|6     |ahb_matrix_top__GC0       |           1|      1159|
 |7     |pwm_sec_top               |           1|      6615|
 |8     |wujian100_open_top__GCB1  |           1|      1670|
-|9     |wujian100_open_top_GT0    |           1|     10309|
-|10    |wujian100_open_top_GT0__2 |           1|      9790|
+|9     |wujian100_open_top_GT0    |           1|      9826|
+|10    |wujian100_open_top_GT0__2 |           1|      9694|
 +------+--------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -5852,14 +5824,15 @@ INFO: [Common 17-14] Message 'Synth 8-7053' appears 100 times and further instan
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_kws_0  has unconnected pin data_in_TLAST[0]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:13:12 ; elapsed = 00:13:44 . Memory (MB): peak = 2117.051 ; gain = 1337.012
+Finished IO Insertion : Time (s): cpu = 00:13:00 ; elapsed = 00:13:37 . Memory (MB): peak = 2056.184 ; gain = 1274.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:13:12 ; elapsed = 00:13:44 . Memory (MB): peak = 2117.051 ; gain = 1337.012
+Finished Renaming Generated Instances : Time (s): cpu = 00:13:00 ; elapsed = 00:13:38 . Memory (MB): peak = 2056.184 ; gain = 1274.336
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -5878,25 +5851,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:13:24 ; elapsed = 00:13:57 . Memory (MB): peak = 2117.051 ; gain = 1337.012
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:13:12 ; elapsed = 00:13:50 . Memory (MB): peak = 2056.184 ; gain = 1274.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:13:25 ; elapsed = 00:13:57 . Memory (MB): peak = 2117.051 ; gain = 1337.012
+Finished Renaming Generated Ports : Time (s): cpu = 00:13:13 ; elapsed = 00:13:51 . Memory (MB): peak = 2056.184 ; gain = 1274.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:13:26 ; elapsed = 00:13:59 . Memory (MB): peak = 2117.051 ; gain = 1337.012
+Finished Handling Custom Attributes : Time (s): cpu = 00:13:14 ; elapsed = 00:13:52 . Memory (MB): peak = 2056.184 ; gain = 1274.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:13:27 ; elapsed = 00:14:00 . Memory (MB): peak = 2117.051 ; gain = 1337.012
+Finished Renaming Generated Nets : Time (s): cpu = 00:13:15 ; elapsed = 00:13:53 . Memory (MB): peak = 2056.184 ; gain = 1274.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -5906,86 +5879,81 @@ Report BlackBoxes:
 +------+---------------------+----------+
 |      |BlackBox name        |Instances |
 +------+---------------------+----------+
-|1     |ahblite_axi_bridge_0 |        10|
-|2     |kws_0                |         1|
-|3     |axi_bram_ctrl_0      |         1|
-|4     |blk_mem_gen_0        |         1|
-|5     |preprocess_0         |         1|
+|1     |ahblite_axi_bridge_0 |         5|
+|2     |axis_data_fifo_0     |         1|
+|3     |kws_0                |         1|
+|4     |axi_bram_ctrl_0      |         1|
+|5     |blk_mem_gen_0        |         1|
 +------+---------------------+----------+
 
 Report Cell Usage: 
-+------+-------------------------+------+
-|      |Cell                     |Count |
-+------+-------------------------+------+
-|1     |ahblite_axi_bridge_0     |     1|
-|2     |ahblite_axi_bridge_0__10 |     1|
-|3     |ahblite_axi_bridge_0__11 |     1|
-|4     |ahblite_axi_bridge_0__12 |     1|
-|5     |ahblite_axi_bridge_0__13 |     1|
-|6     |ahblite_axi_bridge_0__14 |     1|
-|7     |ahblite_axi_bridge_0__15 |     1|
-|8     |ahblite_axi_bridge_0__16 |     1|
-|9     |ahblite_axi_bridge_0__17 |     1|
-|10    |ahblite_axi_bridge_0__18 |     1|
-|11    |axi_bram_ctrl_0          |     1|
-|12    |blk_mem_gen_0            |     1|
-|13    |kws_0                    |     1|
-|14    |preprocess_0             |     1|
-|15    |BUFG                     |     2|
-|16    |CARRY4                   |  1508|
-|17    |LUT1                     |  1179|
-|18    |LUT2                     |  3111|
-|19    |LUT3                     |  2733|
-|20    |LUT4                     |  4443|
-|21    |LUT5                     |  5634|
-|22    |LUT6                     | 15135|
-|23    |MUXF7                    |   371|
-|24    |MUXF8                    |    36|
-|25    |RAM32M                   |    18|
-|26    |RAMB36E1                 |    64|
-|27    |FDCE                     | 11344|
-|28    |FDPE                     |  1170|
-|29    |FDRE                     |   969|
-|30    |IBUF                     |     4|
-|31    |IOBUF                    |    51|
-|32    |OBUF                     |     1|
-|33    |OBUFT                    |     6|
-+------+-------------------------+------+
++------+------------------------+------+
+|      |Cell                    |Count |
++------+------------------------+------+
+|1     |ahblite_axi_bridge_0    |     1|
+|2     |ahblite_axi_bridge_0__5 |     1|
+|3     |ahblite_axi_bridge_0__6 |     1|
+|4     |ahblite_axi_bridge_0__7 |     1|
+|5     |ahblite_axi_bridge_0__8 |     1|
+|6     |axi_bram_ctrl_0         |     1|
+|7     |axis_data_fifo_0        |     1|
+|8     |blk_mem_gen_0           |     1|
+|9     |kws_0                   |     1|
+|10    |BUFG                    |     2|
+|11    |CARRY4                  |  1508|
+|12    |LUT1                    |  1180|
+|13    |LUT2                    |  2973|
+|14    |LUT3                    |  2613|
+|15    |LUT4                    |  4601|
+|16    |LUT5                    |  5359|
+|17    |LUT6                    | 14768|
+|18    |MUXF7                   |   372|
+|19    |MUXF8                   |    36|
+|20    |RAM32M                  |    18|
+|21    |RAMB36E1                |    64|
+|22    |FDCE                    | 11299|
+|23    |FDPE                    |  1169|
+|24    |FDRE                    |   969|
+|25    |IBUF                    |     4|
+|26    |IOBUF                   |    51|
+|27    |OBUF                    |     1|
+|28    |OBUFT                   |     6|
++------+------------------------+------+
 
 Report Instance Areas: 
 +------+------------------------------------------------+---------------------------+------+
 |      |Instance                                        |Module                     |Cells |
 +------+------------------------------------------------+---------------------------+------+
-|1     |top                                             |                           | 49884|
-|2     |  x_aou_top                                     |aou_top                    |  1073|
-|3     |    x_gpio_sec_top                              |gpio0_sec_top              |   815|
-|4     |      x_gpio0                                   |gpio0                      |   815|
-|5     |        x_gpio_top                              |gpio_top                   |   815|
-|6     |          U_GPIO_APBIF                          |gpio_apbif                 |   655|
+|1     |top                                             |                           | 48143|
+|2     |  x_aou_top                                     |aou_top                    |  1060|
+|3     |    x_gpio_sec_top                              |gpio0_sec_top              |   811|
+|4     |      x_gpio0                                   |gpio0                      |   811|
+|5     |        x_gpio_top                              |gpio_top                   |   811|
+|6     |          U_GPIO_APBIF                          |gpio_apbif                 |   651|
 |7     |          U_GPIO_CTRL                           |gpio_ctrl                  |   160|
-|8     |    x_rtc0_sec_top                              |rtc0_sec_top               |   258|
+|8     |    x_rtc0_sec_top                              |rtc0_sec_top               |   249|
 |9     |      x_rtc_aou_top                             |rtc_aou_top                |   152|
 |10    |        x_rtc_aou_apbif                         |rtc_aou_apbif              |    64|
 |11    |        x_rtc_cnt                               |rtc_cnt                    |    85|
 |12    |        x_rtc_ig                                |rtc_ig                     |     3|
-|13    |      x_rtc_pdu_top                             |rtc_pdu_top                |   106|
+|13    |      x_rtc_pdu_top                             |rtc_pdu_top                |    97|
 |14    |        x_rtc_cdr_sync                          |rtc_cdr_sync               |    32|
 |15    |        x_rtc_clr_sync                          |rtc_clr_sync               |     5|
-|16    |        x_rtc_pdu_apbif                         |rtc_pdu_apbif              |    69|
-|17    |  x_cpu_top                                     |core_top                   |  7989|
-|18    |    CPU                                         |E902_20191018              |  7989|
-|19    |      x_cr_core_top                             |cr_core_top                |  5500|
-|20    |        x_cr_bmu_top                            |cr_bmu_top                 |    60|
+|16    |        x_rtc_pdu_apbif                         |rtc_pdu_apbif              |    60|
+|17    |  x_cpu_top                                     |core_top                   |  8022|
+|18    |    CPU                                         |E902_20191018              |  8022|
+|19    |      x_cr_core_top                             |cr_core_top                |  5513|
+|20    |        x_cr_bmu_top                            |cr_bmu_top                 |    62|
 |21    |          x_cr_bmu_dbus_if                      |cr_bmu_dbus_if             |    25|
-|22    |          x_cr_bmu_ibus_if                      |cr_bmu_ibus_if             |    35|
-|23    |        x_cr_core                               |cr_core                    |  5257|
+|22    |          x_cr_bmu_ibus_if                      |cr_bmu_ibus_if             |    37|
+|23    |        x_cr_core                               |cr_core                    |  5268|
 |24    |          x_cr_cp0_top                          |cr_cp0_top                 |   443|
 |25    |            x_cr_cp0_lpmd                       |cr_cp0_lpmd                |     5|
 |26    |            x_cr_cp0_oreg                       |cr_cp0_oreg                |   372|
 |27    |            x_cr_cp0_status                     |cr_cp0_status              |    66|
-|28    |          x_cr_ifu_top                          |cr_ifu_top                 |  1925|
-|29    |            x_ibuf                              |cr_ifu_ibuf                |  1841|
-|30    |              x_ibuf_entry_0                    |cr_ifu_ibuf_entry          |  1214|
+|28    |          x_cr_ifu_top                          |cr_ifu_top                 |  1936|
+|29    |            x_ibuf                              |cr_ifu_ibuf                |  1852|
+|30    |              x_ibuf_entry_0                    |cr_ifu_ibuf_entry          |  1225|
 |31    |              x_ibuf_entry_1                    |cr_ifu_ibuf_entry_193      |   105|
 |32    |              x_ibuf_entry_2                    |cr_ifu_ibuf_entry_194      |   186|
 |33    |              x_ibuf_entry_3                    |cr_ifu_ibuf_entry_195      |   213|
@@ -6040,8 +6008,8 @@ Report Instance Areas:
 |82    |        A18547                                  |A15_175                    |     8|
 |83    |        A18548                                  |A15_176                    |     8|
 |84    |        A18549                                  |A186a0_177                 |     9|
-|85    |      x_cr_tcipif_top                           |cr_tcipif_top              |  1581|
-|86    |        x_cr_clic_top                           |cr_clic_top                |   746|
+|85    |      x_cr_tcipif_top                           |cr_tcipif_top              |  1601|
+|86    |        x_cr_clic_top                           |cr_clic_top                |   766|
 |87    |          \INT_KID[0].x_cr_clic_kid             |cr_clic_kid                |     4|
 |88    |          \INT_KID[10].x_cr_clic_kid            |cr_clic_kid_112            |     4|
 |89    |          \INT_KID[11].x_cr_clic_kid            |cr_clic_kid_113            |     4|
@@ -6052,28 +6020,28 @@ Report Instance Areas:
 |94    |          \INT_KID[16].x_cr_clic_kid            |cr_clic_kid_118            |    17|
 |95    |          \INT_KID[17].x_cr_clic_kid            |cr_clic_kid_119            |    19|
 |96    |          \INT_KID[18].x_cr_clic_kid            |cr_clic_kid_120            |    18|
-|97    |          \INT_KID[19].x_cr_clic_kid            |cr_clic_kid_121            |    23|
+|97    |          \INT_KID[19].x_cr_clic_kid            |cr_clic_kid_121            |    25|
 |98    |          \INT_KID[1].x_cr_clic_kid             |cr_clic_kid_122            |     5|
 |99    |          \INT_KID[20].x_cr_clic_kid            |cr_clic_kid_123            |    17|
 |100   |          \INT_KID[21].x_cr_clic_kid            |cr_clic_kid_124            |    17|
-|101   |          \INT_KID[22].x_cr_clic_kid            |cr_clic_kid_125            |    21|
-|102   |          \INT_KID[23].x_cr_clic_kid            |cr_clic_kid_126            |    48|
-|103   |          \INT_KID[24].x_cr_clic_kid            |cr_clic_kid_127            |    17|
-|104   |          \INT_KID[25].x_cr_clic_kid            |cr_clic_kid_128            |    25|
-|105   |          \INT_KID[26].x_cr_clic_kid            |cr_clic_kid_129            |    23|
-|106   |          \INT_KID[27].x_cr_clic_kid            |cr_clic_kid_130            |    24|
+|101   |          \INT_KID[22].x_cr_clic_kid            |cr_clic_kid_125            |    18|
+|102   |          \INT_KID[23].x_cr_clic_kid            |cr_clic_kid_126            |    56|
+|103   |          \INT_KID[24].x_cr_clic_kid            |cr_clic_kid_127            |    18|
+|104   |          \INT_KID[25].x_cr_clic_kid            |cr_clic_kid_128            |    23|
+|105   |          \INT_KID[26].x_cr_clic_kid            |cr_clic_kid_129            |    19|
+|106   |          \INT_KID[27].x_cr_clic_kid            |cr_clic_kid_130            |    23|
 |107   |          \INT_KID[28].x_cr_clic_kid            |cr_clic_kid_131            |    17|
 |108   |          \INT_KID[29].x_cr_clic_kid            |cr_clic_kid_132            |    20|
 |109   |          \INT_KID[2].x_cr_clic_kid             |cr_clic_kid_133            |     5|
-|110   |          \INT_KID[30].x_cr_clic_kid            |cr_clic_kid_134            |    18|
+|110   |          \INT_KID[30].x_cr_clic_kid            |cr_clic_kid_134            |    19|
 |111   |          \INT_KID[31].x_cr_clic_kid            |cr_clic_kid_135            |     4|
 |112   |          \INT_KID[32].x_cr_clic_kid            |cr_clic_kid_136            |    19|
 |113   |          \INT_KID[33].x_cr_clic_kid            |cr_clic_kid_137            |    19|
 |114   |          \INT_KID[34].x_cr_clic_kid            |cr_clic_kid_138            |    24|
-|115   |          \INT_KID[35].x_cr_clic_kid            |cr_clic_kid_139            |    30|
+|115   |          \INT_KID[35].x_cr_clic_kid            |cr_clic_kid_139            |    26|
 |116   |          \INT_KID[36].x_cr_clic_kid            |cr_clic_kid_140            |    17|
 |117   |          \INT_KID[37].x_cr_clic_kid            |cr_clic_kid_141            |    19|
-|118   |          \INT_KID[38].x_cr_clic_kid            |cr_clic_kid_142            |    20|
+|118   |          \INT_KID[38].x_cr_clic_kid            |cr_clic_kid_142            |    19|
 |119   |          \INT_KID[39].x_cr_clic_kid            |cr_clic_kid_143            |    18|
 |120   |          \INT_KID[3].x_cr_clic_kid             |cr_clic_kid_144            |     4|
 |121   |          \INT_KID[40].x_cr_clic_kid            |cr_clic_kid_145            |    19|
@@ -6081,7 +6049,7 @@ Report Instance Areas:
 |123   |          \INT_KID[42].x_cr_clic_kid            |cr_clic_kid_147            |     4|
 |124   |          \INT_KID[43].x_cr_clic_kid            |cr_clic_kid_148            |     4|
 |125   |          \INT_KID[44].x_cr_clic_kid            |cr_clic_kid_149            |     4|
-|126   |          \INT_KID[45].x_cr_clic_kid            |cr_clic_kid_150            |     4|
+|126   |          \INT_KID[45].x_cr_clic_kid            |cr_clic_kid_150            |    26|
 |127   |          \INT_KID[46].x_cr_clic_kid            |cr_clic_kid_151            |     4|
 |128   |          \INT_KID[47].x_cr_clic_kid            |cr_clic_kid_152            |     4|
 |129   |          \INT_KID[48].x_cr_clic_kid            |cr_clic_kid_153            |     4|
@@ -6103,22 +6071,22 @@ Report Instance Areas:
 |145   |          \INT_KID[62].x_cr_clic_kid            |cr_clic_kid_169            |     4|
 |146   |          \INT_KID[63].x_cr_clic_kid            |cr_clic_kid_170            |     4|
 |147   |          \INT_KID[6].x_cr_clic_kid             |cr_clic_kid_171            |     4|
-|148   |          \INT_KID[7].x_cr_clic_kid             |cr_clic_kid_172            |    20|
+|148   |          \INT_KID[7].x_cr_clic_kid             |cr_clic_kid_172            |    21|
 |149   |          \INT_KID[8].x_cr_clic_kid             |cr_clic_kid_173            |     4|
 |150   |          \INT_KID[9].x_cr_clic_kid             |cr_clic_kid_174            |     4|
 |151   |          x_cr_clic_arb                         |cr_clic_arb                |    58|
 |152   |        x_cr_coretim_top                        |cr_coretim_top             |   129|
 |153   |        x_cr_tcipif_dbus                        |cr_tcipif_behavior_bus     |   705|
 |154   |        x_cr_tcipif_ibus                        |cr_tcipif_dummy_bus        |     1|
-|155   |  x_pdu_top                                     |pdu_top                    | 40444|
-|156   |    x_main_bus_top                              |ahb_matrix_top             | 22589|
-|157   |      x_ahb_axi_kws                             |ahb_axi_kws                |  1006|
-|158   |      x_ahb_matrix_7_12_main                    |ahb_matrix_7_12_main       |  5389|
-|159   |        x_matrix_arb                            |ahb_matrix_7_12_arb        |  3786|
-|160   |        x_matrix_dec                            |ahb_matrix_7_12_dec        |  1603|
-|161   |      x_dmac_top                                |dmac_top                   | 15874|
-|162   |        x_ahbbusmux_ctrl                        |bmux_ctrl                  |   262|
-|163   |        x_arb_ctrl                              |arb_ctrl                   |   142|
+|155   |  x_pdu_top                                     |pdu_top                    | 38620|
+|156   |    x_main_bus_top                              |ahb_matrix_top             | 22034|
+|157   |      x_ahb_axi_kws                             |ahb_axi_kws                |   842|
+|158   |      x_ahb_matrix_7_12_main                    |ahb_matrix_7_12_main       |  5145|
+|159   |        x_matrix_arb                            |ahb_matrix_7_12_arb        |  3585|
+|160   |        x_matrix_dec                            |ahb_matrix_7_12_dec        |  1560|
+|161   |      x_dmac_top                                |dmac_top                   | 15728|
+|162   |        x_ahbbusmux_ctrl                        |bmux_ctrl                  |   243|
+|163   |        x_arb_ctrl                              |arb_ctrl                   |   141|
 |164   |          U_CH0TRGLATCH                         |chntrg_latch               |     5|
 |165   |          U_CH10TRGLATCH                        |chntrg_latch_97            |     7|
 |166   |          U_CH11TRGLATCH                        |chntrg_latch_98            |     4|
@@ -6130,51 +6098,51 @@ Report Instance Areas:
 |172   |          U_CH2TRGLATCH                         |chntrg_latch_104           |     5|
 |173   |          U_CH3TRGLATCH                         |chntrg_latch_105           |     4|
 |174   |          U_CH4TRGLATCH                         |chntrg_latch_106           |     4|
-|175   |          U_CH5TRGLATCH                         |chntrg_latch_107           |    26|
+|175   |          U_CH5TRGLATCH                         |chntrg_latch_107           |    25|
 |176   |          U_CH6TRGLATCH                         |chntrg_latch_108           |     4|
 |177   |          U_CH7TRGLATCH                         |chntrg_latch_109           |     4|
 |178   |          U_CH8TRGLATCH                         |chntrg_latch_110           |     3|
 |179   |          U_CH9TRGLATCH                         |chntrg_latch_111           |     5|
 |180   |          U_HPCHNS                              |hpchn_decd                 |    20|
-|181   |        x_chfsm_ctrl                            |ch_ctrl                    |  9177|
-|182   |          x_fsmc0                               |fsmc                       |   594|
-|183   |          x_fsmc1                               |fsmc_82                    |   561|
-|184   |          x_fsmc10                              |fsmc_83                    |   561|
-|185   |          x_fsmc11                              |fsmc_84                    |   561|
-|186   |          x_fsmc12                              |fsmc_85                    |   594|
-|187   |          x_fsmc13                              |fsmc_86                    |   561|
-|188   |          x_fsmc14                              |fsmc_87                    |   561|
-|189   |          x_fsmc15                              |fsmc_88                    |   563|
-|190   |          x_fsmc2                               |fsmc_89                    |   561|
-|191   |          x_fsmc3                               |fsmc_90                    |   626|
-|192   |          x_fsmc4                               |fsmc_91                    |   561|
-|193   |          x_fsmc5                               |fsmc_92                    |   561|
-|194   |          x_fsmc6                               |fsmc_93                    |   594|
-|195   |          x_fsmc7                               |fsmc_94                    |   561|
-|196   |          x_fsmc8                               |fsmc_95                    |   561|
-|197   |          x_fsmc9                               |fsmc_96                    |   596|
-|198   |        x_reg_ctrl                              |reg_ctrl                   |  6293|
-|199   |          x_chregc0                             |chregc0                    |   368|
-|200   |          x_chregc1                             |chregc1                    |   364|
-|201   |          x_chregc10                            |chregc10                   |   363|
-|202   |          x_chregc11                            |chregc11                   |   360|
-|203   |          x_chregc12                            |chregc12                   |   370|
-|204   |          x_chregc13                            |chregc13                   |   365|
-|205   |          x_chregc14                            |chregc14                   |   390|
-|206   |          x_chregc15                            |chregc15                   |   365|
-|207   |          x_chregc2                             |chregc2                    |   362|
-|208   |          x_chregc3                             |chregc3                    |   376|
-|209   |          x_chregc4                             |chregc4                    |   364|
-|210   |          x_chregc5                             |chregc5                    |   382|
-|211   |          x_chregc6                             |chregc6                    |   375|
-|212   |          x_chregc7                             |chregc7                    |   367|
-|213   |          x_chregc8                             |chregc8                    |   362|
-|214   |          x_chregc9                             |chregc9                    |   370|
+|181   |        x_chfsm_ctrl                            |ch_ctrl                    |  9035|
+|182   |          x_fsmc0                               |fsmc                       |   585|
+|183   |          x_fsmc1                               |fsmc_82                    |   552|
+|184   |          x_fsmc10                              |fsmc_83                    |   552|
+|185   |          x_fsmc11                              |fsmc_84                    |   552|
+|186   |          x_fsmc12                              |fsmc_85                    |   585|
+|187   |          x_fsmc13                              |fsmc_86                    |   552|
+|188   |          x_fsmc14                              |fsmc_87                    |   552|
+|189   |          x_fsmc15                              |fsmc_88                    |   554|
+|190   |          x_fsmc2                               |fsmc_89                    |   552|
+|191   |          x_fsmc3                               |fsmc_90                    |   619|
+|192   |          x_fsmc4                               |fsmc_91                    |   552|
+|193   |          x_fsmc5                               |fsmc_92                    |   552|
+|194   |          x_fsmc6                               |fsmc_93                    |   585|
+|195   |          x_fsmc7                               |fsmc_94                    |   552|
+|196   |          x_fsmc8                               |fsmc_95                    |   552|
+|197   |          x_fsmc9                               |fsmc_96                    |   587|
+|198   |        x_reg_ctrl                              |reg_ctrl                   |  6309|
+|199   |          x_chregc0                             |chregc0                    |   369|
+|200   |          x_chregc1                             |chregc1                    |   365|
+|201   |          x_chregc10                            |chregc10                   |   364|
+|202   |          x_chregc11                            |chregc11                   |   361|
+|203   |          x_chregc12                            |chregc12                   |   371|
+|204   |          x_chregc13                            |chregc13                   |   366|
+|205   |          x_chregc14                            |chregc14                   |   391|
+|206   |          x_chregc15                            |chregc15                   |   366|
+|207   |          x_chregc2                             |chregc2                    |   363|
+|208   |          x_chregc3                             |chregc3                    |   377|
+|209   |          x_chregc4                             |chregc4                    |   365|
+|210   |          x_chregc5                             |chregc5                    |   383|
+|211   |          x_chregc6                             |chregc6                    |   376|
+|212   |          x_chregc7                             |chregc7                    |   368|
+|213   |          x_chregc8                             |chregc8                    |   363|
+|214   |          x_chregc9                             |chregc9                    |   371|
 |215   |          x_gbregc                              |gbregc                     |    25|
-|216   |      x_main_dmem_top0                          |ahb_main_dmem_top          |   320|
-|217   |    x_sub_apb0_top                              |apb0_sub_top               | 12497|
-|218   |      x_apb0_sub_top                            |csky_apb0_top              |   960|
-|219   |        U_APB0_STATE_CTRL                       |apb0_state_ctrl            |   960|
+|216   |      x_main_dmem_top0                          |ahb_main_dmem_top          |   319|
+|217   |    x_sub_apb0_top                              |apb0_sub_top               | 12479|
+|218   |      x_apb0_sub_top                            |csky_apb0_top              |   950|
+|219   |        U_APB0_STATE_CTRL                       |apb0_state_ctrl            |   950|
 |220   |      x_pwm_sec_top                             |pwm_sec_top                |  6471|
 |221   |        x_pwm                                   |pwm                        |  6349|
 |222   |          x_pwm_apbif                           |pwm_apbif                  |  2014|
@@ -6185,12 +6153,12 @@ Report Instance Areas:
 |227   |            pwm_3_inst                          |pwm_gen_79                 |   696|
 |228   |            pwm_4_inst                          |pwm_gen_80                 |   711|
 |229   |            pwm_5_inst                          |pwm_gen_81                 |   710|
-|230   |      x_tim0_sec_top                            |tim0_sec_top               |   383|
-|231   |        x_tim_top                               |tim_top                    |   383|
-|232   |          x_timers_top                          |timers_top_73              |   383|
+|230   |      x_tim0_sec_top                            |tim0_sec_top               |   384|
+|231   |        x_tim_top                               |tim_top                    |   384|
+|232   |          x_timers_top                          |timers_top_73              |   384|
 |233   |            U_TIMER0                            |timers_frc_74              |    86|
 |234   |            U_TIMER1                            |timers_frc_75              |    86|
-|235   |            U_TIMERS_APBIF                      |timers_apbif_76            |   211|
+|235   |            U_TIMERS_APBIF                      |timers_apbif_76            |   212|
 |236   |      x_tim2_sec_top                            |tim2_sec_top               |   383|
 |237   |        x_tim2_tim_top                          |tim2_tim_top               |   383|
 |238   |          x_timers_top                          |timers_top_69              |   383|
@@ -6209,38 +6177,38 @@ Report Instance Areas:
 |251   |            U_TIMER0                            |timers_frc_62              |    86|
 |252   |            U_TIMER1                            |timers_frc_63              |    86|
 |253   |            U_TIMERS_APBIF                      |timers_apbif_64            |   211|
-|254   |      x_usi0_sec_top                            |usi0_sec_top               |  1642|
-|255   |        x_usi0                                  |usi_top_51                 |  1637|
+|254   |      x_usi0_sec_top                            |usi0_sec_top               |  1640|
+|255   |        x_usi0                                  |usi_top_51                 |  1635|
 |256   |          x_apb_if                              |apb_if_52                  |   429|
-|257   |          x_i2c_top                             |i2c_top_53                 |   621|
-|258   |            x_i2cm                              |i2cm_59                    |   417|
-|259   |            x_i2cs                              |i2cs_60                    |   204|
+|257   |          x_i2c_top                             |i2c_top_53                 |   619|
+|258   |            x_i2cm                              |i2cm_59                    |   416|
+|259   |            x_i2cs                              |i2cs_60                    |   203|
 |260   |          x_rx_sync_fifo_16x16                  |sync_fifo_16x16_54         |    43|
 |261   |          x_sdata_if                            |sdata_if_55                |    40|
 |262   |          x_spi                                 |spi_56                     |   204|
 |263   |          x_tx_sync_fifo_16x16                  |sync_fifo_16x16_57         |    44|
 |264   |          x_uart                                |uart_58                    |   238|
-|265   |      x_usi2_sec_top                            |usi2_sec_top               |  1644|
-|266   |        x_usi2                                  |usi_top_41                 |  1639|
-|267   |          x_apb_if                              |apb_if_42                  |   431|
-|268   |          x_i2c_top                             |i2c_top_43                 |   618|
-|269   |            x_i2cm                              |i2cm_49                    |   417|
-|270   |            x_i2cs                              |i2cs_50                    |   201|
-|271   |          x_rx_sync_fifo_16x16                  |sync_fifo_16x16_44         |    42|
+|265   |      x_usi2_sec_top                            |usi2_sec_top               |  1640|
+|266   |        x_usi2                                  |usi_top_41                 |  1635|
+|267   |          x_apb_if                              |apb_if_42                  |   429|
+|268   |          x_i2c_top                             |i2c_top_43                 |   619|
+|269   |            x_i2cm                              |i2cm_49                    |   416|
+|270   |            x_i2cs                              |i2cs_50                    |   203|
+|271   |          x_rx_sync_fifo_16x16                  |sync_fifo_16x16_44         |    43|
 |272   |          x_sdata_if                            |sdata_if_45                |    40|
-|273   |          x_spi                                 |spi_46                     |   205|
-|274   |          x_tx_sync_fifo_16x16                  |sync_fifo_16x16_47         |    45|
-|275   |          x_uart                                |uart_48                    |   240|
-|276   |      x_wdt_sec_top                             |wdt_sec_top                |   248|
-|277   |        x_wdt                                   |wdt                        |   248|
+|273   |          x_spi                                 |spi_46                     |   204|
+|274   |          x_tx_sync_fifo_16x16                  |sync_fifo_16x16_47         |    44|
+|275   |          x_uart                                |uart_48                    |   238|
+|276   |      x_wdt_sec_top                             |wdt_sec_top                |   245|
+|277   |        x_wdt                                   |wdt                        |   245|
 |278   |          U_WDT_BIU                             |wdt_biu                    |    32|
-|279   |          U_WDT_ISRC                            |wdt_isrc                   |   163|
-|280   |            U_WDT_CNT                           |wdt_cnt                    |   138|
+|279   |          U_WDT_ISRC                            |wdt_isrc                   |   154|
+|280   |            U_WDT_CNT                           |wdt_cnt                    |   129|
 |281   |            U_WDT_ISRG                          |wdt_isrg                   |    25|
-|282   |          U_WDT_REGFILE                         |wdt_regfile                |    53|
-|283   |    x_sub_apb1_top                              |apb1_sub_top               |  3878|
-|284   |      x_apb1_sub_top                            |csky_apb1_top              |   703|
-|285   |        U_APB1_STATE_CTRL                       |apb1_state_ctrl            |   703|
+|282   |          U_WDT_REGFILE                         |wdt_regfile                |    59|
+|283   |    x_sub_apb1_top                              |apb1_sub_top               |  3863|
+|284   |      x_apb1_sub_top                            |csky_apb1_top              |   690|
+|285   |        U_APB1_STATE_CTRL                       |apb1_state_ctrl            |   690|
 |286   |      x_tim1_sec_top                            |tim1_sec_top               |   384|
 |287   |        x_tim1_tim_top                          |tim1_tim_top               |   384|
 |288   |          x_timers_top                          |timers_top_37              |   384|
@@ -6265,83 +6233,82 @@ Report Instance Areas:
 |307   |            U_TIMER0                            |timers_frc                 |    86|
 |308   |            U_TIMER1                            |timers_frc_28              |    86|
 |309   |            U_TIMERS_APBIF                      |timers_apbif               |   211|
-|310   |      x_usi1_sec_top                            |usi1_sec_top               |  1642|
-|311   |        x_usi1                                  |usi_top                    |  1637|
+|310   |      x_usi1_sec_top                            |usi1_sec_top               |  1640|
+|311   |        x_usi1                                  |usi_top                    |  1635|
 |312   |          x_apb_if                              |apb_if                     |   429|
-|313   |          x_i2c_top                             |i2c_top                    |   621|
-|314   |            x_i2cm                              |i2cm                       |   417|
-|315   |            x_i2cs                              |i2cs                       |   204|
+|313   |          x_i2c_top                             |i2c_top                    |   619|
+|314   |            x_i2cm                              |i2cm                       |   416|
+|315   |            x_i2cs                              |i2cs                       |   203|
 |316   |          x_rx_sync_fifo_16x16                  |sync_fifo_16x16            |    43|
 |317   |          x_sdata_if                            |sdata_if                   |    40|
 |318   |          x_spi                                 |spi                        |   204|
 |319   |          x_tx_sync_fifo_16x16                  |sync_fifo_16x16_27         |    44|
 |320   |          x_uart                                |uart                       |   238|
-|321   |    x_sub_ls_top                                |ls_sub_top                 |  1476|
-|322   |      x_ahb_axi_preprocess                      |ahb_axi_preprocess         |   831|
-|323   |      x_sub_ls_top                              |ahb_matrix_1_6_sub         |   645|
-|324   |        x_matrix_sub_dec                        |ahb_matrix_1_6_sub_dec     |   645|
-|325   |  x_retu_top                                    |retu_top                   |   313|
-|326   |    x_smu_top                                   |smu_top                    |   313|
-|327   |      x_sms_top                                 |sms_top                    |   313|
-|328   |        x_isram_top                             |sms_bank_64k_top           |    62|
-|329   |          x_sms_sms_ahbs                        |sms_sms_ahbs_bk2_20        |    45|
-|330   |          x_sms_sram                            |sms_sram_bk2_21            |    17|
-|331   |            x_fpga_spram                        |fpga_spram_22              |    16|
-|332   |              x_fpga_byte0_spram                |fpga_byte_spram_23         |     4|
-|333   |              x_fpga_byte1_spram                |fpga_byte_spram_24         |     4|
-|334   |              x_fpga_byte2_spram                |fpga_byte_spram_25         |     4|
-|335   |              x_fpga_byte3_spram                |fpga_byte_spram_26         |     4|
-|336   |        x_sms0_top                              |sms_bank_64k_top_0         |    63|
-|337   |          x_sms_sms_ahbs                        |sms_sms_ahbs_bk2_13        |    46|
-|338   |          x_sms_sram                            |sms_sram_bk2_14            |    17|
-|339   |            x_fpga_spram                        |fpga_spram_15              |    16|
-|340   |              x_fpga_byte0_spram                |fpga_byte_spram_16         |     4|
-|341   |              x_fpga_byte1_spram                |fpga_byte_spram_17         |     4|
-|342   |              x_fpga_byte2_spram                |fpga_byte_spram_18         |     4|
-|343   |              x_fpga_byte3_spram                |fpga_byte_spram_19         |     4|
-|344   |        x_sms1_top                              |sms_bank_64k_top_1         |    94|
-|345   |          x_sms_sms_ahbs                        |sms_sms_ahbs_bk2_6         |    77|
-|346   |          x_sms_sram                            |sms_sram_bk2_7             |    17|
-|347   |            x_fpga_spram                        |fpga_spram_8               |    16|
-|348   |              x_fpga_byte0_spram                |fpga_byte_spram_9          |     4|
-|349   |              x_fpga_byte1_spram                |fpga_byte_spram_10         |     4|
-|350   |              x_fpga_byte2_spram                |fpga_byte_spram_11         |     4|
-|351   |              x_fpga_byte3_spram                |fpga_byte_spram_12         |     4|
-|352   |        x_sms2_top                              |sms_bank_64k_top_2         |    94|
-|353   |          x_sms_sms_ahbs                        |sms_sms_ahbs_bk2           |    77|
-|354   |          x_sms_sram                            |sms_sram_bk2               |    17|
-|355   |            x_fpga_spram                        |fpga_spram                 |    16|
-|356   |              x_fpga_byte0_spram                |fpga_byte_spram            |     4|
-|357   |              x_fpga_byte1_spram                |fpga_byte_spram_3          |     4|
-|358   |              x_fpga_byte2_spram                |fpga_byte_spram_4          |     4|
-|359   |              x_fpga_byte3_spram                |fpga_byte_spram_5          |     4|
+|321   |    x_sub_ls_top                                |ls_sub_top                 |   240|
+|322   |      x_sub_ls_top                              |ahb_matrix_1_6_sub         |   240|
+|323   |        x_matrix_sub_dec                        |ahb_matrix_1_6_sub_dec     |   240|
+|324   |  x_retu_top                                    |retu_top                   |   376|
+|325   |    x_smu_top                                   |smu_top                    |   376|
+|326   |      x_sms_top                                 |sms_top                    |   376|
+|327   |        x_isram_top                             |sms_bank_64k_top           |    95|
+|328   |          x_sms_sms_ahbs                        |sms_sms_ahbs_bk2_20        |    78|
+|329   |          x_sms_sram                            |sms_sram_bk2_21            |    17|
+|330   |            x_fpga_spram                        |fpga_spram_22              |    16|
+|331   |              x_fpga_byte0_spram                |fpga_byte_spram_23         |     4|
+|332   |              x_fpga_byte1_spram                |fpga_byte_spram_24         |     4|
+|333   |              x_fpga_byte2_spram                |fpga_byte_spram_25         |     4|
+|334   |              x_fpga_byte3_spram                |fpga_byte_spram_26         |     4|
+|335   |        x_sms0_top                              |sms_bank_64k_top_0         |    95|
+|336   |          x_sms_sms_ahbs                        |sms_sms_ahbs_bk2_13        |    78|
+|337   |          x_sms_sram                            |sms_sram_bk2_14            |    17|
+|338   |            x_fpga_spram                        |fpga_spram_15              |    16|
+|339   |              x_fpga_byte0_spram                |fpga_byte_spram_16         |     4|
+|340   |              x_fpga_byte1_spram                |fpga_byte_spram_17         |     4|
+|341   |              x_fpga_byte2_spram                |fpga_byte_spram_18         |     4|
+|342   |              x_fpga_byte3_spram                |fpga_byte_spram_19         |     4|
+|343   |        x_sms1_top                              |sms_bank_64k_top_1         |    86|
+|344   |          x_sms_sms_ahbs                        |sms_sms_ahbs_bk2_6         |    61|
+|345   |          x_sms_sram                            |sms_sram_bk2_7             |    25|
+|346   |            x_fpga_spram                        |fpga_spram_8               |    24|
+|347   |              x_fpga_byte0_spram                |fpga_byte_spram_9          |     6|
+|348   |              x_fpga_byte1_spram                |fpga_byte_spram_10         |     6|
+|349   |              x_fpga_byte2_spram                |fpga_byte_spram_11         |     6|
+|350   |              x_fpga_byte3_spram                |fpga_byte_spram_12         |     6|
+|351   |        x_sms2_top                              |sms_bank_64k_top_2         |   100|
+|352   |          x_sms_sms_ahbs                        |sms_sms_ahbs_bk2           |    69|
+|353   |          x_sms_sram                            |sms_sram_bk2               |    31|
+|354   |            x_fpga_spram                        |fpga_spram                 |    30|
+|355   |              x_fpga_byte0_spram                |fpga_byte_spram            |     8|
+|356   |              x_fpga_byte1_spram                |fpga_byte_spram_3          |     5|
+|357   |              x_fpga_byte2_spram                |fpga_byte_spram_4          |     7|
+|358   |              x_fpga_byte3_spram                |fpga_byte_spram_5          |    10|
 +------+------------------------------------------------+---------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:13:27 ; elapsed = 00:14:00 . Memory (MB): peak = 2117.051 ; gain = 1337.012
+Finished Writing Synthesis Report : Time (s): cpu = 00:13:15 ; elapsed = 00:13:53 . Memory (MB): peak = 2056.184 ; gain = 1274.336
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 298 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:12:11 ; elapsed = 00:13:35 . Memory (MB): peak = 2117.051 ; gain = 1072.457
-Synthesis Optimization Complete : Time (s): cpu = 00:13:27 ; elapsed = 00:14:08 . Memory (MB): peak = 2117.051 ; gain = 1337.012
+Synthesis finished with 0 errors, 1 critical warnings and 298 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:12:03 ; elapsed = 00:13:32 . Memory (MB): peak = 2056.184 ; gain = 1031.719
+Synthesis Optimization Complete : Time (s): cpu = 00:13:15 ; elapsed = 00:14:03 . Memory (MB): peak = 2056.184 ; gain = 1274.336
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2117.051 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 2048 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2056.184 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2049 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2117.051 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2056.184 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 69 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 51 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 18 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-749 Infos, 217 Warnings, 0 Critical Warnings and 0 Errors encountered.
+746 Infos, 222 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:13:49 ; elapsed = 00:14:42 . Memory (MB): peak = 2117.051 ; gain = 1660.273
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2117.051 ; gain = 0.000
+synth_design: Time (s): cpu = 00:13:36 ; elapsed = 00:14:37 . Memory (MB): peak = 2056.184 ; gain = 1599.660
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2056.184 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'D:/wulian/KWS-SOC/KWS-SOC.runs/synth_1/wujian100_open_top.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 2117.051 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.runs/synth_1/wujian100_open_top.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 2056.184 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file wujian100_open_top_utilization_synth.rpt -pb wujian100_open_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jul  1 23:50:27 2020...
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 24 13:50:16 2020...

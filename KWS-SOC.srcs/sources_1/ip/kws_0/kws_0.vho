@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:hls:kws:1.0
--- IP Revision: 2006301106
+-- IP Revision: 2008241312
 
 -- The following code must appear in the VHDL architecture header.
 
@@ -66,12 +66,8 @@ COMPONENT kws_0
     weight_in_TLAST : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     control_in_TVALID : IN STD_LOGIC;
     control_in_TREADY : OUT STD_LOGIC;
-    control_in_TDATA : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    control_in_TDATA : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     control_in_TLAST : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    keep_in_TVALID : IN STD_LOGIC;
-    keep_in_TREADY : OUT STD_LOGIC;
-    keep_in_TDATA : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-    keep_in_TLAST : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     data_out_TVALID : OUT STD_LOGIC;
     data_out_TREADY : IN STD_LOGIC;
     data_out_TDATA : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -100,10 +96,6 @@ your_instance_name : kws_0
     control_in_TREADY => control_in_TREADY,
     control_in_TDATA => control_in_TDATA,
     control_in_TLAST => control_in_TLAST,
-    keep_in_TVALID => keep_in_TVALID,
-    keep_in_TREADY => keep_in_TREADY,
-    keep_in_TDATA => keep_in_TDATA,
-    keep_in_TLAST => keep_in_TLAST,
     data_out_TVALID => data_out_TVALID,
     data_out_TREADY => data_out_TREADY,
     data_out_TDATA => data_out_TDATA,

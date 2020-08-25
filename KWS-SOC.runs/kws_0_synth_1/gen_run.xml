@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="kws_0_synth_1" LaunchPart="xc7a200tfbg484-1" LaunchTime="1593614812">
+<GenRun Id="kws_0_synth_1" LaunchPart="xc7a200tfbg484-1" LaunchTime="1598246328">
   <File Type="PA-TCL" Name="kws_0.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="kws_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="kws_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="kws_0.vds"/>
   <File Type="RDS-UTIL" Name="kws_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="kws_0_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="kws_0.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="kws_0_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="kws_0_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/kws_0">
     <File Path="$PSRCDIR/sources_1/ip/kws_0/kws_0.xci">
       <FileInfo>
@@ -39,7 +42,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

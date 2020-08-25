@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L axis_infrastructure_v1_1_0 -L axis_data_fifo_v2_0_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot axis_data_fifo_0 xil_defaultlib.axis_data_fifo_0 xil_defaultlib.glbl -log elaborate.log

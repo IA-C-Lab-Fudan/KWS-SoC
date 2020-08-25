@@ -57,7 +57,7 @@
 axi_bram_ctrl_0 your_instance_name (
   .s_axi_aclk(s_axi_aclk),        // input wire s_axi_aclk
   .s_axi_aresetn(s_axi_aresetn),  // input wire s_axi_aresetn
-  .s_axi_awaddr(s_axi_awaddr),    // input wire [17 : 0] s_axi_awaddr
+  .s_axi_awaddr(s_axi_awaddr),    // input wire [15 : 0] s_axi_awaddr
   .s_axi_awprot(s_axi_awprot),    // input wire [2 : 0] s_axi_awprot
   .s_axi_awvalid(s_axi_awvalid),  // input wire s_axi_awvalid
   .s_axi_awready(s_axi_awready),  // output wire s_axi_awready
@@ -68,7 +68,7 @@ axi_bram_ctrl_0 your_instance_name (
   .s_axi_bresp(s_axi_bresp),      // output wire [1 : 0] s_axi_bresp
   .s_axi_bvalid(s_axi_bvalid),    // output wire s_axi_bvalid
   .s_axi_bready(s_axi_bready),    // input wire s_axi_bready
-  .s_axi_araddr(s_axi_araddr),    // input wire [17 : 0] s_axi_araddr
+  .s_axi_araddr(s_axi_araddr),    // input wire [15 : 0] s_axi_araddr
   .s_axi_arprot(s_axi_arprot),    // input wire [2 : 0] s_axi_arprot
   .s_axi_arvalid(s_axi_arvalid),  // input wire s_axi_arvalid
   .s_axi_arready(s_axi_arready),  // output wire s_axi_arready
@@ -80,7 +80,7 @@ axi_bram_ctrl_0 your_instance_name (
   .bram_clk_a(bram_clk_a),        // output wire bram_clk_a
   .bram_en_a(bram_en_a),          // output wire bram_en_a
   .bram_we_a(bram_we_a),          // output wire [3 : 0] bram_we_a
-  .bram_addr_a(bram_addr_a),      // output wire [17 : 0] bram_addr_a
+  .bram_addr_a(bram_addr_a),      // output wire [15 : 0] bram_addr_a
   .bram_wrdata_a(bram_wrdata_a),  // output wire [31 : 0] bram_wrdata_a
   .bram_rddata_a(bram_rddata_a)  // input wire [31 : 0] bram_rddata_a
 );

@@ -869,7 +869,7 @@ int32_t drv_usi_spi_receive(spi_handle_t handle, void *data, uint32_t num)
         spi_priv->recv_num = num;
 
         while (spi_priv->recv_num) {
-            int timeout = 1000000;
+
             wj_spi_set_mode(spi_priv, WJENUM_SPI_TXRX);
 
             addr->USI_EN = 0x0;
@@ -877,17 +877,17 @@ int32_t drv_usi_spi_receive(spi_handle_t handle, void *data, uint32_t num)
             uint32_t once_len = (spi_priv->recv_num >= USI_RX_MAX_FIFO) ?
                                 USI_RX_MAX_FIFO : spi_priv->recv_num;
             int i = 0;
-
-            for (i = 0; i < once_len; i++) {
+			
+			for (i = 0; i < once_len; i++) {
                 addr->USI_TX_RX_FIFO = 0;
             }
 
-            while ((addr->USI_SPI_STA == 0x1) && (timeout--));
+
+            while ((addr->USI_SPI_STA == 0x1) );
 
             for (i = 0; i < once_len; i++) {
-                timeout = 1000000;
 
-                while ((addr->USI_FIFO_STA & 0x4) && (timeout--));
+                while ((addr->USI_FIFO_STA & 0x4));
 
                 *spi_priv->recv_buf++ = addr->USI_TX_RX_FIFO;
             }
@@ -919,6 +919,7 @@ int32_t drv_usi_spi_receive(spi_handle_t handle, void *data, uint32_t num)
 
     return 0;
 }
+
 
 /**
   \brief       sending/receiving data to/from SPI transmitter/receiver.
@@ -970,7 +971,6 @@ int32_t drv_usi_spi_transfer(spi_handle_t handle, const void *data_out, void *da
         uint32_t txrx_num;
 
         while (spi_priv->tot_num) {
-            int timeout = 1000000;
 
             if (spi_priv->tot_num > USI_TX_MAX_FIFO) {
                 txrx_num = USI_TX_MAX_FIFO;
@@ -983,7 +983,7 @@ int32_t drv_usi_spi_transfer(spi_handle_t handle, const void *data_out, void *da
                 ptx_buffer++;
             }
 
-            while ((addr->USI_SPI_STA == 0x1) && (timeout--));
+            while ((addr->USI_SPI_STA == 0x1));
 
             for (i = 0; i < txrx_num; i++) {
                 *prx_buffer = addr->USI_TX_RX_FIFO;

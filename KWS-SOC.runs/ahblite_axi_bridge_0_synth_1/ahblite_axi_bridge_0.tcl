@@ -29,11 +29,6 @@ set_property webtalk.parent_dir D:/wulian/KWS-SOC/KWS-SOC.cache/wt [current_proj
 set_property parent.project_path D:/wulian/KWS-SOC/KWS-SOC.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_repo_paths {
-  d:/wulian/kws_hls/kws_hls_1/kws_hls_1/solution1/impl/ip
-  d:/wulian/MFCCHLS_V1/PreProcess/solution1/impl/ip
-} [current_project]
-update_ip_catalog
 set_property ip_output_repo d:/wulian/KWS-SOC/KWS-SOC.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_ip -quiet d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/ahblite_axi_bridge_0/ahblite_axi_bridge_0.xci

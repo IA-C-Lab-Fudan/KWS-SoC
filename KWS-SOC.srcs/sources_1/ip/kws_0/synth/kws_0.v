@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:kws:1.0
-// IP Revision: 2006301106
+// IP Revision: 2008241312
 
 (* X_CORE_INFO = "kws,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "kws_0,kws,{}" *)
-(* CORE_GENERATION_INFO = "kws_0,kws,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=kws,x_ipVersion=1.0,x_ipCoreRevision=2006301106,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "kws_0,kws,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=kws,x_ipVersion=1.0,x_ipCoreRevision=2008241312,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module kws_0 (
@@ -70,17 +70,13 @@ module kws_0 (
   control_in_TREADY,
   control_in_TDATA,
   control_in_TLAST,
-  keep_in_TVALID,
-  keep_in_TREADY,
-  keep_in_TDATA,
-  keep_in_TLAST,
   data_out_TVALID,
   data_out_TREADY,
   data_out_TDATA,
   data_out_TLAST
 );
 
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF data_in:weight_in:control_in:keep_in:data_out, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 100000000, PHASE 0.000, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF data_in:weight_in:control_in:data_out, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 100000000, PHASE 0.000, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *)
 input wire ap_clk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
@@ -109,19 +105,10 @@ input wire control_in_TVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 control_in TREADY" *)
 output wire control_in_TREADY;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 control_in TDATA" *)
-input wire [31 : 0] control_in_TDATA;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME control_in, TDATA_NUM_BYTES 4, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, INSERT_VIP 0" *)
+input wire [15 : 0] control_in_TDATA;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME control_in, TDATA_NUM_BYTES 2, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 control_in TLAST" *)
 input wire [0 : 0] control_in_TLAST;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 keep_in TVALID" *)
-input wire keep_in_TVALID;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 keep_in TREADY" *)
-output wire keep_in_TREADY;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 keep_in TDATA" *)
-input wire [31 : 0] keep_in_TDATA;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME keep_in, TDATA_NUM_BYTES 4, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, INSERT_VIP 0" *)
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 keep_in TLAST" *)
-input wire [0 : 0] keep_in_TLAST;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 data_out TVALID" *)
 output wire data_out_TVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 data_out TREADY" *)
@@ -147,10 +134,6 @@ output wire [0 : 0] data_out_TLAST;
     .control_in_TREADY(control_in_TREADY),
     .control_in_TDATA(control_in_TDATA),
     .control_in_TLAST(control_in_TLAST),
-    .keep_in_TVALID(keep_in_TVALID),
-    .keep_in_TREADY(keep_in_TREADY),
-    .keep_in_TDATA(keep_in_TDATA),
-    .keep_in_TLAST(keep_in_TLAST),
     .data_out_TVALID(data_out_TVALID),
     .data_out_TREADY(data_out_TREADY),
     .data_out_TDATA(data_out_TDATA),

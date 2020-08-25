@@ -5,7 +5,7 @@
 `timescale 1 ns / 1 ps
 module grucell_zz_ram (addr0, ce0, d0, we0, q0,  clk);
 
-parameter DWIDTH = 16;
+parameter DWIDTH = 32;
 parameter AWIDTH = 6;
 parameter MEM_SIZE = 64;
 
@@ -46,7 +46,7 @@ module grucell_zz(
     d0,
     q0);
 
-parameter DataWidth = 32'd16;
+parameter DataWidth = 32'd32;
 parameter AddressRange = 32'd64;
 parameter AddressWidth = 32'd6;
 input reset;

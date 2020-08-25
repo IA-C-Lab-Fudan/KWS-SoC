@@ -2,11 +2,11 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Wed Jul  1 23:35:23 2020
-# Process ID: 2232
-# Current directory: D:/wulian/KWS-SOC/KWS-SOC.runs/synth_1
+# Start of session at: Mon Aug 24 13:35:10 2020
+# Process ID: 18100
+# Current directory: D:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.runs/synth_1
 # Command line: vivado.exe -log wujian100_open_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source wujian100_open_top.tcl
-# Log file: D:/wulian/KWS-SOC/KWS-SOC.runs/synth_1/wujian100_open_top.vds
-# Journal file: D:/wulian/KWS-SOC/KWS-SOC.runs/synth_1\vivado.jou
+# Log file: D:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.runs/synth_1/wujian100_open_top.vds
+# Journal file: D:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source wujian100_open_top.tcl -notrace

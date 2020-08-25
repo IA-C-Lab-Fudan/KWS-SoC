@@ -9,10 +9,8 @@
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source axi_bram_ctrl_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 424.363 ; gain = 144.758
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/wulian/kws_hls/kws_hls_1/kws_hls_1/solution1/impl/ip'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/wulian/MFCCHLS_V1/PreProcess/solution1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/wulian/DD/KWS-SOC-8bit/kws-ip/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'.
 Command: synth_design -top axi_bram_ctrl_0 -part xc7a200tfbg484-1 -mode out_of_context
 Starting synth_design
@@ -20,15 +18,15 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Device 21-403] Loading part xc7a200tfbg484-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8988 
+INFO: Helper process launched with PID 6356 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1011.730 ; gain = 234.988
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1012.457 ; gain = 235.043
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_0' [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/synth/axi_bram_ctrl_0.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_0' [d:/wulian/DD/KWS-SOC-8bit/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/synth/axi_bram_ctrl_0.vhd:92]
 	Parameter C_BRAM_INST_MODE bound to: EXTERNAL - type: string 
-	Parameter C_MEMORY_DEPTH bound to: 65536 - type: integer 
-	Parameter C_BRAM_ADDR_WIDTH bound to: 16 - type: integer 
-	Parameter C_S_AXI_ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter C_MEMORY_DEPTH bound to: 16384 - type: integer 
+	Parameter C_BRAM_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 16 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXI_PROTOCOL bound to: AXI4LITE - type: string 
@@ -43,12 +41,12 @@ INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_0' [d:/wulian/KWS-SOC/KWS
 	Parameter C_ECC_TYPE bound to: 0 - type: integer 
 	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
 	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'axi_bram_ctrl' declared at 'd:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31357' bound to instance 'U0' of component 'axi_bram_ctrl' [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/synth/axi_bram_ctrl_0.vhd:231]
-INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl' [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31528]
+INFO: [Synth 8-3491] module 'axi_bram_ctrl' declared at 'd:/wulian/DD/KWS-SOC-8bit/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31357' bound to instance 'U0' of component 'axi_bram_ctrl' [d:/wulian/DD/KWS-SOC-8bit/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/synth/axi_bram_ctrl_0.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl' [d:/wulian/DD/KWS-SOC-8bit/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31528]
 	Parameter C_BRAM_INST_MODE bound to: EXTERNAL - type: string 
-	Parameter C_MEMORY_DEPTH bound to: 65536 - type: integer 
-	Parameter C_BRAM_ADDR_WIDTH bound to: 16 - type: integer 
-	Parameter C_S_AXI_ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter C_MEMORY_DEPTH bound to: 16384 - type: integer 
+	Parameter C_BRAM_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 16 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXI_PROTOCOL bound to: AXI4LITE - type: string 
@@ -63,9 +61,9 @@ INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl' [d:/wulian/KWS-SOC/KWS-S
 	Parameter C_ECC_TYPE bound to: 0 - type: integer 
 	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
 	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_top' [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30527]
-	Parameter C_BRAM_ADDR_WIDTH bound to: 16 - type: integer 
-	Parameter C_S_AXI_ADDR_WIDTH bound to: 18 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_top' [d:/wulian/DD/KWS-SOC-8bit/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30527]
+	Parameter C_BRAM_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 16 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXI_PROTOCOL bound to: AXI4LITE - type: string 
@@ -80,9 +78,9 @@ INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_top' [d:/wulian/KWS-SOC/K
 	Parameter C_ECC_TYPE bound to: 0 - type: integer 
 	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
 	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_lite' [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:6841]
+INFO: [Synth 8-638] synthesizing module 'axi_lite' [d:/wulian/DD/KWS-SOC-8bit/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:6841]
 	Parameter C_S_AXI_PROTOCOL bound to: AXI4LITE - type: string 
-	Parameter C_S_AXI_ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 16 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer 
 	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
@@ -100,13 +98,13 @@ INFO: [Synth 8-638] synthesizing module 'axi_lite' [d:/wulian/KWS-SOC/KWS-SOC.sr
 	Parameter C_ECC_STATUS_REGISTERS bound to: 0 - type: integer 
 	Parameter C_ECC_ONOFF_REGISTER bound to: 0 - type: integer 
 	Parameter C_CE_COUNTER_WIDTH bound to: 0 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element GEN_NO_RD_CMD_OPT.axi_arready_reg_reg was removed.  [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:8429]
-WARNING: [Synth 8-6014] Unused sequential element GEN_NO_RD_CMD_OPT.axi_rvalid_set_r_reg was removed.  [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:8430]
-WARNING: [Synth 8-6014] Unused sequential element GEN_NO_RD_CMD_OPT.axi_rlast_set_r_reg was removed.  [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:8431]
-INFO: [Synth 8-256] done synthesizing module 'axi_lite' (1#1) [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:6841]
-INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl_top' (2#1) [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30527]
-INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl' (3#1) [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31528]
-INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl_0' (4#1) [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/synth/axi_bram_ctrl_0.vhd:92]
+WARNING: [Synth 8-6014] Unused sequential element GEN_NO_RD_CMD_OPT.axi_arready_reg_reg was removed.  [d:/wulian/DD/KWS-SOC-8bit/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:8429]
+WARNING: [Synth 8-6014] Unused sequential element GEN_NO_RD_CMD_OPT.axi_rvalid_set_r_reg was removed.  [d:/wulian/DD/KWS-SOC-8bit/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:8430]
+WARNING: [Synth 8-6014] Unused sequential element GEN_NO_RD_CMD_OPT.axi_rlast_set_r_reg was removed.  [d:/wulian/DD/KWS-SOC-8bit/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:8431]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite' (1#1) [d:/wulian/DD/KWS-SOC-8bit/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:6841]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl_top' (2#1) [d:/wulian/DD/KWS-SOC-8bit/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30527]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl' (3#1) [d:/wulian/DD/KWS-SOC-8bit/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31528]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl_0' (4#1) [d:/wulian/DD/KWS-SOC-8bit/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/synth/axi_bram_ctrl_0.vhd:92]
 WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_AWADDR[1]
 WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_AWADDR[0]
 WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_ARADDR[1]
@@ -209,7 +207,7 @@ WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[4]
 WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[3]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1094.875 ; gain = 318.133
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1095.383 ; gain = 317.969
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -222,45 +220,45 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1094.875 ; gain = 318.133
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1095.383 ; gain = 317.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1094.875 ; gain = 318.133
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1095.383 ; gain = 317.969
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1094.875 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1095.383 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/axi_bram_ctrl_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/axi_bram_ctrl_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [D:/wulian/KWS-SOC/KWS-SOC.runs/axi_bram_ctrl_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [D:/wulian/KWS-SOC/KWS-SOC.runs/axi_bram_ctrl_0_synth_1/dont_touch.xdc]
+Parsing XDC File [d:/wulian/DD/KWS-SOC-8bit/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/axi_bram_ctrl_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/wulian/DD/KWS-SOC-8bit/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/axi_bram_ctrl_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [D:/wulian/DD/KWS-SOC-8bit/KWS-SOC.runs/axi_bram_ctrl_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/wulian/DD/KWS-SOC-8bit/KWS-SOC.runs/axi_bram_ctrl_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1175.449 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1175.270 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 1186.090 ; gain = 10.641
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1186.699 ; gain = 11.430
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1186.090 ; gain = 409.348
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1186.699 ; gain = 409.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1186.090 ; gain = 409.348
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1186.699 ; gain = 409.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for U0. (constraint file  D:/wulian/KWS-SOC/KWS-SOC.runs/axi_bram_ctrl_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for U0. (constraint file  D:/wulian/DD/KWS-SOC-8bit/KWS-SOC.runs/axi_bram_ctrl_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1186.090 ; gain = 409.348
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1186.699 ; gain = 409.285
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4471] merging register 'GEN_NO_RD_CMD_OPT.GEN_R.axi_rlast_int_reg' into 'GEN_NO_RD_CMD_OPT.GEN_R.axi_rvalid_int_reg' [d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:7279]
+INFO: [Synth 8-4471] merging register 'GEN_NO_RD_CMD_OPT.GEN_R.axi_rlast_int_reg' into 'GEN_NO_RD_CMD_OPT.GEN_R.axi_rvalid_int_reg' [d:/wulian/DD/KWS-SOC-8bit/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:7279]
 INFO: [Synth 8-802] inferred FSM for state register 'GEN_NO_RD_CMD_OPT.lite_sm_cs_reg' in module 'axi_lite'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -271,7 +269,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'GEN_NO_RD_CMD_OPT.lite_sm_c
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'GEN_NO_RD_CMD_OPT.lite_sm_cs_reg' using encoding 'one-hot' in module 'axi_lite'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1186.090 ; gain = 409.348
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1186.699 ; gain = 409.285
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -294,7 +292,7 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit        Muxes := 2     
 	   3 Input      4 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 19    
+	   2 Input      1 Bit        Muxes := 17    
 	   3 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -316,7 +314,7 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit        Muxes := 2     
 	   3 Input      4 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 19    
+	   2 Input      1 Bit        Muxes := 17    
 	   3 Input      1 Bit        Muxes := 4     
 Module axi_bram_ctrl_top 
 Detailed RTL Component Info : 
@@ -342,7 +340,7 @@ INFO: [Synth 8-3332] Sequential element (gext_inst.abcv4_0_ext_inst/GEN_AXI4LITE
 INFO: [Synth 8-3332] Sequential element (gext_inst.abcv4_0_ext_inst/GEN_AXI4LITE.I_AXI_LITE/FSM_onehot_GEN_NO_RD_CMD_OPT.lite_sm_cs_reg[2]) is unused and will be removed from module axi_bram_ctrl.
 INFO: [Synth 8-3332] Sequential element (gext_inst.abcv4_0_ext_inst/GEN_AXI4LITE.I_AXI_LITE/FSM_onehot_GEN_NO_RD_CMD_OPT.lite_sm_cs_reg[1]) is unused and will be removed from module axi_bram_ctrl.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1186.090 ; gain = 409.348
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1186.699 ; gain = 409.285
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -354,13 +352,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1186.090 ; gain = 409.348
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1186.699 ; gain = 409.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1186.090 ; gain = 409.348
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1186.699 ; gain = 409.285
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -372,7 +370,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1186.090 ; gain = 409.348
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1186.699 ; gain = 409.285
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -396,13 +394,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1187.258 ; gain = 410.516
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1188.773 ; gain = 411.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1187.258 ; gain = 410.516
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1188.773 ; gain = 411.359
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -421,25 +419,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1187.258 ; gain = 410.516
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1188.773 ; gain = 411.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1187.258 ; gain = 410.516
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1188.773 ; gain = 411.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1187.258 ; gain = 410.516
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1188.773 ; gain = 411.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1187.258 ; gain = 410.516
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1188.773 ; gain = 411.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -460,7 +458,7 @@ Report Cell Usage:
 |3     |LUT3 |     5|
 |4     |LUT4 |     1|
 |5     |LUT5 |     5|
-|6     |LUT6 |    24|
+|6     |LUT6 |    22|
 |7     |FDRE |    13|
 |8     |FDSE |     1|
 +------+-----+------+
@@ -469,39 +467,39 @@ Report Instance Areas:
 +------+---------------------------------+------------------+------+
 |      |Instance                         |Module            |Cells |
 +------+---------------------------------+------------------+------+
-|1     |top                              |                  |    51|
-|2     |  U0                             |axi_bram_ctrl     |    51|
-|3     |    \gext_inst.abcv4_0_ext_inst  |axi_bram_ctrl_top |    51|
-|4     |      \GEN_AXI4LITE.I_AXI_LITE   |axi_lite          |    49|
+|1     |top                              |                  |    49|
+|2     |  U0                             |axi_bram_ctrl     |    49|
+|3     |    \gext_inst.abcv4_0_ext_inst  |axi_bram_ctrl_top |    49|
+|4     |      \GEN_AXI4LITE.I_AXI_LITE   |axi_lite          |    47|
 +------+---------------------------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1187.258 ; gain = 410.516
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1188.773 ; gain = 411.359
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 180 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 1187.258 ; gain = 319.301
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1187.258 ; gain = 410.516
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 1188.773 ; gain = 320.043
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1188.773 ; gain = 411.359
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1199.320 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1200.832 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1210.352 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1208.449 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-29 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+28 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:53 . Memory (MB): peak = 1210.352 ; gain = 754.035
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1210.352 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:58 . Memory (MB): peak = 1208.449 ; gain = 751.180
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1208.449 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'D:/wulian/KWS-SOC/KWS-SOC.runs/axi_bram_ctrl_0_synth_1/axi_bram_ctrl_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'D:/wulian/DD/KWS-SOC-8bit/KWS-SOC.runs/axi_bram_ctrl_0_synth_1/axi_bram_ctrl_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP axi_bram_ctrl_0, cache-ID = 86fba63168683245
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP axi_bram_ctrl_0, cache-ID = badf8fffe23b2fb3
 INFO: [Coretcl 2-1174] Renamed 3 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1210.352 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1208.449 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'D:/wulian/KWS-SOC/KWS-SOC.runs/axi_bram_ctrl_0_synth_1/axi_bram_ctrl_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'D:/wulian/DD/KWS-SOC-8bit/KWS-SOC.runs/axi_bram_ctrl_0_synth_1/axi_bram_ctrl_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file axi_bram_ctrl_0_utilization_synth.rpt -pb axi_bram_ctrl_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jul  1 23:35:02 2020...
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 17 14:24:46 2020...

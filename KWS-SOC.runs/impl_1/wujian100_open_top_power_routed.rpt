@@ -1,0 +1,163 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date             : Mon Aug 24 14:47:49 2020
+| Host             : LAPTOP-5KE3GPT6 running 64-bit major release  (build 9200)
+| Command          : report_power -file wujian100_open_top_power_routed.rpt -pb wujian100_open_top_power_summary_routed.pb -rpx wujian100_open_top_power_routed.rpx
+| Design           : wujian100_open_top
+| Device           : xc7a200tfbg484-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.334        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.187        |
+| Device Static (W)        | 0.146        |
+| Effective TJA (C/W)      | 2.5          |
+| Max Ambient (C)          | 84.2         |
+| Junction Temperature (C) | 25.8         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.044 |        4 |       --- |             --- |
+| Slice Logic              |     0.036 |   157780 |       --- |             --- |
+|   LUT as Logic           |     0.028 |    62353 |    133800 |           46.60 |
+|   LUT as Distributed RAM |     0.005 |    12876 |     46200 |           27.87 |
+|   CARRY4                 |     0.002 |     4539 |     33450 |           13.57 |
+|   Register               |     0.002 |    54584 |    267600 |           20.40 |
+|   F7/F8 Muxes            |    <0.001 |     2737 |    133800 |            2.05 |
+|   LUT as Shift Register  |    <0.001 |     1719 |     46200 |            3.72 |
+|   Others                 |     0.000 |     7751 |       --- |             --- |
+| Signals                  |     0.061 |   131505 |       --- |             --- |
+| Block RAM                |     0.006 |      149 |       365 |           40.82 |
+| DSPs                     |     0.037 |      326 |       740 |           44.05 |
+| I/O                      |     0.003 |       62 |       285 |           21.75 |
+| Static Power             |     0.146 |          |           |                 |
+| Total                    |     0.334 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.219 |       0.184 |      0.035 |
+| Vccaux    |       1.800 |     0.031 |       0.000 |      0.031 |
+| Vcco33    |       3.300 |     0.006 |       0.001 |      0.005 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.005 |       0.000 |      0.004 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 2.5                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.2                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++----------+---------------+-----------------+
+| Clock    | Domain        | Constraint (ns) |
++----------+---------------+-----------------+
+| EHS      | PIN_EHS       |            50.0 |
+| JTAG_CLK | PAD_JTAG_TCLK |          1000.0 |
++----------+---------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++------------------------------+-----------+
+| Name                         | Power (W) |
++------------------------------+-----------+
+| wujian100_open_top           |     0.187 |
+|   x_cpu_top                  |     0.006 |
+|     CPU                      |     0.006 |
+|       x_cr_core_top          |     0.005 |
+|   x_pdu_top                  |     0.178 |
+|     x_main_bus_top           |     0.172 |
+|       x_ahb_axi_kws          |     0.165 |
+|       x_ahb_matrix_7_12_main |     0.002 |
+|       x_dmac_top             |     0.005 |
+|     x_sub_apb0_top           |     0.005 |
+|       x_pwm_sec_top          |     0.002 |
+|     x_sub_apb1_top           |     0.001 |
++------------------------------+-----------+
+
+

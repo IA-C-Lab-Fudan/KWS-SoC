@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date                      : Thu Jul  2 10:59:14 2020
+| Date                      : Mon Aug 24 14:13:26 2020
 | Host                      : LAPTOP-5KE3GPT6 running 64-bit major release  (build 9200)
 | Command                   : report_io -file wujian100_open_top_io_placed.rpt
 | Design                    : wujian100_open_top

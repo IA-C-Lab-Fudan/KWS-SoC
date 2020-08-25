@@ -20,13 +20,13 @@
 extern void Default_Handler(void);
 extern void CORET_IRQHandler(void);
 
-void (*g_irqvector[48])(void);
+void (*g_irqvector[49])(void);
 
 void irq_vectors_init(void)
 {
     int i;
 
-    for (i = 0; i < 48; i++) {
+    for (i = 0; i < 49; i++) {
         g_irqvector[i] = Default_Handler;
     }
 

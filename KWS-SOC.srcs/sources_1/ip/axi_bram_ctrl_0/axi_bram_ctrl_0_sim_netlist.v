@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Wed Jul  1 23:35:02 2020
+// Date        : Mon Aug 17 14:24:46 2020
 // Host        : LAPTOP-5KE3GPT6 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/axi_bram_ctrl_0_sim_netlist.v
+//               D:/wulian/DD/KWS-SOC-8bit/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/axi_bram_ctrl_0_sim_netlist.v
 // Design      : axi_bram_ctrl_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -45,7 +45,7 @@ module axi_bram_ctrl_0
     bram_rddata_a);
   (* x_interface_info = "xilinx.com:signal:clock:1.0 CLKIF CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME CLKIF, ASSOCIATED_BUSIF S_AXI:S_AXI_CTRL, ASSOCIATED_RESET s_axi_aresetn, FREQ_HZ 100000000, PHASE 0.000, INSERT_VIP 0" *) input s_axi_aclk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 RSTIF RST" *) (* x_interface_parameter = "XIL_INTERFACENAME RSTIF, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s_axi_aresetn;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 18, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [17:0]s_axi_awaddr;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 16, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [15:0]s_axi_awaddr;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWPROT" *) input [2:0]s_axi_awprot;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWVALID" *) input s_axi_awvalid;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWREADY" *) output s_axi_awready;
@@ -56,7 +56,7 @@ module axi_bram_ctrl_0
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI BRESP" *) output [1:0]s_axi_bresp;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI BVALID" *) output s_axi_bvalid;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI BREADY" *) input s_axi_bready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI ARADDR" *) input [17:0]s_axi_araddr;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI ARADDR" *) input [15:0]s_axi_araddr;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI ARPROT" *) input [2:0]s_axi_arprot;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI ARVALID" *) input s_axi_arvalid;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI ARREADY" *) output s_axi_arready;
@@ -68,11 +68,11 @@ module axi_bram_ctrl_0
   (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA CLK" *) output bram_clk_a;
   (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA EN" *) output bram_en_a;
   (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA WE" *) output [3:0]bram_we_a;
-  (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA ADDR" *) output [17:0]bram_addr_a;
+  (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA ADDR" *) output [15:0]bram_addr_a;
   (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA DIN" *) output [31:0]bram_wrdata_a;
   (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA DOUT" *) input [31:0]bram_rddata_a;
 
-  wire [17:0]bram_addr_a;
+  wire [15:0]bram_addr_a;
   wire bram_clk_a;
   wire bram_en_a;
   wire [31:0]bram_rddata_a;
@@ -80,12 +80,12 @@ module axi_bram_ctrl_0
   wire [3:0]bram_we_a;
   wire [31:0]bram_wrdata_a;
   wire s_axi_aclk;
-  wire [17:0]s_axi_araddr;
+  wire [15:0]s_axi_araddr;
   wire s_axi_aresetn;
   wire [2:0]s_axi_arprot;
   wire s_axi_arready;
   wire s_axi_arvalid;
-  wire [17:0]s_axi_awaddr;
+  wire [15:0]s_axi_awaddr;
   wire [2:0]s_axi_awprot;
   wire s_axi_awready;
   wire s_axi_awvalid;
@@ -111,7 +111,7 @@ module axi_bram_ctrl_0
   wire NLW_U0_s_axi_ctrl_rvalid_UNCONNECTED;
   wire NLW_U0_s_axi_ctrl_wready_UNCONNECTED;
   wire NLW_U0_s_axi_rlast_UNCONNECTED;
-  wire [17:0]NLW_U0_bram_addr_b_UNCONNECTED;
+  wire [15:0]NLW_U0_bram_addr_b_UNCONNECTED;
   wire [3:0]NLW_U0_bram_we_b_UNCONNECTED;
   wire [31:0]NLW_U0_bram_wrdata_b_UNCONNECTED;
   wire [0:0]NLW_U0_s_axi_bid_UNCONNECTED;
@@ -120,18 +120,18 @@ module axi_bram_ctrl_0
   wire [1:0]NLW_U0_s_axi_ctrl_rresp_UNCONNECTED;
   wire [0:0]NLW_U0_s_axi_rid_UNCONNECTED;
 
-  (* C_BRAM_ADDR_WIDTH = "16" *) 
+  (* C_BRAM_ADDR_WIDTH = "14" *) 
   (* C_BRAM_INST_MODE = "EXTERNAL" *) 
   (* C_ECC = "0" *) 
   (* C_ECC_ONOFF_RESET_VALUE = "0" *) 
   (* C_ECC_TYPE = "0" *) 
   (* C_FAMILY = "artix7" *) 
   (* C_FAULT_INJECT = "0" *) 
-  (* C_MEMORY_DEPTH = "65536" *) 
+  (* C_MEMORY_DEPTH = "16384" *) 
   (* C_RD_CMD_OPTIMIZATION = "0" *) 
   (* C_READ_LATENCY = "1" *) 
   (* C_SINGLE_PORT_BRAM = "1" *) 
-  (* C_S_AXI_ADDR_WIDTH = "18" *) 
+  (* C_S_AXI_ADDR_WIDTH = "16" *) 
   (* C_S_AXI_CTRL_ADDR_WIDTH = "32" *) 
   (* C_S_AXI_CTRL_DATA_WIDTH = "32" *) 
   (* C_S_AXI_DATA_WIDTH = "32" *) 
@@ -141,7 +141,7 @@ module axi_bram_ctrl_0
   (* downgradeipidentifiedwarnings = "yes" *) 
   axi_bram_ctrl_0_axi_bram_ctrl U0
        (.bram_addr_a(bram_addr_a),
-        .bram_addr_b(NLW_U0_bram_addr_b_UNCONNECTED[17:0]),
+        .bram_addr_b(NLW_U0_bram_addr_b_UNCONNECTED[15:0]),
         .bram_clk_a(bram_clk_a),
         .bram_clk_b(NLW_U0_bram_clk_b_UNCONNECTED),
         .bram_en_a(bram_en_a),
@@ -211,10 +211,10 @@ module axi_bram_ctrl_0
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
-(* C_BRAM_ADDR_WIDTH = "16" *) (* C_BRAM_INST_MODE = "EXTERNAL" *) (* C_ECC = "0" *) 
+(* C_BRAM_ADDR_WIDTH = "14" *) (* C_BRAM_INST_MODE = "EXTERNAL" *) (* C_ECC = "0" *) 
 (* C_ECC_ONOFF_RESET_VALUE = "0" *) (* C_ECC_TYPE = "0" *) (* C_FAMILY = "artix7" *) 
-(* C_FAULT_INJECT = "0" *) (* C_MEMORY_DEPTH = "65536" *) (* C_RD_CMD_OPTIMIZATION = "0" *) 
-(* C_READ_LATENCY = "1" *) (* C_SINGLE_PORT_BRAM = "1" *) (* C_S_AXI_ADDR_WIDTH = "18" *) 
+(* C_FAULT_INJECT = "0" *) (* C_MEMORY_DEPTH = "16384" *) (* C_RD_CMD_OPTIMIZATION = "0" *) 
+(* C_READ_LATENCY = "1" *) (* C_SINGLE_PORT_BRAM = "1" *) (* C_S_AXI_ADDR_WIDTH = "16" *) 
 (* C_S_AXI_CTRL_ADDR_WIDTH = "32" *) (* C_S_AXI_CTRL_DATA_WIDTH = "32" *) (* C_S_AXI_DATA_WIDTH = "32" *) 
 (* C_S_AXI_ID_WIDTH = "1" *) (* C_S_AXI_PROTOCOL = "AXI4LITE" *) (* C_S_AXI_SUPPORTS_NARROW_BURST = "0" *) 
 (* ORIG_REF_NAME = "axi_bram_ctrl" *) (* downgradeipidentifiedwarnings = "yes" *) 
@@ -293,7 +293,7 @@ module axi_bram_ctrl_0_axi_bram_ctrl
   output ecc_interrupt;
   output ecc_ue;
   input [0:0]s_axi_awid;
-  input [17:0]s_axi_awaddr;
+  input [15:0]s_axi_awaddr;
   input [7:0]s_axi_awlen;
   input [2:0]s_axi_awsize;
   input [1:0]s_axi_awburst;
@@ -312,7 +312,7 @@ module axi_bram_ctrl_0_axi_bram_ctrl
   output s_axi_bvalid;
   input s_axi_bready;
   input [0:0]s_axi_arid;
-  input [17:0]s_axi_araddr;
+  input [15:0]s_axi_araddr;
   input [7:0]s_axi_arlen;
   input [2:0]s_axi_arsize;
   input [1:0]s_axi_arburst;
@@ -347,30 +347,30 @@ module axi_bram_ctrl_0_axi_bram_ctrl
   output bram_clk_a;
   output bram_en_a;
   output [3:0]bram_we_a;
-  output [17:0]bram_addr_a;
+  output [15:0]bram_addr_a;
   output [31:0]bram_wrdata_a;
   input [31:0]bram_rddata_a;
   output bram_rst_b;
   output bram_clk_b;
   output bram_en_b;
   output [3:0]bram_we_b;
-  output [17:0]bram_addr_b;
+  output [15:0]bram_addr_b;
   output [31:0]bram_wrdata_b;
   input [31:0]bram_rddata_b;
 
   wire \<const0> ;
-  wire [17:2]\^bram_addr_a ;
+  wire [15:2]\^bram_addr_a ;
   wire bram_en_a;
   wire [31:0]bram_rddata_a;
   wire bram_rst_a;
   wire [3:0]bram_we_a;
   wire s_axi_aclk;
-  wire [17:0]s_axi_araddr;
+  wire [15:0]s_axi_araddr;
   wire s_axi_aresetn;
   wire [0:0]s_axi_arid;
   wire s_axi_arready;
   wire s_axi_arvalid;
-  wire [17:0]s_axi_awaddr;
+  wire [15:0]s_axi_awaddr;
   wire [0:0]s_axi_awid;
   wire s_axi_awready;
   wire s_axi_awvalid;
@@ -384,11 +384,9 @@ module axi_bram_ctrl_0_axi_bram_ctrl
   wire [3:0]s_axi_wstrb;
   wire s_axi_wvalid;
 
-  assign bram_addr_a[17:2] = \^bram_addr_a [17:2];
+  assign bram_addr_a[15:2] = \^bram_addr_a [15:2];
   assign bram_addr_a[1] = \<const0> ;
   assign bram_addr_a[0] = \<const0> ;
-  assign bram_addr_b[17] = \<const0> ;
-  assign bram_addr_b[16] = \<const0> ;
   assign bram_addr_b[15] = \<const0> ;
   assign bram_addr_b[14] = \<const0> ;
   assign bram_addr_b[13] = \<const0> ;
@@ -503,13 +501,13 @@ module axi_bram_ctrl_0_axi_bram_ctrl
         .bram_en_a(bram_en_a),
         .bram_we_a(bram_we_a),
         .s_axi_aclk(s_axi_aclk),
-        .s_axi_araddr(s_axi_araddr[17:2]),
+        .s_axi_araddr(s_axi_araddr[15:2]),
         .s_axi_aresetn(s_axi_aresetn),
         .s_axi_aresetn_0(bram_rst_a),
         .s_axi_arid(s_axi_arid),
         .s_axi_arready(s_axi_arready),
         .s_axi_arvalid(s_axi_arvalid),
-        .s_axi_awaddr(s_axi_awaddr[17:2]),
+        .s_axi_awaddr(s_axi_awaddr[15:2]),
         .s_axi_awid(s_axi_awid),
         .s_axi_awready(s_axi_awready),
         .s_axi_awvalid(s_axi_awvalid),
@@ -551,7 +549,7 @@ module axi_bram_ctrl_0_axi_bram_ctrl_top
   output bram_en_a;
   output [3:0]bram_we_a;
   output s_axi_bvalid;
-  output [15:0]bram_addr_a;
+  output [13:0]bram_addr_a;
   output s_axi_rlast;
   output s_axi_arready;
   output [0:0]s_axi_bid;
@@ -564,25 +562,25 @@ module axi_bram_ctrl_0_axi_bram_ctrl_top
   input s_axi_wvalid;
   input s_axi_awvalid;
   input s_axi_bready;
-  input [15:0]s_axi_araddr;
-  input [15:0]s_axi_awaddr;
+  input [13:0]s_axi_araddr;
+  input [13:0]s_axi_awaddr;
   input s_axi_rready;
   input [0:0]s_axi_awid;
   input [0:0]s_axi_arid;
 
   wire \GEN_AXI4LITE.I_AXI_LITE_n_4 ;
   wire \GEN_AXI4LITE.I_AXI_LITE_n_5 ;
-  wire [15:0]bram_addr_a;
+  wire [13:0]bram_addr_a;
   wire bram_en_a;
   wire [3:0]bram_we_a;
   wire s_axi_aclk;
-  wire [15:0]s_axi_araddr;
+  wire [13:0]s_axi_araddr;
   wire s_axi_aresetn;
   wire s_axi_aresetn_0;
   wire [0:0]s_axi_arid;
   wire s_axi_arready;
   wire s_axi_arvalid;
-  wire [15:0]s_axi_awaddr;
+  wire [13:0]s_axi_awaddr;
   wire [0:0]s_axi_awid;
   wire s_axi_awready;
   wire s_axi_awvalid;
@@ -673,7 +671,7 @@ module axi_bram_ctrl_0_axi_lite
   output s_axi_aresetn_0;
   output bram_en_a;
   output [3:0]bram_we_a;
-  output [15:0]bram_addr_a;
+  output [13:0]bram_addr_a;
   input s_axi_aresetn;
   input s_axi_aclk;
   input [0:0]s_axi_bid;
@@ -685,8 +683,8 @@ module axi_bram_ctrl_0_axi_lite
   input [3:0]s_axi_wstrb;
   input s_axi_wvalid;
   input s_axi_bready;
-  input [15:0]s_axi_araddr;
-  input [15:0]s_axi_awaddr;
+  input [13:0]s_axi_araddr;
+  input [13:0]s_axi_awaddr;
   input s_axi_rready;
 
   wire \FSM_onehot_GEN_NO_RD_CMD_OPT.lite_sm_cs[0]_i_1_n_0 ;
@@ -705,7 +703,7 @@ module axi_bram_ctrl_0_axi_lite
   wire \GEN_NO_RD_CMD_OPT.bvalid_cnt[2]_i_1_n_0 ;
   wire axi_aresetn_d1;
   wire axi_aresetn_d2;
-  wire [15:0]bram_addr_a;
+  wire [13:0]bram_addr_a;
   wire bram_en_a;
   wire bram_en_a_INST_0_i_1_n_0;
   wire [3:0]bram_we_a;
@@ -713,14 +711,14 @@ module axi_bram_ctrl_0_axi_lite
   wire bvalid_cnt_dec2_out;
   wire p_0_in;
   wire s_axi_aclk;
-  wire [15:0]s_axi_araddr;
+  wire [13:0]s_axi_araddr;
   wire s_axi_aresetn;
   wire s_axi_aresetn_0;
   wire [0:0]s_axi_arid;
   wire s_axi_arready;
   wire s_axi_arvalid;
   wire s_axi_arvalid_0;
-  wire [15:0]s_axi_awaddr;
+  wire [13:0]s_axi_awaddr;
   wire [0:0]s_axi_awid;
   wire s_axi_awready;
   wire s_axi_awvalid;
@@ -1024,26 +1022,6 @@ module axi_bram_ctrl_0_axi_lite
         .O(bram_addr_a[13]));
   LUT6 #(
     .INIT(64'hAAAABBBFAAAA8880)) 
-    \bram_addr_a[16]_INST_0 
-       (.I0(s_axi_araddr[14]),
-        .I1(s_axi_arvalid),
-        .I2(\FSM_onehot_GEN_NO_RD_CMD_OPT.lite_sm_cs_reg_n_0_[5] ),
-        .I3(\FSM_onehot_GEN_NO_RD_CMD_OPT.lite_sm_cs_reg_n_0_[0] ),
-        .I4(p_0_in),
-        .I5(s_axi_awaddr[14]),
-        .O(bram_addr_a[14]));
-  LUT6 #(
-    .INIT(64'hAAAABBBFAAAA8880)) 
-    \bram_addr_a[17]_INST_0 
-       (.I0(s_axi_araddr[15]),
-        .I1(s_axi_arvalid),
-        .I2(\FSM_onehot_GEN_NO_RD_CMD_OPT.lite_sm_cs_reg_n_0_[5] ),
-        .I3(\FSM_onehot_GEN_NO_RD_CMD_OPT.lite_sm_cs_reg_n_0_[0] ),
-        .I4(p_0_in),
-        .I5(s_axi_awaddr[15]),
-        .O(bram_addr_a[15]));
-  LUT6 #(
-    .INIT(64'hAAAABBBFAAAA8880)) 
     \bram_addr_a[2]_INST_0 
        (.I0(s_axi_araddr[0]),
         .I1(s_axi_arvalid),
@@ -1155,7 +1133,7 @@ module axi_bram_ctrl_0_axi_lite
         .I1(s_axi_arvalid),
         .I2(bram_en_a_INST_0_i_1_n_0),
         .O(bram_we_a[0]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \bram_we_a[1]_INST_0 
@@ -1163,7 +1141,7 @@ module axi_bram_ctrl_0_axi_lite
         .I1(s_axi_arvalid),
         .I2(bram_en_a_INST_0_i_1_n_0),
         .O(bram_we_a[1]));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \bram_we_a[2]_INST_0 

@@ -67,6 +67,7 @@ __Vectors:
     .long   Default_IRQHandler
     .long   Default_IRQHandler
     .long   Default_IRQHandler
+	.long   Default_IRQHandler
 
     .text
     .align  2

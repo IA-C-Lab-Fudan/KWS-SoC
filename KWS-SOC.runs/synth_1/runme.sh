@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/wulian/KWS-SOC/KWS-SOC.runs/synth_1'
+HD_PWD='D:/wulian/DD/KWS-SOC-8bit-detective/KWS-SOC.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

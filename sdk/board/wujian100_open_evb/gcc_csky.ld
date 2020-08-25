@@ -12,11 +12,11 @@
 MEMORY
 {
     I-SRAM : ORIGIN = 0x0        , LENGTH = 0x00010000   /* I-SRAM  64KB */
-    SRAM   : ORIGIN = 0x20000000,  LENGTH = 0x00100000   /* on-chip SRAM 192KB */
+    SRAM   : ORIGIN = 0x20000000,  LENGTH = 0x00030000   /* on-chip SRAM 192KB */
 }
 
 __min_heap_size = 0x200;
-PROVIDE (__ram_end  = 0x20100000);
+PROVIDE (__ram_end  = 0x20030000);
 PROVIDE (__heap_end = __ram_end);
 
 REGION_ALIAS("REGION_TEXT",    I-SRAM);

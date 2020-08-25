@@ -26,6 +26,7 @@ extern void wj_rtc_irqhandler(int32_t idx);
 extern void wj_usi_irqhandler(int32_t idx);
 extern void wj_oip_wdt_irqhandler(int32_t idx);
 extern void wj_dma_irqhandler(int32_t idx);
+extern void kws_intr(void);
 
 #define  ATTRIBUTE_ISR
 
@@ -225,5 +226,12 @@ ATTRIBUTE_ISR void GPIO0_IRQHandler(void)
 {
     CSI_INTRPT_ENTER();
     wj_oip_gpio_irqhandler(0);
+    CSI_INTRPT_EXIT();
+}
+
+ATTRIBUTE_ISR void KWS_IRQHandler(void)
+{
+    CSI_INTRPT_ENTER();
+    kws_intr();
     CSI_INTRPT_EXIT();
 }

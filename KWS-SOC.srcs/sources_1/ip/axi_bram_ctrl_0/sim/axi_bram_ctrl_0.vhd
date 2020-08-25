@@ -60,7 +60,7 @@ ENTITY axi_bram_ctrl_0 IS
   PORT (
     s_axi_aclk : IN STD_LOGIC;
     s_axi_aresetn : IN STD_LOGIC;
-    s_axi_awaddr : IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+    s_axi_awaddr : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     s_axi_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     s_axi_awvalid : IN STD_LOGIC;
     s_axi_awready : OUT STD_LOGIC;
@@ -71,7 +71,7 @@ ENTITY axi_bram_ctrl_0 IS
     s_axi_bresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
     s_axi_bvalid : OUT STD_LOGIC;
     s_axi_bready : IN STD_LOGIC;
-    s_axi_araddr : IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+    s_axi_araddr : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     s_axi_arprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     s_axi_arvalid : IN STD_LOGIC;
     s_axi_arready : OUT STD_LOGIC;
@@ -83,7 +83,7 @@ ENTITY axi_bram_ctrl_0 IS
     bram_clk_a : OUT STD_LOGIC;
     bram_en_a : OUT STD_LOGIC;
     bram_we_a : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-    bram_addr_a : OUT STD_LOGIC_VECTOR(17 DOWNTO 0);
+    bram_addr_a : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
     bram_wrdata_a : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     bram_rddata_a : IN STD_LOGIC_VECTOR(31 DOWNTO 0)
   );
@@ -119,7 +119,7 @@ ARCHITECTURE axi_bram_ctrl_0_arch OF axi_bram_ctrl_0 IS
       ecc_interrupt : OUT STD_LOGIC;
       ecc_ue : OUT STD_LOGIC;
       s_axi_awid : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-      s_axi_awaddr : IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+      s_axi_awaddr : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
       s_axi_awlen : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
       s_axi_awsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
       s_axi_awburst : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
@@ -138,7 +138,7 @@ ARCHITECTURE axi_bram_ctrl_0_arch OF axi_bram_ctrl_0 IS
       s_axi_bvalid : OUT STD_LOGIC;
       s_axi_bready : IN STD_LOGIC;
       s_axi_arid : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-      s_axi_araddr : IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+      s_axi_araddr : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
       s_axi_arlen : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
       s_axi_arsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
       s_axi_arburst : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
@@ -173,14 +173,14 @@ ARCHITECTURE axi_bram_ctrl_0_arch OF axi_bram_ctrl_0 IS
       bram_clk_a : OUT STD_LOGIC;
       bram_en_a : OUT STD_LOGIC;
       bram_we_a : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-      bram_addr_a : OUT STD_LOGIC_VECTOR(17 DOWNTO 0);
+      bram_addr_a : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
       bram_wrdata_a : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       bram_rddata_a : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       bram_rst_b : OUT STD_LOGIC;
       bram_clk_b : OUT STD_LOGIC;
       bram_en_b : OUT STD_LOGIC;
       bram_we_b : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-      bram_addr_b : OUT STD_LOGIC_VECTOR(17 DOWNTO 0);
+      bram_addr_b : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
       bram_wrdata_b : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       bram_rddata_b : IN STD_LOGIC_VECTOR(31 DOWNTO 0)
     );
@@ -213,7 +213,7 @@ ARCHITECTURE axi_bram_ctrl_0_arch OF axi_bram_ctrl_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_awready: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI AWREADY";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_awvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI AWVALID";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_awprot: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI AWPROT";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF s_axi_awaddr: SIGNAL IS "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 18, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER" & 
+  ATTRIBUTE X_INTERFACE_PARAMETER OF s_axi_awaddr: SIGNAL IS "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 16, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER" & 
 "_BITS_PER_BYTE 0, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_awaddr: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI AWADDR";
   ATTRIBUTE X_INTERFACE_PARAMETER OF s_axi_aresetn: SIGNAL IS "XIL_INTERFACENAME RSTIF, POLARITY ACTIVE_LOW, INSERT_VIP 0";
@@ -224,9 +224,9 @@ BEGIN
   U0 : axi_bram_ctrl
     GENERIC MAP (
       C_BRAM_INST_MODE => "EXTERNAL",
-      C_MEMORY_DEPTH => 65536,
-      C_BRAM_ADDR_WIDTH => 16,
-      C_S_AXI_ADDR_WIDTH => 18,
+      C_MEMORY_DEPTH => 16384,
+      C_BRAM_ADDR_WIDTH => 14,
+      C_S_AXI_ADDR_WIDTH => 16,
       C_S_AXI_DATA_WIDTH => 32,
       C_S_AXI_ID_WIDTH => 1,
       C_S_AXI_PROTOCOL => "AXI4LITE",

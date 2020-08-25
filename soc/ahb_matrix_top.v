@@ -822,7 +822,21 @@ ahbm_dummy_top  x_main_mdummy_top2 (
   .mhwdata                  (mdummy2_hmain0_m6_hwdata),
   .mhwrite                  (mdummy2_hmain0_m6_hwrite)
 );
-
+ahb_dummy_top  x_main_imemdummy_top0 (
+  .haddr                       (hmain0_imemdummy0_s1_haddr ),
+  .hclk                        (pmu_imemdummy0_hclk        ),
+  .hprot                       (hmain0_imemdummy0_s1_hprot ),
+  .hrdata                      (imemdummy0_hmain0_s1_hrdata),
+  .hready                      (imemdummy0_hmain0_s1_hready),
+  .hresp                       (imemdummy0_hmain0_s1_hresp ),
+  .hrst_b                      (pmu_imemdummy0_hrst_b      ),
+  .hsel                        (hmain0_imemdummy0_s1_hsel  ),
+  .hsize                       (hmain0_imemdummy0_s1_hsize ),
+  .htrans                      (hmain0_imemdummy0_s1_htrans),
+  .hwdata                      (hmain0_imemdummy0_s1_hwdata),
+  .hwrite                      (hmain0_imemdummy0_s1_hwrite),
+  .intr                        (main_imemdummy0_intr       )
+);
 ahb_main_dmem_top  x_main_dmem_top0 (
   .haddr                       (hmain0_dmemdummy0_s5_haddr ),
   .hclk                        (pmu_dmemdummy0_hclk        ),
@@ -946,7 +960,6 @@ dmac_top  x_dmac_top (
   .s_hwdata                   (hmain0_dmac0_s6_hwdata    ),
   .s_hwrite                   (hmain0_dmac0_s6_hwrite    )
 );
-
 ahb_axi_kws  x_ahb_axi_kws (
   .haddr0                   (hmain0_dummy0_s7_haddr ),
   .hclk0                    (pmu_dummy0_hclk        ),
@@ -999,22 +1012,8 @@ ahb_axi_kws  x_ahb_axi_kws (
   .htrans3                   (hmain0_dummy3_s11_htrans),
   .hwdata3                   (hmain0_dummy3_s11_hwdata),
   .hwrite3                   (hmain0_dummy3_s11_hwrite),
-  .intr3                     (main_dummy3_intr        ),
-  .haddr4                    (hmain0_imemdummy0_s1_haddr ),
-  .hclk4                     (pmu_imemdummy0_hclk        ),
-  .hprot4                    (hmain0_imemdummy0_s1_hprot ),
-  .hrdata4                   (imemdummy0_hmain0_s1_hrdata),
-  .hready4                   (imemdummy0_hmain0_s1_hready),
-  .hresp4                    (imemdummy0_hmain0_s1_hresp ),
-  .hrst_b4                   (pmu_imemdummy0_hrst_b      ),
-  .hsel4                     (hmain0_imemdummy0_s1_hsel  ),
-  .hsize4                    (hmain0_imemdummy0_s1_hsize ),
-  .htrans4                   (hmain0_imemdummy0_s1_htrans),
-  .hwdata4                   (hmain0_imemdummy0_s1_hwdata),
-  .hwrite4                   (hmain0_imemdummy0_s1_hwrite),
-  .intr4                     (main_imemdummy0_intr       )
-);
-
+  .intr3                     (main_dummy3_intr        )
+  );
 assign etb_dmacch0_trg = 1'b0;
 assign etb_dmacch10_trg = 1'b0;
 assign etb_dmacch11_trg = 1'b0;

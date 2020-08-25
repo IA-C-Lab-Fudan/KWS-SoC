@@ -6,8 +6,8 @@
 module calc_stft_frames_ram (addr0, ce0, d0, we0, q0, addr1, ce1, d1, we1, q1,  clk);
 
 parameter DWIDTH = 32;
-parameter AWIDTH = 15;
-parameter MEM_SIZE = 31360;
+parameter AWIDTH = 14;
+parameter MEM_SIZE = 15680;
 
 input[AWIDTH-1:0] addr0;
 input ce0;
@@ -64,8 +64,8 @@ module calc_stft_frames(
     q1);
 
 parameter DataWidth = 32'd32;
-parameter AddressRange = 32'd31360;
-parameter AddressWidth = 32'd15;
+parameter AddressRange = 32'd15680;
+parameter AddressWidth = 32'd14;
 input reset;
 input clk;
 input[AddressWidth - 1:0] address0;

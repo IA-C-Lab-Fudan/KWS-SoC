@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Wed Jul  1 23:35:02 2020
+-- Date        : Mon Aug 17 14:24:46 2020
 -- Host        : LAPTOP-5KE3GPT6 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               d:/wulian/KWS-SOC/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/axi_bram_ctrl_0_sim_netlist.vhdl
+--               D:/wulian/DD/KWS-SOC-8bit/KWS-SOC.srcs/sources_1/ip/axi_bram_ctrl_0/axi_bram_ctrl_0_sim_netlist.vhdl
 -- Design      : axi_bram_ctrl_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -25,7 +25,7 @@ entity axi_bram_ctrl_0_axi_lite is
     s_axi_aresetn_0 : out STD_LOGIC;
     bram_en_a : out STD_LOGIC;
     bram_we_a : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    bram_addr_a : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    bram_addr_a : out STD_LOGIC_VECTOR ( 13 downto 0 );
     s_axi_aresetn : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC;
     s_axi_bid : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -37,8 +37,8 @@ entity axi_bram_ctrl_0_axi_lite is
     s_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s_axi_wvalid : in STD_LOGIC;
     s_axi_bready : in STD_LOGIC;
-    s_axi_araddr : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    s_axi_awaddr : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    s_axi_araddr : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    s_axi_awaddr : in STD_LOGIC_VECTOR ( 13 downto 0 );
     s_axi_rready : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
@@ -80,8 +80,8 @@ architecture STRUCTURE of axi_bram_ctrl_0_axi_lite is
   attribute SOFT_HLUTNM of \GEN_NO_RD_CMD_OPT.bvalid_cnt[1]_i_1\ : label is "soft_lutpair0";
   attribute SOFT_HLUTNM of bram_en_a_INST_0 : label is "soft_lutpair1";
   attribute SOFT_HLUTNM of \bram_we_a[0]_INST_0\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \bram_we_a[1]_INST_0\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \bram_we_a[2]_INST_0\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \bram_we_a[1]_INST_0\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \bram_we_a[2]_INST_0\ : label is "soft_lutpair2";
   attribute SOFT_HLUTNM of \bram_we_a[3]_INST_0\ : label is "soft_lutpair3";
 begin
   s_axi_aresetn_0 <= \^s_axi_aresetn_0\;
@@ -468,32 +468,6 @@ begin
       I5 => s_axi_awaddr(13),
       O => bram_addr_a(13)
     );
-\bram_addr_a[16]_INST_0\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"AAAABBBFAAAA8880"
-    )
-        port map (
-      I0 => s_axi_araddr(14),
-      I1 => s_axi_arvalid,
-      I2 => \FSM_onehot_GEN_NO_RD_CMD_OPT.lite_sm_cs_reg_n_0_[5]\,
-      I3 => \FSM_onehot_GEN_NO_RD_CMD_OPT.lite_sm_cs_reg_n_0_[0]\,
-      I4 => p_0_in,
-      I5 => s_axi_awaddr(14),
-      O => bram_addr_a(14)
-    );
-\bram_addr_a[17]_INST_0\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"AAAABBBFAAAA8880"
-    )
-        port map (
-      I0 => s_axi_araddr(15),
-      I1 => s_axi_arvalid,
-      I2 => \FSM_onehot_GEN_NO_RD_CMD_OPT.lite_sm_cs_reg_n_0_[5]\,
-      I3 => \FSM_onehot_GEN_NO_RD_CMD_OPT.lite_sm_cs_reg_n_0_[0]\,
-      I4 => p_0_in,
-      I5 => s_axi_awaddr(15),
-      O => bram_addr_a(15)
-    );
 \bram_addr_a[2]_INST_0\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"AAAABBBFAAAA8880"
@@ -682,7 +656,7 @@ entity axi_bram_ctrl_0_axi_bram_ctrl_top is
     bram_en_a : out STD_LOGIC;
     bram_we_a : out STD_LOGIC_VECTOR ( 3 downto 0 );
     s_axi_bvalid : out STD_LOGIC;
-    bram_addr_a : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    bram_addr_a : out STD_LOGIC_VECTOR ( 13 downto 0 );
     s_axi_rlast : out STD_LOGIC;
     s_axi_arready : out STD_LOGIC;
     s_axi_bid : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -695,8 +669,8 @@ entity axi_bram_ctrl_0_axi_bram_ctrl_top is
     s_axi_wvalid : in STD_LOGIC;
     s_axi_awvalid : in STD_LOGIC;
     s_axi_bready : in STD_LOGIC;
-    s_axi_araddr : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    s_axi_awaddr : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    s_axi_araddr : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    s_axi_awaddr : in STD_LOGIC_VECTOR ( 13 downto 0 );
     s_axi_rready : in STD_LOGIC;
     s_axi_awid : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axi_arid : in STD_LOGIC_VECTOR ( 0 to 0 )
@@ -738,18 +712,18 @@ begin
 \GEN_AXI4LITE.I_AXI_LITE\: entity work.axi_bram_ctrl_0_axi_lite
      port map (
       \GEN_AXI4LITE.GEN_SIM_ONLY.S_AXI_BID_int_reg[0]\ => \GEN_AXI4LITE.I_AXI_LITE_n_4\,
-      bram_addr_a(15 downto 0) => bram_addr_a(15 downto 0),
+      bram_addr_a(13 downto 0) => bram_addr_a(13 downto 0),
       bram_en_a => bram_en_a,
       bram_we_a(3 downto 0) => bram_we_a(3 downto 0),
       s_axi_aclk => s_axi_aclk,
-      s_axi_araddr(15 downto 0) => s_axi_araddr(15 downto 0),
+      s_axi_araddr(13 downto 0) => s_axi_araddr(13 downto 0),
       s_axi_aresetn => s_axi_aresetn,
       s_axi_aresetn_0 => s_axi_aresetn_0,
       s_axi_arid(0) => s_axi_arid(0),
       s_axi_arready => s_axi_arready,
       s_axi_arvalid => s_axi_arvalid,
       s_axi_arvalid_0 => \GEN_AXI4LITE.I_AXI_LITE_n_5\,
-      s_axi_awaddr(15 downto 0) => s_axi_awaddr(15 downto 0),
+      s_axi_awaddr(13 downto 0) => s_axi_awaddr(13 downto 0),
       s_axi_awid(0) => s_axi_awid(0),
       s_axi_awready => s_axi_awready,
       s_axi_awvalid => s_axi_awvalid,
@@ -774,7 +748,7 @@ entity axi_bram_ctrl_0_axi_bram_ctrl is
     ecc_interrupt : out STD_LOGIC;
     ecc_ue : out STD_LOGIC;
     s_axi_awid : in STD_LOGIC_VECTOR ( 0 to 0 );
-    s_axi_awaddr : in STD_LOGIC_VECTOR ( 17 downto 0 );
+    s_axi_awaddr : in STD_LOGIC_VECTOR ( 15 downto 0 );
     s_axi_awlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
     s_axi_awsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_awburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -793,7 +767,7 @@ entity axi_bram_ctrl_0_axi_bram_ctrl is
     s_axi_bvalid : out STD_LOGIC;
     s_axi_bready : in STD_LOGIC;
     s_axi_arid : in STD_LOGIC_VECTOR ( 0 to 0 );
-    s_axi_araddr : in STD_LOGIC_VECTOR ( 17 downto 0 );
+    s_axi_araddr : in STD_LOGIC_VECTOR ( 15 downto 0 );
     s_axi_arlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
     s_axi_arsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_arburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -828,19 +802,19 @@ entity axi_bram_ctrl_0_axi_bram_ctrl is
     bram_clk_a : out STD_LOGIC;
     bram_en_a : out STD_LOGIC;
     bram_we_a : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    bram_addr_a : out STD_LOGIC_VECTOR ( 17 downto 0 );
+    bram_addr_a : out STD_LOGIC_VECTOR ( 15 downto 0 );
     bram_wrdata_a : out STD_LOGIC_VECTOR ( 31 downto 0 );
     bram_rddata_a : in STD_LOGIC_VECTOR ( 31 downto 0 );
     bram_rst_b : out STD_LOGIC;
     bram_clk_b : out STD_LOGIC;
     bram_en_b : out STD_LOGIC;
     bram_we_b : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    bram_addr_b : out STD_LOGIC_VECTOR ( 17 downto 0 );
+    bram_addr_b : out STD_LOGIC_VECTOR ( 15 downto 0 );
     bram_wrdata_b : out STD_LOGIC_VECTOR ( 31 downto 0 );
     bram_rddata_b : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   attribute C_BRAM_ADDR_WIDTH : integer;
-  attribute C_BRAM_ADDR_WIDTH of axi_bram_ctrl_0_axi_bram_ctrl : entity is 16;
+  attribute C_BRAM_ADDR_WIDTH of axi_bram_ctrl_0_axi_bram_ctrl : entity is 14;
   attribute C_BRAM_INST_MODE : string;
   attribute C_BRAM_INST_MODE of axi_bram_ctrl_0_axi_bram_ctrl : entity is "EXTERNAL";
   attribute C_ECC : integer;
@@ -854,7 +828,7 @@ entity axi_bram_ctrl_0_axi_bram_ctrl is
   attribute C_FAULT_INJECT : integer;
   attribute C_FAULT_INJECT of axi_bram_ctrl_0_axi_bram_ctrl : entity is 0;
   attribute C_MEMORY_DEPTH : integer;
-  attribute C_MEMORY_DEPTH of axi_bram_ctrl_0_axi_bram_ctrl : entity is 65536;
+  attribute C_MEMORY_DEPTH of axi_bram_ctrl_0_axi_bram_ctrl : entity is 16384;
   attribute C_RD_CMD_OPTIMIZATION : integer;
   attribute C_RD_CMD_OPTIMIZATION of axi_bram_ctrl_0_axi_bram_ctrl : entity is 0;
   attribute C_READ_LATENCY : integer;
@@ -862,7 +836,7 @@ entity axi_bram_ctrl_0_axi_bram_ctrl is
   attribute C_SINGLE_PORT_BRAM : integer;
   attribute C_SINGLE_PORT_BRAM of axi_bram_ctrl_0_axi_bram_ctrl : entity is 1;
   attribute C_S_AXI_ADDR_WIDTH : integer;
-  attribute C_S_AXI_ADDR_WIDTH of axi_bram_ctrl_0_axi_bram_ctrl : entity is 18;
+  attribute C_S_AXI_ADDR_WIDTH of axi_bram_ctrl_0_axi_bram_ctrl : entity is 16;
   attribute C_S_AXI_CTRL_ADDR_WIDTH : integer;
   attribute C_S_AXI_CTRL_ADDR_WIDTH of axi_bram_ctrl_0_axi_bram_ctrl : entity is 32;
   attribute C_S_AXI_CTRL_DATA_WIDTH : integer;
@@ -883,7 +857,7 @@ end axi_bram_ctrl_0_axi_bram_ctrl;
 
 architecture STRUCTURE of axi_bram_ctrl_0_axi_bram_ctrl is
   signal \<const0>\ : STD_LOGIC;
-  signal \^bram_addr_a\ : STD_LOGIC_VECTOR ( 17 downto 2 );
+  signal \^bram_addr_a\ : STD_LOGIC_VECTOR ( 15 downto 2 );
   signal \^bram_rddata_a\ : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal \^s_axi_aclk\ : STD_LOGIC;
   signal \^s_axi_awready\ : STD_LOGIC;
@@ -893,11 +867,9 @@ begin
   \^bram_rddata_a\(31 downto 0) <= bram_rddata_a(31 downto 0);
   \^s_axi_aclk\ <= s_axi_aclk;
   \^s_axi_wdata\(31 downto 0) <= s_axi_wdata(31 downto 0);
-  bram_addr_a(17 downto 2) <= \^bram_addr_a\(17 downto 2);
+  bram_addr_a(15 downto 2) <= \^bram_addr_a\(15 downto 2);
   bram_addr_a(1) <= \<const0>\;
   bram_addr_a(0) <= \<const0>\;
-  bram_addr_b(17) <= \<const0>\;
-  bram_addr_b(16) <= \<const0>\;
   bram_addr_b(15) <= \<const0>\;
   bram_addr_b(14) <= \<const0>\;
   bram_addr_b(13) <= \<const0>\;
@@ -1013,17 +985,17 @@ GND: unisim.vcomponents.GND
     );
 \gext_inst.abcv4_0_ext_inst\: entity work.axi_bram_ctrl_0_axi_bram_ctrl_top
      port map (
-      bram_addr_a(15 downto 0) => \^bram_addr_a\(17 downto 2),
+      bram_addr_a(13 downto 0) => \^bram_addr_a\(15 downto 2),
       bram_en_a => bram_en_a,
       bram_we_a(3 downto 0) => bram_we_a(3 downto 0),
       s_axi_aclk => \^s_axi_aclk\,
-      s_axi_araddr(15 downto 0) => s_axi_araddr(17 downto 2),
+      s_axi_araddr(13 downto 0) => s_axi_araddr(15 downto 2),
       s_axi_aresetn => s_axi_aresetn,
       s_axi_aresetn_0 => bram_rst_a,
       s_axi_arid(0) => s_axi_arid(0),
       s_axi_arready => s_axi_arready,
       s_axi_arvalid => s_axi_arvalid,
-      s_axi_awaddr(15 downto 0) => s_axi_awaddr(17 downto 2),
+      s_axi_awaddr(13 downto 0) => s_axi_awaddr(15 downto 2),
       s_axi_awid(0) => s_axi_awid(0),
       s_axi_awready => \^s_axi_awready\,
       s_axi_awvalid => s_axi_awvalid,
@@ -1045,7 +1017,7 @@ entity axi_bram_ctrl_0 is
   port (
     s_axi_aclk : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC;
-    s_axi_awaddr : in STD_LOGIC_VECTOR ( 17 downto 0 );
+    s_axi_awaddr : in STD_LOGIC_VECTOR ( 15 downto 0 );
     s_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_awvalid : in STD_LOGIC;
     s_axi_awready : out STD_LOGIC;
@@ -1056,7 +1028,7 @@ entity axi_bram_ctrl_0 is
     s_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_bvalid : out STD_LOGIC;
     s_axi_bready : in STD_LOGIC;
-    s_axi_araddr : in STD_LOGIC_VECTOR ( 17 downto 0 );
+    s_axi_araddr : in STD_LOGIC_VECTOR ( 15 downto 0 );
     s_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_arvalid : in STD_LOGIC;
     s_axi_arready : out STD_LOGIC;
@@ -1068,7 +1040,7 @@ entity axi_bram_ctrl_0 is
     bram_clk_a : out STD_LOGIC;
     bram_en_a : out STD_LOGIC;
     bram_we_a : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    bram_addr_a : out STD_LOGIC_VECTOR ( 17 downto 0 );
+    bram_addr_a : out STD_LOGIC_VECTOR ( 15 downto 0 );
     bram_wrdata_a : out STD_LOGIC_VECTOR ( 31 downto 0 );
     bram_rddata_a : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
@@ -1094,7 +1066,7 @@ architecture STRUCTURE of axi_bram_ctrl_0 is
   signal NLW_U0_s_axi_ctrl_rvalid_UNCONNECTED : STD_LOGIC;
   signal NLW_U0_s_axi_ctrl_wready_UNCONNECTED : STD_LOGIC;
   signal NLW_U0_s_axi_rlast_UNCONNECTED : STD_LOGIC;
-  signal NLW_U0_bram_addr_b_UNCONNECTED : STD_LOGIC_VECTOR ( 17 downto 0 );
+  signal NLW_U0_bram_addr_b_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal NLW_U0_bram_we_b_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_U0_bram_wrdata_b_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal NLW_U0_s_axi_bid_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -1103,7 +1075,7 @@ architecture STRUCTURE of axi_bram_ctrl_0 is
   signal NLW_U0_s_axi_ctrl_rresp_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_U0_s_axi_rid_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   attribute C_BRAM_ADDR_WIDTH : integer;
-  attribute C_BRAM_ADDR_WIDTH of U0 : label is 16;
+  attribute C_BRAM_ADDR_WIDTH of U0 : label is 14;
   attribute C_BRAM_INST_MODE : string;
   attribute C_BRAM_INST_MODE of U0 : label is "EXTERNAL";
   attribute C_ECC : integer;
@@ -1117,7 +1089,7 @@ architecture STRUCTURE of axi_bram_ctrl_0 is
   attribute C_FAULT_INJECT : integer;
   attribute C_FAULT_INJECT of U0 : label is 0;
   attribute C_MEMORY_DEPTH : integer;
-  attribute C_MEMORY_DEPTH of U0 : label is 65536;
+  attribute C_MEMORY_DEPTH of U0 : label is 16384;
   attribute C_RD_CMD_OPTIMIZATION : integer;
   attribute C_RD_CMD_OPTIMIZATION of U0 : label is 0;
   attribute C_READ_LATENCY : integer;
@@ -1125,7 +1097,7 @@ architecture STRUCTURE of axi_bram_ctrl_0 is
   attribute C_SINGLE_PORT_BRAM : integer;
   attribute C_SINGLE_PORT_BRAM of U0 : label is 1;
   attribute C_S_AXI_ADDR_WIDTH : integer;
-  attribute C_S_AXI_ADDR_WIDTH of U0 : label is 18;
+  attribute C_S_AXI_ADDR_WIDTH of U0 : label is 16;
   attribute C_S_AXI_CTRL_ADDR_WIDTH : integer;
   attribute C_S_AXI_CTRL_ADDR_WIDTH of U0 : label is 32;
   attribute C_S_AXI_CTRL_DATA_WIDTH : integer;
@@ -1166,7 +1138,7 @@ architecture STRUCTURE of axi_bram_ctrl_0 is
   attribute x_interface_info of s_axi_araddr : signal is "xilinx.com:interface:aximm:1.0 S_AXI ARADDR";
   attribute x_interface_info of s_axi_arprot : signal is "xilinx.com:interface:aximm:1.0 S_AXI ARPROT";
   attribute x_interface_info of s_axi_awaddr : signal is "xilinx.com:interface:aximm:1.0 S_AXI AWADDR";
-  attribute x_interface_parameter of s_axi_awaddr : signal is "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 18, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute x_interface_parameter of s_axi_awaddr : signal is "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 16, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute x_interface_info of s_axi_awprot : signal is "xilinx.com:interface:aximm:1.0 S_AXI AWPROT";
   attribute x_interface_info of s_axi_bresp : signal is "xilinx.com:interface:aximm:1.0 S_AXI BRESP";
   attribute x_interface_info of s_axi_rdata : signal is "xilinx.com:interface:aximm:1.0 S_AXI RDATA";
@@ -1176,8 +1148,8 @@ architecture STRUCTURE of axi_bram_ctrl_0 is
 begin
 U0: entity work.axi_bram_ctrl_0_axi_bram_ctrl
      port map (
-      bram_addr_a(17 downto 0) => bram_addr_a(17 downto 0),
-      bram_addr_b(17 downto 0) => NLW_U0_bram_addr_b_UNCONNECTED(17 downto 0),
+      bram_addr_a(15 downto 0) => bram_addr_a(15 downto 0),
+      bram_addr_b(15 downto 0) => NLW_U0_bram_addr_b_UNCONNECTED(15 downto 0),
       bram_clk_a => bram_clk_a,
       bram_clk_b => NLW_U0_bram_clk_b_UNCONNECTED,
       bram_en_a => bram_en_a,
@@ -1193,7 +1165,7 @@ U0: entity work.axi_bram_ctrl_0_axi_bram_ctrl
       ecc_interrupt => NLW_U0_ecc_interrupt_UNCONNECTED,
       ecc_ue => NLW_U0_ecc_ue_UNCONNECTED,
       s_axi_aclk => s_axi_aclk,
-      s_axi_araddr(17 downto 0) => s_axi_araddr(17 downto 0),
+      s_axi_araddr(15 downto 0) => s_axi_araddr(15 downto 0),
       s_axi_arburst(1 downto 0) => B"00",
       s_axi_arcache(3 downto 0) => B"0000",
       s_axi_aresetn => s_axi_aresetn,
@@ -1204,7 +1176,7 @@ U0: entity work.axi_bram_ctrl_0_axi_bram_ctrl
       s_axi_arready => s_axi_arready,
       s_axi_arsize(2 downto 0) => B"000",
       s_axi_arvalid => s_axi_arvalid,
-      s_axi_awaddr(17 downto 0) => s_axi_awaddr(17 downto 0),
+      s_axi_awaddr(15 downto 0) => s_axi_awaddr(15 downto 0),
       s_axi_awburst(1 downto 0) => B"00",
       s_axi_awcache(3 downto 0) => B"0000",
       s_axi_awid(0) => '0',

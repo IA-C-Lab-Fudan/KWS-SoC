@@ -56,7 +56,7 @@ COMPONENT axi_bram_ctrl_0
   PORT (
     s_axi_aclk : IN STD_LOGIC;
     s_axi_aresetn : IN STD_LOGIC;
-    s_axi_awaddr : IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+    s_axi_awaddr : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     s_axi_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     s_axi_awvalid : IN STD_LOGIC;
     s_axi_awready : OUT STD_LOGIC;
@@ -67,7 +67,7 @@ COMPONENT axi_bram_ctrl_0
     s_axi_bresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
     s_axi_bvalid : OUT STD_LOGIC;
     s_axi_bready : IN STD_LOGIC;
-    s_axi_araddr : IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+    s_axi_araddr : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     s_axi_arprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     s_axi_arvalid : IN STD_LOGIC;
     s_axi_arready : OUT STD_LOGIC;
@@ -79,7 +79,7 @@ COMPONENT axi_bram_ctrl_0
     bram_clk_a : OUT STD_LOGIC;
     bram_en_a : OUT STD_LOGIC;
     bram_we_a : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-    bram_addr_a : OUT STD_LOGIC_VECTOR(17 DOWNTO 0);
+    bram_addr_a : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
     bram_wrdata_a : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     bram_rddata_a : IN STD_LOGIC_VECTOR(31 DOWNTO 0)
   );

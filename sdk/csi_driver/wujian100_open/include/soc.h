@@ -64,6 +64,7 @@ typedef enum IRQn {
     TIM13_IRQn                       =  38,     /* timer13 Interrupt */
     TIM14_IRQn                       =  39,     /* timer14 Interrupt */
     TIM15_IRQn                       =  40,     /* timer15 Interrupt */
+	KWS_IRQn                         =  45,     /* KWS */
 }
 IRQn_Type;
 

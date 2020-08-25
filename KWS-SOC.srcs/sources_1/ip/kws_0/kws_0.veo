@@ -47,7 +47,7 @@
 // DO NOT MODIFY THIS FILE.
 
 // IP VLNV: xilinx.com:hls:kws:1.0
-// IP Revision: 2006301106
+// IP Revision: 2008241312
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections
@@ -67,12 +67,8 @@ kws_0 your_instance_name (
   .weight_in_TLAST(weight_in_TLAST),      // input wire [0 : 0] weight_in_TLAST
   .control_in_TVALID(control_in_TVALID),  // input wire control_in_TVALID
   .control_in_TREADY(control_in_TREADY),  // output wire control_in_TREADY
-  .control_in_TDATA(control_in_TDATA),    // input wire [31 : 0] control_in_TDATA
+  .control_in_TDATA(control_in_TDATA),    // input wire [15 : 0] control_in_TDATA
   .control_in_TLAST(control_in_TLAST),    // input wire [0 : 0] control_in_TLAST
-  .keep_in_TVALID(keep_in_TVALID),        // input wire keep_in_TVALID
-  .keep_in_TREADY(keep_in_TREADY),        // output wire keep_in_TREADY
-  .keep_in_TDATA(keep_in_TDATA),          // input wire [31 : 0] keep_in_TDATA
-  .keep_in_TLAST(keep_in_TLAST),          // input wire [0 : 0] keep_in_TLAST
   .data_out_TVALID(data_out_TVALID),      // output wire data_out_TVALID
   .data_out_TREADY(data_out_TREADY),      // input wire data_out_TREADY
   .data_out_TDATA(data_out_TDATA),        // output wire [31 : 0] data_out_TDATA

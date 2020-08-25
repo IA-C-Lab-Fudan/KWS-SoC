@@ -98,11 +98,10 @@ module wujian100_open_top(
   PAD_USI2_SD0,
   PAD_USI2_SD1,
   PIN_EHS,
+  
   POUT_EHS
 );
-
-
-input           PIN_EHS;               
+input           PIN_EHS;     
 
 output          POUT_EHS;              
 
@@ -2311,7 +2310,5 @@ assign test_mode = 1'b0;
 
 
 endmodule
-
-
 
 

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Wed Jul  1 23:50:27 2020
+| Date         : Mon Aug 24 13:50:15 2020
 | Host         : LAPTOP-5KE3GPT6 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file wujian100_open_top_utilization_synth.rpt -pb wujian100_open_top_utilization_synth.pb
 | Design       : wujian100_open_top
@@ -30,15 +30,15 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 28414 |     0 |    134600 | 21.11 |
-|   LUT as Logic             | 28342 |     0 |    134600 | 21.06 |
+| Slice LUTs*                | 27808 |     0 |    134600 | 20.66 |
+|   LUT as Logic             | 27736 |     0 |    134600 | 20.61 |
 |   LUT as Memory            |    72 |     0 |     46200 |  0.16 |
 |     LUT as Distributed RAM |    72 |     0 |           |       |
 |     LUT as Shift Register  |     0 |     0 |           |       |
-| Slice Registers            | 13483 |     0 |    269200 |  5.01 |
-|   Register as Flip Flop    | 13483 |     0 |    269200 |  5.01 |
+| Slice Registers            | 13437 |     0 |    269200 |  4.99 |
+|   Register as Flip Flop    | 13437 |     0 |    269200 |  4.99 |
 |   Register as Latch        |     0 |     0 |    269200 |  0.00 |
-| F7 Muxes                   |   371 |     0 |     67300 |  0.55 |
+| F7 Muxes                   |   372 |     0 |     67300 |  0.55 |
 | F8 Muxes                   |    36 |     0 |     33650 |  0.11 |
 +----------------------------+-------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -56,8 +56,8 @@ Table of Contents
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
-| 1170  |          Yes |           - |          Set |
-| 11344 |          Yes |           - |        Reset |
+| 1169  |          Yes |           - |          Set |
+| 11299 |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
 | 969   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -152,17 +152,17 @@ Table of Contents
 +----------+-------+---------------------+
 | Ref Name |  Used | Functional Category |
 +----------+-------+---------------------+
-| LUT6     | 15135 |                 LUT |
-| FDCE     | 11344 |        Flop & Latch |
-| LUT5     |  5634 |                 LUT |
-| LUT4     |  4443 |                 LUT |
-| LUT2     |  3111 |                 LUT |
-| LUT3     |  2733 |                 LUT |
+| LUT6     | 14768 |                 LUT |
+| FDCE     | 11299 |        Flop & Latch |
+| LUT5     |  5359 |                 LUT |
+| LUT4     |  4601 |                 LUT |
+| LUT2     |  2973 |                 LUT |
+| LUT3     |  2613 |                 LUT |
 | CARRY4   |  1508 |          CarryLogic |
-| LUT1     |  1179 |                 LUT |
-| FDPE     |  1170 |        Flop & Latch |
+| LUT1     |  1180 |                 LUT |
+| FDPE     |  1169 |        Flop & Latch |
 | FDRE     |   969 |        Flop & Latch |
-| MUXF7    |   371 |               MuxFx |
+| MUXF7    |   372 |               MuxFx |
 | RAMD32   |   108 |  Distributed Memory |
 | RAMB36E1 |    64 |        Block Memory |
 | OBUFT    |    57 |                  IO |
@@ -180,10 +180,10 @@ Table of Contents
 +----------------------+------+
 |       Ref Name       | Used |
 +----------------------+------+
-| ahblite_axi_bridge_0 |   10 |
-| preprocess_0         |    1 |
+| ahblite_axi_bridge_0 |    5 |
 | kws_0                |    1 |
 | blk_mem_gen_0        |    1 |
+| axis_data_fifo_0     |    1 |
 | axi_bram_ctrl_0      |    1 |
 +----------------------+------+
 

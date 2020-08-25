@@ -365,24 +365,27 @@ int32_t drv_usi_iic_config(iic_handle_t handle,
     ret = drv_usi_iic_config_mode(handle, mode);
 
     if (ret < 0) {
+		printf("mode");
         return ret;
     }
 
     ret = drv_usi_iic_config_speed(handle, speed);
 
     if (ret < 0) {
+		printf("speed");
         return ret;
     }
 
     ret = drv_usi_iic_config_addr_mode(handle, addr_mode);
 
     if (ret < 0) {
+		printf("addr_mode");
         return ret;
     }
 
-    // ret = drv_usi_iic_config_slave_addr(handle, slave_addr);
+	//ret = drv_usi_iic_config_slave_addr(handle, slave_addr);
 
-    // if (ret < 0) {
+	//if (ret < 0) {
     //     return ret;
     // }
 
