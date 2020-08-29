@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session Name="D:\wulian\github\KWS-SOC-8bit-detective\sdk\projects\examples\kws\CDK\wujian100_VS1053.cdkws">
+<Session Name="D:\wulian\github\KWS-SoC\sdk\projects\examples\kws\CDK\wujian100_VS1053.cdkws">
   <int Value="0" Name="m_selectedTab"/>
-  <wxString Value="D:\wulian\github\KWS-SOC-8bit-detective\sdk\projects\examples\kws\CDK\wujian100_VS1053.cdkws" Name="m_workspaceName"/>
+  <wxString Value="D:\wulian\github\KWS-SoC\sdk\projects\examples\kws\CDK\wujian100_VS1053.cdkws" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="D:\wulian\github\KWS-SOC-8bit-detective\sdk\projects\examples\kws\main.c" Name="FileName"/>
-      <int Value="108" Name="FirstVisibleLine"/>
-      <int Value="115" Name="CurrentLine"/>
+      <wxString Value="D:\wulian\github\KWS-SoC\sdk\projects\examples\kws\main.c" Name="FileName"/>
+      <int Value="120" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
